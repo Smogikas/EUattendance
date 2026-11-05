@@ -175,10 +175,21 @@
     } else {
       var u = "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/gviz/tq?tqx=out:csv&headers=1&sheet=" + encodeURIComponent(OLD_SHEET);
       p = (CACHE._old || (CACHE._old = fetch(u).then(function (r) { return r.text(); }).then(function (t) { return objs(csv(t)); })))
-        .then(function (all) { return all.filter(function (g) { return g.season === s; }); });
+        .then(function (all) { return all.filter(function (g) { return g.season === s; }).map(fixRow); });
     }
     CACHE[s] = p.catch(function () { return []; });
     return CACHE[s];
+  }
+
+  // lape skaičiai/datos gali būti suformatuoti („3,210“, „10/17/2023“) – suvienodinama
+  function fixRow(g) {
+    ["attendance", "capacity"].forEach(function (k) { g[k] = String(g[k] == null ? "" : g[k]).replace(/[^0-9]/g, ""); });
+    var d = String(g.date || "").trim(), m;
+    if ((m = d.match(/^(\d{4})[-.\/](\d{1,2})[-.\/](\d{1,2})/))) d = m[1] + "-" + ("0" + m[2]).slice(-2) + "-" + ("0" + m[3]).slice(-2);
+    else if ((m = d.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/))) d = m[3] + "-" + ("0" + m[1]).slice(-2) + "-" + ("0" + m[2]).slice(-2);
+    else if ((m = d.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})/))) d = m[3] + "-" + ("0" + m[2]).slice(-2) + "-" + ("0" + m[1]).slice(-2);
+    g.date = d;
+    return g;
   }
 
   function aggregate(games) {
