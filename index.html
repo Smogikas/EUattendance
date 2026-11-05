@@ -177,8 +177,17 @@
       p = (CACHE._old || (CACHE._old = fetch(u).then(function (r) { return r.text(); }).then(function (t) { return objs(csv(t)); })))
         .then(function (all) { return all.filter(function (g) { return g.season === s; }).map(fixRow); });
     }
-    CACHE[s] = p.catch(function () { return []; });
+    CACHE[s] = Promise.all([p, VCAP]).then(function (x) { VMAP = x[1] || {}; return x[0].map(applyCap); }).catch(function () { return []; });
     return CACHE[s];
+  }
+
+  // arenų talpos iš lapo „Arenas“ (collect.py → data/venue_capacity.json) – taikoma ir pasibaigusiems sezonams
+  var VCAP = getJSON("data/venue_capacity.json").catch(function () { return {}; }), VMAP = {};
+  function applyCap(g) {
+    var m = VMAP[(g.venue || "").trim()];
+    if (m && m.capacity) { g.capacity = String(m.capacity); g.cap_src = m.src; g.cap_arena = m.arena; }
+    else if (g.capacity && !g.cap_src) g.cap_src = "official";
+    return g;
   }
 
   // lape skaičiai/datos gali būti suformatuoti („3,210“, „10/17/2023“) – suvienodinama
@@ -289,7 +298,7 @@
         if (open) {
           row += '<tr class="games-row"><td colspan="9"><table class="glist">' + c.games.slice().sort(function (a, b) { return a.date < b.date ? -1 : 1; }).map(function (g) {
             var a = parseInt(g.attendance, 10), cap = parseInt(g.capacity, 10);
-            return "<tr><td class=\"muted\">" + esc(g.date) + '</td><td class="muted hide-sm">' + esc(g.round) + "</td><td>– " + esc(g.away) + '</td><td class="num">' + (a > 0 ? fmt(a) : '<span class="muted">nėra</span>') + '</td><td class="num muted hide-sm">' + (cap > 0 ? fmt(cap) + (g.cap_src === "arenas" ? "*" : "") : "") + '</td><td class="muted hide-sm">' + esc(g.venue) + "</td><td>" + (g.url ? '<a href="' + esc(g.url) + '" target="_blank" rel="noopener">↗</a>' : "") + "</td></tr>";
+            return "<tr><td class=\"muted\">" + esc(g.date) + '</td><td class="muted hide-sm">' + esc(g.round) + "</td><td>– " + esc(g.away) + '</td><td class="num">' + (a > 0 ? fmt(a) : '<span class="muted">nėra</span>') + '</td><td class="num muted hide-sm">' + (cap > 0 ? fmt(cap) + (g.cap_src === "official" ? "*" : "") : "") + '</td><td class="muted hide-sm">' + esc(g.venue) + "</td><td>" + (g.url ? '<a href="' + esc(g.url) + '" target="_blank" rel="noopener">↗</a>' : "") + "</td></tr>";
           }).join("") + "</table></td></tr>";
         }
         return row;
@@ -311,7 +320,7 @@
       document.getElementById("warns").innerHTML = w.map(function (x) { return '<div class="warn">' + x + "</div>"; }).join("");
       document.getElementById("foot").innerHTML = "Šaltiniai: <a href=\"https://www.euroleaguebasketball.net\" target=\"_blank\" rel=\"noopener\">euroleaguebasketball.net</a>, " +
         "<a href=\"https://www.championsleague.basketball\" target=\"_blank\" rel=\"noopener\">championsleague.basketball</a>, <a href=\"https://www.fiba.basketball\" target=\"_blank\" rel=\"noopener\">fiba.basketball</a> · " +
-        "Rungtynės be lankomumo į vidurkį neįskaičiuojamos; * – talpa iš lapo „Arenas“ · Paspauskite klubą – matysite rungtynes";
+        "Rungtynės be lankomumo į vidurkį neįskaičiuojamos; talpa – iš lapo „Arenas“; * – turnyro nurodyta talpa (arenos lape nėra) · Paspauskite klubą – matysite rungtynes";
     });
   }
 
