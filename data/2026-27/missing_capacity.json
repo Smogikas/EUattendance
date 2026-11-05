@@ -1,36 +1,6 @@
 [
  {
   "comp": "bcl",
-  "venue": "Palasport Giulio Bigi",
-  "club": "Pallacanestro Reggiana",
-  "games": 2
- },
- {
-  "comp": "bcl",
-  "venue": "Vilnius Arena",
-  "club": "Utena Juventus",
-  "games": 2
- },
- {
-  "comp": "bcl",
-  "venue": "Enteria Arena ",
-  "club": "BK Pardubice",
-  "games": 2
- },
- {
-  "comp": "bcl",
-  "venue": "Berlin Arena",
-  "club": "Alba Berlin",
-  "games": 2
- },
- {
-  "comp": "bcl",
-  "venue": "Torwar Arena",
-  "club": "Legia Warszawa",
-  "games": 1
- },
- {
-  "comp": "bcl",
   "venue": "Kupittaa Hall",
   "club": "Salon Vilpas",
   "games": 1
@@ -42,12 +12,6 @@
   "games": 1
  },
  {
-  "comp": "euroleague",
-  "venue": "Arena 8888 Sofia",
-  "club": "Hapoel Tel Aviv",
-  "games": 4
- },
- {
   "comp": "fec",
   "venue": "Centre sportif de la Queue-d'Arve",
   "club": "Lions de Geneve",
@@ -55,26 +19,8 @@
  },
  {
   "comp": "fec",
-  "venue": "Tbilisi Sports Palace",
-  "club": "BC Batumi 2010",
-  "games": 3
- },
- {
-  "comp": "fec",
   "venue": "Sala Polivalenta Craiova",
   "club": "Sport Club Municipal Craiova",
-  "games": 3
- },
- {
-  "comp": "fec",
-  "venue": "Vidzemes Olimpiskas Centrs",
-  "club": "Valmiera Glass/ViA",
-  "games": 3
- },
- {
-  "comp": "fec",
-  "venue": "Baku Sports Palace",
-  "club": "LANDAU Lions",
   "games": 3
  },
  {
@@ -91,38 +37,8 @@
  },
  {
   "comp": "fec",
-  "venue": "Minatori",
-  "club": "BC Trepca",
-  "games": 2
- },
- {
-  "comp": "fec",
-  "venue": "Arena of Split Croatia Insurance",
-  "club": "KK Split",
-  "games": 2
- },
- {
-  "comp": "fec",
-  "venue": "Haleon Arena",
-  "club": "BK Patrioti Levice",
-  "games": 2
- },
- {
-  "comp": "fec",
   "venue": "Ganja Sports Palace",
   "club": "Gence BC",
-  "games": 2
- },
- {
-  "comp": "fec",
-  "venue": "Costas Papaellinas Arena",
-  "club": "Keravnos BC",
-  "games": 2
- },
- {
-  "comp": "fec",
-  "venue": "Kition Athletic Center",
-  "club": "Petrolina AEK Larnaca Basketball Club",
   "games": 2
  },
  {
@@ -136,18 +52,6 @@
   "venue": "Sezai Surroi",
   "club": "Basketball Club Bashkimi",
   "games": 2
- },
- {
-  "comp": "fec",
-  "venue": "Arena Samokov",
-  "club": "BC Rilski Sportist",
-  "games": 1
- },
- {
-  "comp": "fec",
-  "venue": "National Basketball Performance Centre",
-  "club": "Manchester Basketball Club",
-  "games": 1
  },
  {
   "comp": "fec",
