@@ -1,36 +1,6 @@
 {
  "missing": [
   {
-   "venue": "DVTK Arena",
-   "club": "Szolnoki Olaj",
-   "other_clubs": [],
-   "comps": [
-    "bcl"
-   ],
-   "seasons": [
-    "2025-26"
-   ],
-   "games": 5,
-   "official": {
-    "3300": 5
-   }
-  },
-  {
-   "venue": "Saint-Quentin Arena",
-   "club": "Saint - Quentin BB",
-   "other_clubs": [],
-   "comps": [
-    "bcl"
-   ],
-   "seasons": [
-    "2024-25"
-   ],
-   "games": 4,
-   "official": {
-    "3088": 4
-   }
-  },
-  {
    "venue": "D.Popescu Colibasi",
    "club": "CSM Corona Brasov",
    "other_clubs": [],
@@ -43,92 +13,6 @@
    "games": 3,
    "official": {
     "2000": 3
-   }
-  },
-  {
-   "venue": "Arena of Spartak",
-   "club": "KK Spartak Subotica",
-   "other_clubs": [],
-   "comps": [
-    "bcl"
-   ],
-   "seasons": [
-    "2025-26"
-   ],
-   "games": 1,
-   "official": {
-    "2500": 1
-   }
-  },
-  {
-   "venue": "Centro de Desportos e Congressos de Matosinhos",
-   "club": "FC Porto",
-   "other_clubs": [],
-   "comps": [
-    "bcl"
-   ],
-   "seasons": [
-    "2026-27"
-   ],
-   "games": 1,
-   "official": {}
-  },
-  {
-   "venue": "GBG Halle am Herzogenried",
-   "club": "MLP Academics Heidelberg",
-   "other_clubs": [],
-   "comps": [
-    "bcl"
-   ],
-   "seasons": [
-    "2025-26"
-   ],
-   "games": 1,
-   "official": {
-    "2000": 1
-   }
-  },
-  {
-   "venue": "Kupittaa Hall",
-   "club": "Salon Vilpas",
-   "other_clubs": [],
-   "comps": [
-    "bcl"
-   ],
-   "seasons": [
-    "2026-27"
-   ],
-   "games": 1,
-   "official": {}
-  },
-  {
-   "venue": "Metro Energy Sports Hall",
-   "club": "Bahcesehir Koleji",
-   "other_clubs": [],
-   "comps": [
-    "fec"
-   ],
-   "seasons": [
-    "2023-24"
-   ],
-   "games": 1,
-   "official": {
-    "1200": 1
-   }
-  },
-  {
-   "venue": "Nova Pg Arena",
-   "club": "U-BT Cluj - Napoca",
-   "other_clubs": [],
-   "comps": [
-    "eurocup"
-   ],
-   "seasons": [
-    "2025-26"
-   ],
-   "games": 1,
-   "official": {
-    "3200": 1
    }
   }
  ],

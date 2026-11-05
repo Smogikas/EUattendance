@@ -137,6 +137,12 @@
 "arena": "Sala Polivalentă Dinamo",
 "match": "exact"
 },
+"Arena of Spartak": {
+"capacity": 3500,
+"src": "arenas",
+"arena": "Hala Sportova Dudova šuma",
+"match": "exact"
+},
 "Arena of Split Croatia Insurance": {
 "capacity": 10941,
 "src": "arenas",
@@ -299,6 +305,12 @@
 "arena": "Centre sportif de la Queue-d'Arve",
 "match": "exact"
 },
+"Centro de Desportos e Congressos de Matosinhos": {
+"capacity": 3875,
+"src": "arenas",
+"arena": "Centro de Desportos e Congressos de Matosinhos",
+"match": "exact"
+},
 "Centrum Rekreacyjno-Sportowe Zielona Gora": {
 "capacity": 5080,
 "src": "arenas",
@@ -327,6 +339,12 @@
 "capacity": 2000,
 "src": "arenas",
 "arena": "Costas Papaellinas Arena",
+"match": "exact"
+},
+"DVTK Arena": {
+"capacity": 3600,
+"src": "arenas",
+"arena": "DVTK Arena",
 "match": "exact"
 },
 "Darussafaka Ayhan Sahenk Spor Salonu": {
@@ -417,6 +435,12 @@
 "capacity": 12700,
 "src": "arenas",
 "arena": "Unipol Forum",
+"match": "exact"
+},
+"GBG Halle am Herzogenried": {
+"capacity": 1578,
+"src": "arenas",
+"arena": "GBG Halle am Herzogenried",
 "match": "exact"
 },
 "GOPASS Arena": {
@@ -599,6 +623,12 @@
 "arena": "Královka Arena",
 "match": "exact"
 },
+"Kupittaa Hall": {
+"capacity": 2770,
+"src": "arenas",
+"arena": "Kupittaa Hall",
+"match": "exact"
+},
 "La Meilleraie": {
 "capacity": 5191,
 "src": "arenas",
@@ -677,6 +707,12 @@
 "arena": "Messe Chemnitz",
 "match": "exact"
 },
+"Metro Energy Sports Hall": {
+"capacity": 2500,
+"src": "arenas",
+"arena": "Metro Energy Sports Hall",
+"match": "exact"
+},
 "Minatori": {
 "capacity": 2300,
 "src": "arenas",
@@ -741,6 +777,12 @@
 "capacity": 5000,
 "src": "arenas",
 "arena": "Nova Arena",
+"match": "exact"
+},
+"Nova Pg Arena": {
+"capacity": 3200,
+"src": "arenas",
+"arena": "Nova Pg Arena",
 "match": "exact"
 },
 "Oaka Altion": {
@@ -1047,6 +1089,12 @@
 "capacity": 5400,
 "src": "arenas",
 "arena": "SWT-Arena",
+"match": "exact"
+},
+"Saint-Quentin Arena": {
+"capacity": 3800,
+"src": "arenas",
+"arena": "Palais des Sports Pierre-Ratte",
 "match": "exact"
 },
 "Sala Polivalenta Craiova": {
