@@ -2,19 +2,7 @@
  {
   "comp": "eurocup",
   "season": "2026-27",
-  "source": "Riga Zelli",
-  "country": ""
- },
- {
-  "comp": "eurocup",
-  "season": "2026-27",
   "source": "Roma Basketball",
-  "country": ""
- },
- {
-  "comp": "euroleague",
-  "season": "2026-27",
-  "source": "Armani Olimpia Milan",
   "country": ""
  },
  {
@@ -44,24 +32,6 @@
  {
   "comp": "fec",
   "season": "2026-27",
-  "source": "Bigbank/Kalev",
-  "country": "Estonia"
- },
- {
-  "comp": "fec",
-  "season": "2026-27",
-  "source": "Biotekno Korfez Basket",
-  "country": "Türkiye"
- },
- {
-  "comp": "fec",
-  "season": "2026-27",
-  "source": "Coretec Oostende",
-  "country": "Belgium"
- },
- {
-  "comp": "fec",
-  "season": "2026-27",
   "source": "Gence BC",
   "country": "Azerbaijan"
  },
@@ -70,12 +40,6 @@
   "season": "2026-27",
   "source": "Keravnos BC",
   "country": "Cyprus"
- },
- {
-  "comp": "fec",
-  "season": "2026-27",
-  "source": "Kolossos H Hotels BC",
-  "country": "Greece"
  },
  {
   "comp": "fec",
@@ -106,11 +70,5 @@
   "season": "2026-27",
   "source": "Sport Club Municipal Craiova",
   "country": "Romania"
- },
- {
-  "comp": "fec",
-  "season": "2026-27",
-  "source": "Yukatel Denizli Basket",
-  "country": "Türkiye"
  }
 ]
