@@ -9,7 +9,9 @@
     "weighted_capacity": 21000,
     "filling_rate": 0.8406,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 20073,
+    "lowest": 13783
    },
    {
     "nation": "Greece",
@@ -18,7 +20,9 @@
     "weighted_capacity": 19000,
     "filling_rate": 0.8816,
     "games_with_attendance": 7,
-    "home_games": 7
+    "home_games": 7,
+    "highest": 18768,
+    "lowest": 14633
    },
    {
     "nation": "Lithuania",
@@ -27,7 +31,9 @@
     "weighted_capacity": 15415,
     "filling_rate": 0.9736,
     "games_with_attendance": 4,
-    "home_games": 4
+    "home_games": 4,
+    "highest": 15267,
+    "lowest": 14799
    },
    {
     "nation": "Serbia",
@@ -36,7 +42,9 @@
     "weighted_capacity": 21000,
     "filling_rate": 0.6974,
     "games_with_attendance": 6,
-    "home_games": 6
+    "home_games": 6,
+    "highest": 16420,
+    "lowest": 11765
    },
    {
     "nation": "Spain",
@@ -45,7 +53,9 @@
     "weighted_capacity": 15600,
     "filling_rate": 0.7641,
     "games_with_attendance": 5,
-    "home_games": 5
+    "home_games": 5,
+    "highest": 13177,
+    "lowest": 10361
    },
    {
     "nation": "Germany",
@@ -54,7 +64,9 @@
     "weighted_capacity": 11500,
     "filling_rate": 0.9163,
     "games_with_attendance": 4,
-    "home_games": 4
+    "home_games": 4,
+    "highest": 11500,
+    "lowest": 9154
    },
    {
     "nation": "Spain",
@@ -63,7 +75,9 @@
     "weighted_capacity": 13109,
     "filling_rate": 0.673,
     "games_with_attendance": 4,
-    "home_games": 4
+    "home_games": 4,
+    "highest": 10164,
+    "lowest": 6723
    },
    {
     "nation": "Turkey",
@@ -72,7 +86,9 @@
     "weighted_capacity": 13500,
     "filling_rate": 0.6055,
     "games_with_attendance": 5,
-    "home_games": 5
+    "home_games": 5,
+    "highest": 8850,
+    "lowest": 7214
    },
    {
     "nation": "France",
@@ -81,7 +97,9 @@
     "weighted_capacity": 11130,
     "filling_rate": 0.6765,
     "games_with_attendance": 5,
-    "home_games": 5
+    "home_games": 5,
+    "highest": 8712,
+    "lowest": 5282
    },
    {
     "nation": "Spain",
@@ -90,7 +108,9 @@
     "weighted_capacity": 15504,
     "filling_rate": 0.4632,
     "games_with_attendance": 5,
-    "home_games": 5
+    "home_games": 5,
+    "highest": 8136,
+    "lowest": 6290
    },
    {
     "nation": "Italy",
@@ -99,7 +119,9 @@
     "weighted_capacity": 12700,
     "filling_rate": 0.5119,
     "games_with_attendance": 4,
-    "home_games": 4
+    "home_games": 4,
+    "highest": 6950,
+    "lowest": 5891
    },
    {
     "nation": "Turkey",
@@ -108,7 +130,9 @@
     "weighted_capacity": 10000,
     "filling_rate": 0.6484,
     "games_with_attendance": 4,
-    "home_games": 4
+    "home_games": 4,
+    "highest": 9923,
+    "lowest": 3603
    },
    {
     "nation": "Turkey",
@@ -117,7 +141,9 @@
     "weighted_capacity": 10000,
     "filling_rate": 0.631,
     "games_with_attendance": 4,
-    "home_games": 4
+    "home_games": 4,
+    "highest": 8500,
+    "lowest": 5103
    },
    {
     "nation": "Greece",
@@ -126,7 +152,9 @@
     "weighted_capacity": 9025,
     "filling_rate": 0.6758,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 7214,
+    "lowest": 5147
    },
    {
     "nation": "France",
@@ -135,7 +163,9 @@
     "weighted_capacity": 8008,
     "filling_rate": 0.7352,
     "games_with_attendance": 5,
-    "home_games": 5
+    "home_games": 5,
+    "highest": 8042,
+    "lowest": 3746
    },
    {
     "nation": "United Arab Emirates",
@@ -144,7 +174,9 @@
     "weighted_capacity": 15000,
     "filling_rate": 0.3794,
     "games_with_attendance": 5,
-    "home_games": 5
+    "home_games": 5,
+    "highest": 7313,
+    "lowest": 2700
    },
    {
     "nation": "Italy",
@@ -153,7 +185,9 @@
     "weighted_capacity": 5570,
     "filling_rate": 0.9686,
     "games_with_attendance": 4,
-    "home_games": 4
+    "home_games": 4,
+    "highest": 5471,
+    "lowest": 5167
    },
    {
     "nation": "Spain",
@@ -162,7 +196,9 @@
     "weighted_capacity": 7786,
     "filling_rate": 0.6422,
     "games_with_attendance": 5,
-    "home_games": 5
+    "home_games": 5,
+    "highest": 6004,
+    "lowest": 3637
    },
    {
     "nation": "Israel",
@@ -171,7 +207,9 @@
     "weighted_capacity": 9415,
     "filling_rate": 0.0341,
     "games_with_attendance": 3,
-    "home_games": 5
+    "home_games": 5,
+    "highest": 432,
+    "lowest": 218
    },
    {
     "nation": "Israel",
@@ -180,7 +218,9 @@
     "weighted_capacity": 8000,
     "filling_rate": 0.0272,
     "games_with_attendance": 4,
-    "home_games": 4
+    "home_games": 4,
+    "highest": 427,
+    "lowest": 88
    }
   ],
   "eurocup": [
@@ -191,7 +231,9 @@
     "weighted_capacity": 10400,
     "filling_rate": 0.6376,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 6867,
+    "lowest": 6313
    },
    {
     "nation": "Greece",
@@ -200,7 +242,9 @@
     "weighted_capacity": 8142,
     "filling_rate": 0.7889,
     "games_with_attendance": 2,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 7252,
+    "lowest": 5595
    },
    {
     "nation": "Spain",
@@ -209,7 +253,9 @@
     "weighted_capacity": 9604,
     "filling_rate": 0.667,
     "games_with_attendance": 4,
-    "home_games": 4
+    "home_games": 4,
+    "highest": 6896,
+    "lowest": 6007
    },
    {
     "nation": "Romania",
@@ -218,7 +264,9 @@
     "weighted_capacity": 10000,
     "filling_rate": 0.6067,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 6147,
+    "lowest": 5987
    },
    {
     "nation": "Greece",
@@ -227,7 +275,9 @@
     "weighted_capacity": 6200,
     "filling_rate": 0.9573,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 6004,
+    "lowest": 5832
    },
    {
     "nation": "Latvia",
@@ -236,7 +286,9 @@
     "weighted_capacity": 11200,
     "filling_rate": 0.4152,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 5388,
+    "lowest": 3893
    },
    {
     "nation": "France",
@@ -245,7 +297,9 @@
     "weighted_capacity": 6023,
     "filling_rate": 0.6231,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 3972,
+    "lowest": 3484
    },
    {
     "nation": "Germany",
@@ -254,7 +308,9 @@
     "weighted_capacity": 5000,
     "filling_rate": 0.657,
     "games_with_attendance": 1,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 3285,
+    "lowest": 3285
    },
    {
     "nation": "France",
@@ -263,7 +319,9 @@
     "weighted_capacity": 3548,
     "filling_rate": 0.9019,
     "games_with_attendance": 1,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 3200,
+    "lowest": 3200
    },
    {
     "nation": "Spain",
@@ -272,7 +330,9 @@
     "weighted_capacity": 5000,
     "filling_rate": 0.64,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 3670,
+    "lowest": 2730
    },
    {
     "nation": "Germany",
@@ -281,7 +341,9 @@
     "weighted_capacity": 6000,
     "filling_rate": 0.5277,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 5110,
+    "lowest": 2160
    },
    {
     "nation": "Spain",
@@ -290,7 +352,9 @@
     "weighted_capacity": 5100,
     "filling_rate": 0.5954,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 3374,
+    "lowest": 2849
    },
    {
     "nation": "Lithuania",
@@ -299,7 +363,9 @@
     "weighted_capacity": 5500,
     "filling_rate": 0.472,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 3382,
+    "lowest": 2041
    },
    {
     "nation": "Germany",
@@ -308,7 +374,9 @@
     "weighted_capacity": 5000,
     "filling_rate": 0.5102,
     "games_with_attendance": 2,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 2620,
+    "lowest": 2482
    },
    {
     "nation": "Poland",
@@ -317,7 +385,9 @@
     "weighted_capacity": 3000,
     "filling_rate": 0.791,
     "games_with_attendance": 4,
-    "home_games": 4
+    "home_games": 4,
+    "highest": 3000,
+    "lowest": 1618
    },
    {
     "nation": "Italy",
@@ -326,7 +396,9 @@
     "weighted_capacity": 4360,
     "filling_rate": 0.538,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 2563,
+    "lowest": 2113
    },
    {
     "nation": "Italy",
@@ -335,7 +407,9 @@
     "weighted_capacity": 3980,
     "filling_rate": 0.5837,
     "games_with_attendance": 1,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 2323,
+    "lowest": 2323
    },
    {
     "nation": "Italy",
@@ -344,7 +418,9 @@
     "weighted_capacity": 3509,
     "filling_rate": 0.6528,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 2518,
+    "lowest": 2143
    },
    {
     "nation": "Turkey",
@@ -353,7 +429,9 @@
     "weighted_capacity": 16500,
     "filling_rate": 0.1387,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 3127,
+    "lowest": 1786
    },
    {
     "nation": "United Kingdom",
@@ -362,7 +440,9 @@
     "weighted_capacity": 6000,
     "filling_rate": 0.3572,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 3788,
+    "lowest": 1309
    },
    {
     "nation": "Montenegro",
@@ -371,7 +451,9 @@
     "weighted_capacity": 6000,
     "filling_rate": 0.3472,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 3200,
+    "lowest": 1230
    },
    {
     "nation": "Slovenia",
@@ -380,7 +462,9 @@
     "weighted_capacity": 12480,
     "filling_rate": 0.1469,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 2268,
+    "lowest": 1512
    },
    {
     "nation": "Italy",
@@ -389,7 +473,9 @@
     "weighted_capacity": 5000,
     "filling_rate": 0.3631,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 1866,
+    "lowest": 1762
    },
    {
     "nation": "Italy",
@@ -398,7 +484,9 @@
     "weighted_capacity": 6067,
     "filling_rate": 0.2667,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 2178,
+    "lowest": 1208
    },
    {
     "nation": "Lithuania",
@@ -407,7 +495,9 @@
     "weighted_capacity": 6200,
     "filling_rate": 0.2593,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 1757,
+    "lowest": 1530
    },
    {
     "nation": "Turkey",
@@ -416,7 +506,9 @@
     "weighted_capacity": 7500,
     "filling_rate": 0.2047,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 2168,
+    "lowest": 1102
    },
    {
     "nation": "Germany",
@@ -425,7 +517,9 @@
     "weighted_capacity": 5002,
     "filling_rate": 0.2809,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 1620,
+    "lowest": 1145
    },
    {
     "nation": "Lithuania",
@@ -434,7 +528,9 @@
     "weighted_capacity": 5600,
     "filling_rate": 0.2325,
     "games_with_attendance": 4,
-    "home_games": 4
+    "home_games": 4,
+    "highest": 1459,
+    "lowest": 1212
    },
    {
     "nation": "Italy",
@@ -443,7 +539,9 @@
     "weighted_capacity": 3500,
     "filling_rate": 0.2505,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 1000,
+    "lowest": 800
    },
    {
     "nation": "Bulgaria",
@@ -452,7 +550,9 @@
     "weighted_capacity": 3500,
     "filling_rate": 0.1667,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 800,
+    "lowest": 450
    },
    {
     "nation": "Israel",
@@ -461,7 +561,9 @@
     "weighted_capacity": 5000,
     "filling_rate": 0.0237,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 227,
+    "lowest": 60
    },
    {
     "nation": "Bosnia and Herzegovina",
@@ -470,7 +572,9 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 3
+    "home_games": 3,
+    "highest": null,
+    "lowest": null
    }
   ],
   "bcl": [
@@ -481,7 +585,9 @@
     "weighted_capacity": 13488,
     "filling_rate": 0.6336,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 8721,
+    "lowest": 8371
    },
    {
     "nation": "Azerbaijan",
@@ -490,7 +596,9 @@
     "weighted_capacity": 9000,
     "filling_rate": 0.4922,
     "games_with_attendance": 1,
-    "home_games": 1
+    "home_games": 1,
+    "highest": 4430,
+    "lowest": 4430
    },
    {
     "nation": "Spain",
@@ -499,7 +607,9 @@
     "weighted_capacity": 10014,
     "filling_rate": 0.4394,
     "games_with_attendance": 1,
-    "home_games": 1
+    "home_games": 1,
+    "highest": 4400,
+    "lowest": 4400
    },
    {
     "nation": "Germany",
@@ -508,7 +618,9 @@
     "weighted_capacity": 6000,
     "filling_rate": 0.7328,
     "games_with_attendance": 1,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 4397,
+    "lowest": 4397
    },
    {
     "nation": "Czech Republic",
@@ -517,7 +629,9 @@
     "weighted_capacity": 10300,
     "filling_rate": 0.4252,
     "games_with_attendance": 1,
-    "home_games": 1
+    "home_games": 1,
+    "highest": 4380,
+    "lowest": 4380
    },
    {
     "nation": "Lithuania",
@@ -526,7 +640,9 @@
     "weighted_capacity": 9000,
     "filling_rate": 0.4699,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 4403,
+    "lowest": 4055
    },
    {
     "nation": "Spain",
@@ -535,7 +651,9 @@
     "weighted_capacity": 7454,
     "filling_rate": 0.5651,
     "games_with_attendance": 1,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 4212,
+    "lowest": 4212
    },
    {
     "nation": "Germany",
@@ -544,7 +662,9 @@
     "weighted_capacity": 5700,
     "filling_rate": 0.6982,
     "games_with_attendance": 1,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 3980,
+    "lowest": 3980
    },
    {
     "nation": "France",
@@ -553,7 +673,9 @@
     "weighted_capacity": 5191,
     "filling_rate": 0.728,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 4023,
+    "lowest": 3535
    },
    {
     "nation": "Spain",
@@ -562,7 +684,9 @@
     "weighted_capacity": 12760,
     "filling_rate": 0.2443,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 3429,
+    "lowest": 2805
    },
    {
     "nation": "Hungary",
@@ -571,7 +695,9 @@
     "weighted_capacity": 3070,
     "filling_rate": 0.9805,
     "games_with_attendance": 1,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 3010,
+    "lowest": 3010
    },
    {
     "nation": "Turkey",
@@ -580,7 +706,9 @@
     "weighted_capacity": 7500,
     "filling_rate": 0.3484,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 2926,
+    "lowest": 2300
    },
    {
     "nation": "Germany",
@@ -589,7 +717,9 @@
     "weighted_capacity": 3140,
     "filling_rate": 0.7064,
     "games_with_attendance": 1,
-    "home_games": 1
+    "home_games": 1,
+    "highest": 2218,
+    "lowest": 2218
    },
    {
     "nation": "Belgium",
@@ -598,7 +728,9 @@
     "weighted_capacity": 5218,
     "filling_rate": 0.4032,
     "games_with_attendance": 1,
-    "home_games": 1
+    "home_games": 1,
+    "highest": 2104,
+    "lowest": 2104
    },
    {
     "nation": "Italy",
@@ -607,7 +739,9 @@
     "weighted_capacity": 4530,
     "filling_rate": 0.4009,
     "games_with_attendance": 1,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 1816,
+    "lowest": 1816
    },
    {
     "nation": "Croatia",
@@ -616,7 +750,9 @@
     "weighted_capacity": 5400,
     "filling_rate": 0.312,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 2070,
+    "lowest": 1300
    },
    {
     "nation": "Serbia",
@@ -625,7 +761,9 @@
     "weighted_capacity": 3500,
     "filling_rate": 0.4554,
     "games_with_attendance": 1,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 1594,
+    "lowest": 1594
    },
    {
     "nation": "Greece",
@@ -634,7 +772,9 @@
     "weighted_capacity": 9025,
     "filling_rate": 0.1473,
     "games_with_attendance": 1,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 1329,
+    "lowest": 1329
    },
    {
     "nation": "Turkey",
@@ -643,7 +783,9 @@
     "weighted_capacity": 16500,
     "filling_rate": 0.0741,
     "games_with_attendance": 1,
-    "home_games": 1
+    "home_games": 1,
+    "highest": 1223,
+    "lowest": 1223
    },
    {
     "nation": "Greece",
@@ -652,7 +794,9 @@
     "weighted_capacity": 4000,
     "filling_rate": 0.2515,
     "games_with_attendance": 1,
-    "home_games": 1
+    "home_games": 1,
+    "highest": 1006,
+    "lowest": 1006
    },
    {
     "nation": "Bosnia and Herzegovina",
@@ -661,7 +805,9 @@
     "weighted_capacity": 3050,
     "filling_rate": 0.1967,
     "games_with_attendance": 1,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 600,
+    "lowest": 600
    },
    {
     "nation": "France",
@@ -670,7 +816,9 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 2
+    "home_games": 2,
+    "highest": null,
+    "lowest": null
    },
    {
     "nation": "Israel",
@@ -679,7 +827,9 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 1
+    "home_games": 1,
+    "highest": null,
+    "lowest": null
    },
    {
     "nation": "Lithuania",
@@ -688,7 +838,9 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 2
+    "home_games": 2,
+    "highest": null,
+    "lowest": null
    },
    {
     "nation": "Czech Republic",
@@ -697,7 +849,9 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 1
+    "home_games": 1,
+    "highest": null,
+    "lowest": null
    },
    {
     "nation": "France",
@@ -706,7 +860,9 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 1
+    "home_games": 1,
+    "highest": null,
+    "lowest": null
    },
    {
     "nation": "Italy",
@@ -715,7 +871,9 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 1
+    "home_games": 1,
+    "highest": null,
+    "lowest": null
    },
    {
     "nation": "Israel",
@@ -724,7 +882,9 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 1
+    "home_games": 1,
+    "highest": null,
+    "lowest": null
    },
    {
     "nation": "Finland",
@@ -733,7 +893,9 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 1
+    "home_games": 1,
+    "highest": null,
+    "lowest": null
    },
    {
     "nation": "Spain",
@@ -742,7 +904,9 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 1
+    "home_games": 1,
+    "highest": null,
+    "lowest": null
    },
    {
     "nation": "Portugal",
@@ -751,7 +915,9 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 1
+    "home_games": 1,
+    "highest": null,
+    "lowest": null
    },
    {
     "nation": "Poland",
@@ -760,7 +926,9 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 1
+    "home_games": 1,
+    "highest": null,
+    "lowest": null
    }
   ],
   "fec": [
@@ -771,7 +939,9 @@
     "weighted_capacity": 5400,
     "filling_rate": 0.7692,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 4329,
+    "lowest": 4016
    },
    {
     "nation": "France",
@@ -780,7 +950,9 @@
     "weighted_capacity": 6027,
     "filling_rate": 0.6843,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 4554,
+    "lowest": 3805
    },
    {
     "nation": "France",
@@ -789,7 +961,9 @@
     "weighted_capacity": 4540,
     "filling_rate": 0.7004,
     "games_with_attendance": 2,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 3360,
+    "lowest": 3000
    },
    {
     "nation": "Poland",
@@ -798,7 +972,9 @@
     "weighted_capacity": 5080,
     "filling_rate": 0.6222,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 3330,
+    "lowest": 3032
    },
    {
     "nation": "Spain",
@@ -807,7 +983,9 @@
     "weighted_capacity": 5750,
     "filling_rate": 0.4191,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 2873,
+    "lowest": 2167
    },
    {
     "nation": "Romania",
@@ -816,7 +994,9 @@
     "weighted_capacity": 5200,
     "filling_rate": 0.3982,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 2457,
+    "lowest": 1684
    },
    {
     "nation": "Greece",
@@ -825,7 +1005,9 @@
     "weighted_capacity": 3400,
     "filling_rate": 0.5882,
     "games_with_attendance": 1,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 2000,
+    "lowest": 2000
    },
    {
     "nation": "Turkey",
@@ -834,7 +1016,9 @@
     "weighted_capacity": 5000,
     "filling_rate": 0.3673,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 2473,
+    "lowest": 1200
    },
    {
     "nation": "Germany",
@@ -843,7 +1027,9 @@
     "weighted_capacity": 3140,
     "filling_rate": 0.5626,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 1900,
+    "lowest": 1600
    },
    {
     "nation": "Latvia",
@@ -852,7 +1038,9 @@
     "weighted_capacity": 2400,
     "filling_rate": 0.7019,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 1741,
+    "lowest": 1628
    },
    {
     "nation": "Slovakia",
@@ -861,7 +1049,9 @@
     "weighted_capacity": 3400,
     "filling_rate": 0.4485,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 1733,
+    "lowest": 1317
    },
    {
     "nation": "Kosovo",
@@ -870,7 +1060,9 @@
     "weighted_capacity": 3000,
     "filling_rate": 0.5,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 2000,
+    "lowest": 1000
    },
    {
     "nation": "Belgium",
@@ -879,7 +1071,9 @@
     "weighted_capacity": 5000,
     "filling_rate": 0.2999,
     "games_with_attendance": 2,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 1678,
+    "lowest": 1321
    },
    {
     "nation": "Poland",
@@ -888,7 +1082,9 @@
     "weighted_capacity": 3322,
     "filling_rate": 0.4349,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 1588,
+    "lowest": 1301
    },
    {
     "nation": "Kosovo",
@@ -897,7 +1093,9 @@
     "weighted_capacity": 2300,
     "filling_rate": 0.5435,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 1500,
+    "lowest": 1000
    },
    {
     "nation": "Slovakia",
@@ -906,7 +1104,9 @@
     "weighted_capacity": 2250,
     "filling_rate": 0.5231,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 1212,
+    "lowest": 1142
    },
    {
     "nation": "Turkey",
@@ -915,7 +1115,9 @@
     "weighted_capacity": 5000,
     "filling_rate": 0.2349,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 2123,
+    "lowest": 400
    },
    {
     "nation": "Greece",
@@ -924,7 +1126,9 @@
     "weighted_capacity": 2580,
     "filling_rate": 0.4463,
     "games_with_attendance": 2,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 1500,
+    "lowest": 803
    },
    {
     "nation": "Estonia",
@@ -933,7 +1137,9 @@
     "weighted_capacity": 2600,
     "filling_rate": 0.4221,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 1113,
+    "lowest": 1082
    },
    {
     "nation": "North Macedonia",
@@ -942,7 +1148,9 @@
     "weighted_capacity": 5850,
     "filling_rate": 0.1709,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 2000,
+    "lowest": 500
    },
    {
     "nation": "Bulgaria",
@@ -951,7 +1159,9 @@
     "weighted_capacity": 1600,
     "filling_rate": 0.6146,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 1100,
+    "lowest": 900
    },
    {
     "nation": "Latvia",
@@ -960,7 +1170,9 @@
     "weighted_capacity": 1500,
     "filling_rate": 0.6407,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 1004,
+    "lowest": 911
    },
    {
     "nation": "Czech Republic",
@@ -969,7 +1181,9 @@
     "weighted_capacity": 3006,
     "filling_rate": 0.316,
     "games_with_attendance": 1,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 950,
+    "lowest": 950
    },
    {
     "nation": "Switzerland",
@@ -978,7 +1192,9 @@
     "weighted_capacity": 2789,
     "filling_rate": 0.3404,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 998,
+    "lowest": 900
    },
    {
     "nation": "Poland",
@@ -987,7 +1203,9 @@
     "weighted_capacity": 1298,
     "filling_rate": 0.7122,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 992,
+    "lowest": 857
    },
    {
     "nation": "Hungary",
@@ -996,7 +1214,9 @@
     "weighted_capacity": 3200,
     "filling_rate": 0.2777,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 977,
+    "lowest": 800
    },
    {
     "nation": "Croatia",
@@ -1005,7 +1225,9 @@
     "weighted_capacity": 10941,
     "filling_rate": 0.0777,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 1000,
+    "lowest": 700
    },
    {
     "nation": "Switzerland",
@@ -1014,7 +1236,9 @@
     "weighted_capacity": 3260,
     "filling_rate": 0.2546,
     "games_with_attendance": 4,
-    "home_games": 4
+    "home_games": 4,
+    "highest": 1100,
+    "lowest": 720
    },
    {
     "nation": "Denmark",
@@ -1023,7 +1247,9 @@
     "weighted_capacity": 1800,
     "filling_rate": 0.4506,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 911,
+    "lowest": 711
    },
    {
     "nation": "Greece",
@@ -1032,7 +1258,9 @@
     "weighted_capacity": 1014,
     "filling_rate": 0.7068,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 800,
+    "lowest": 600
    },
    {
     "nation": "Estonia",
@@ -1041,7 +1269,9 @@
     "weighted_capacity": 1800,
     "filling_rate": 0.3822,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 714,
+    "lowest": 662
    },
    {
     "nation": "Greece",
@@ -1050,7 +1280,9 @@
     "weighted_capacity": 4200,
     "filling_rate": 0.1373,
     "games_with_attendance": 2,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 798,
+    "lowest": 355
    },
    {
     "nation": "Azerbaijan",
@@ -1059,7 +1291,9 @@
     "weighted_capacity": 2000,
     "filling_rate": 0.2687,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 575,
+    "lowest": 500
    },
    {
     "nation": "Romania",
@@ -1068,7 +1302,9 @@
     "weighted_capacity": 4215,
     "filling_rate": 0.1275,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 800,
+    "lowest": 312
    },
    {
     "nation": "Azerbaijan",
@@ -1077,7 +1313,9 @@
     "weighted_capacity": 3050,
     "filling_rate": 0.1708,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 542,
+    "lowest": 500
    },
    {
     "nation": "Estonia",
@@ -1086,7 +1324,9 @@
     "weighted_capacity": 1820,
     "filling_rate": 0.2679,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 503,
+    "lowest": 458
    },
    {
     "nation": "Cyprus",
@@ -1095,7 +1335,9 @@
     "weighted_capacity": 2000,
     "filling_rate": 0.2375,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 600,
+    "lowest": 350
    },
    {
     "nation": "Bulgaria",
@@ -1104,7 +1346,9 @@
     "weighted_capacity": 2650,
     "filling_rate": 0.1792,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 500,
+    "lowest": 450
    },
    {
     "nation": "Portugal",
@@ -1113,7 +1357,9 @@
     "weighted_capacity": 2456,
     "filling_rate": 0.1545,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 386,
+    "lowest": 366
    },
    {
     "nation": "Slovakia",
@@ -1122,7 +1368,9 @@
     "weighted_capacity": 2000,
     "filling_rate": 0.1833,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 550,
+    "lowest": 270
    },
    {
     "nation": "Azerbaijan",
@@ -1131,7 +1379,9 @@
     "weighted_capacity": 2625,
     "filling_rate": 0.1333,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 400,
+    "lowest": 300
    },
    {
     "nation": "Portugal",
@@ -1140,7 +1390,9 @@
     "weighted_capacity": 3001,
     "filling_rate": 0.115,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 390,
+    "lowest": 300
    },
    {
     "nation": "Romania",
@@ -1149,7 +1401,9 @@
     "weighted_capacity": 2538,
     "filling_rate": 0.0985,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 300,
+    "lowest": 200
    },
    {
     "nation": "Cyprus",
@@ -1158,7 +1412,9 @@
     "weighted_capacity": 2000,
     "filling_rate": 0.1125,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 250,
+    "lowest": 200
    },
    {
     "nation": "Austria",
@@ -1167,7 +1423,9 @@
     "weighted_capacity": 1530,
     "filling_rate": 0.1314,
     "games_with_attendance": 2,
-    "home_games": 2
+    "home_games": 2,
+    "highest": 250,
+    "lowest": 152
    },
    {
     "nation": "United Kingdom",
@@ -1176,7 +1434,9 @@
     "weighted_capacity": 2000,
     "filling_rate": 0.1,
     "games_with_attendance": 1,
-    "home_games": 1
+    "home_games": 1,
+    "highest": 200,
+    "lowest": 200
    },
    {
     "nation": "Turkey",
@@ -1185,7 +1445,9 @@
     "weighted_capacity": 3200,
     "filling_rate": 0.0406,
     "games_with_attendance": 2,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 150,
+    "lowest": 110
    },
    {
     "nation": "Georgia",
@@ -1194,7 +1456,9 @@
     "weighted_capacity": 9700,
     "filling_rate": 0.0072,
     "games_with_attendance": 3,
-    "home_games": 3
+    "home_games": 3,
+    "highest": 100,
+    "lowest": 45
    }
   ]
  }
