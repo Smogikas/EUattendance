@@ -114,7 +114,7 @@
 "match": "exact"
 },
 "Arena Samokov": {
-"capacity": 2000,
+"capacity": 2300,
 "src": "arenas",
 "arena": "Arena Samokov",
 "match": "exact"
@@ -285,6 +285,12 @@
 "capacity": 10000,
 "src": "arenas",
 "arena": "Hala Stulecia",
+"match": "exact"
+},
+"Centre sportif de la Queue-d'Arve": {
+"capacity": 3260,
+"src": "arenas",
+"arena": "Centre sportif de la Queue-d'Arve",
 "match": "exact"
 },
 "Centrum Rekreacyjno-Sportowe Zielona Gora": {
@@ -737,6 +743,12 @@
 "arena": "Otar Korkia and Nodar Jorjikia Tbilisi Sports Palace",
 "match": "exact"
 },
+"P. Chanioti Ano Mera Indoor Hall": {
+"capacity": 1014,
+"src": "arenas",
+"arena": "Κ.Γ. «ΠΑΝ. ΧΑΝΙΩΤΗΣ» ΑΝΩ ΜΕΡΑ ΜΥΚΟΝΟΥ",
+"match": "exact"
+},
 "PAOK Sports Arena": {
 "capacity": 8142,
 "src": "arenas",
@@ -765,6 +777,12 @@
 "capacity": 11600,
 "src": "arenas",
 "arena": "Pais Arena Jerusalem",
+"match": "exact"
+},
+"Pala Ferraris": {
+"capacity": 3510,
+"src": "arenas",
+"arena": "PalaFerraris",
 "match": "exact"
 },
 "Pala Shark": {
@@ -977,6 +995,12 @@
 "arena": "Roig Arena",
 "match": "exact"
 },
+"Rytas Arena": {
+"capacity": 9000,
+"src": "arenas",
+"arena": "Arena Vilnius",
+"match": "exact"
+},
 "SD Laktaši": {
 "capacity": 3050,
 "src": "arenas",
@@ -984,7 +1008,7 @@
 "match": "exact"
 },
 "SNP Dome": {
-"capacity": 4410,
+"capacity": 4521,
 "src": "arenas",
 "arena": "SNP Dome",
 "match": "exact"
@@ -999,6 +1023,12 @@
 "capacity": 5400,
 "src": "arenas",
 "arena": "SWT-Arena",
+"match": "exact"
+},
+"Sala Polivalenta Craiova": {
+"capacity": 4215,
+"src": "arenas",
+"arena": "Sala Polivalentă Craiova",
 "match": "exact"
 },
 "Sala Sporturilor Pitesti": {
@@ -1020,7 +1050,7 @@
 "match": "exact"
 },
 "Samokov Arena": {
-"capacity": 2000,
+"capacity": 2300,
 "src": "arenas",
 "arena": "Arena Samokov",
 "match": "exact"
@@ -1053,6 +1083,12 @@
 "capacity": 7500,
 "src": "arenas",
 "arena": "Servet Tazegül Spor Salonu",
+"match": "exact"
+},
+"Sezai Surroi": {
+"capacity": 3000,
+"src": "arenas",
+"arena": "Sezai Surroi",
 "match": "exact"
 },
 "Shlomo Group Arena": {
@@ -1272,9 +1308,9 @@
 "match": "exact"
 },
 "Unipol Arena": {
-"capacity": 10220,
+"capacity": 10000,
 "src": "arenas",
-"arena": "Virtus Arena",
+"arena": "Unipol Arena",
 "match": "exact"
 },
 "Unipol Forum": {

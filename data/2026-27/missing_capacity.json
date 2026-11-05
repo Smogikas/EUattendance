@@ -13,24 +13,6 @@
  },
  {
   "comp": "fec",
-  "venue": "Centre sportif de la Queue-d'Arve",
-  "club": "Lions de Geneve",
-  "games": 4
- },
- {
-  "comp": "fec",
-  "venue": "Sala Polivalenta Craiova",
-  "club": "Sport Club Municipal Craiova",
-  "games": 3
- },
- {
-  "comp": "fec",
-  "venue": "P. Chanioti Ano Mera Indoor Hall",
-  "club": "Mykonos B.C.",
-  "games": 3
- },
- {
-  "comp": "fec",
   "venue": "Sila Complex",
   "club": "\"Basketball Club Lokomotiv Plovdiv\" Association",
   "games": 3
@@ -45,12 +27,6 @@
   "comp": "fec",
   "venue": "Kola Arena",
   "club": "Dziki Warszawa",
-  "games": 2
- },
- {
-  "comp": "fec",
-  "venue": "Sezai Surroi",
-  "club": "Basketball Club Bashkimi",
   "games": 2
  },
  {

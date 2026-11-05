@@ -1,22 +1,6 @@
 {
  "missing": [
   {
-   "venue": "Pala Ferraris",
-   "club": "Derthona Basket",
-   "other_clubs": [],
-   "comps": [
-    "bcl"
-   ],
-   "seasons": [
-    "2023-24",
-    "2024-25"
-   ],
-   "games": 11,
-   "official": {
-    "3510": 11
-   }
-  },
-  {
    "venue": "DVTK Arena",
    "club": "Szolnoki Olaj",
    "other_clubs": [],
@@ -30,37 +14,6 @@
    "official": {
     "3300": 5
    }
-  },
-  {
-   "venue": "Sezai Surroi",
-   "club": "Basketball Club \"Bashkimi\"",
-   "other_clubs": [
-    "Basketball Club Bashkimi"
-   ],
-   "comps": [
-    "fec"
-   ],
-   "seasons": [
-    "2025-26",
-    "2026-27"
-   ],
-   "games": 5,
-   "official": {
-    "2500": 3
-   }
-  },
-  {
-   "venue": "Centre sportif de la Queue-d'Arve",
-   "club": "Lions de Geneve",
-   "other_clubs": [],
-   "comps": [
-    "fec"
-   ],
-   "seasons": [
-    "2026-27"
-   ],
-   "games": 4,
-   "official": {}
   },
   {
    "venue": "Saint-Quentin Arena",
@@ -91,32 +44,6 @@
    "official": {
     "2000": 3
    }
-  },
-  {
-   "venue": "P. Chanioti Ano Mera Indoor Hall",
-   "club": "Mykonos B.C.",
-   "other_clubs": [],
-   "comps": [
-    "fec"
-   ],
-   "seasons": [
-    "2026-27"
-   ],
-   "games": 3,
-   "official": {}
-  },
-  {
-   "venue": "Sala Polivalenta Craiova",
-   "club": "Sport Club Municipal Craiova",
-   "other_clubs": [],
-   "comps": [
-    "fec"
-   ],
-   "seasons": [
-    "2026-27"
-   ],
-   "games": 3,
-   "official": {}
   },
   {
    "venue": "Sarkhadchi Sport Center",
@@ -289,21 +216,6 @@
    "games": 1,
    "official": {
     "3200": 1
-   }
-  },
-  {
-   "venue": "Rytas Arena",
-   "club": "Rytas Vilnius",
-   "other_clubs": [],
-   "comps": [
-    "bcl"
-   ],
-   "seasons": [
-    "2023-24"
-   ],
-   "games": 1,
-   "official": {
-    "2000": 1
    }
   }
  ],
