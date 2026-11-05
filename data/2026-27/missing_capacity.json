@@ -1,50 +1,14 @@
 [
  {
   "comp": "fec",
-  "venue": "Centre sportif de la Queue-d'Arve",
-  "club": "Lions de Geneve",
-  "games": 4
- },
- {
-  "comp": "fec",
-  "venue": "Tbilisi Sports Palace",
-  "club": "BC Batumi 2010",
-  "games": 3
- },
- {
-  "comp": "fec",
-  "venue": "Pavello Fontajau",
-  "club": "Basquet Girona",
-  "games": 3
- },
- {
-  "comp": "fec",
-  "venue": "Centrum Rekreacyjno-Sportowe Zielona Gora",
-  "club": "Zastal Zielona Gora",
-  "games": 3
- },
- {
-  "comp": "fec",
   "venue": "Sala Polivalenta Craiova",
   "club": "Sport Club Municipal Craiova",
   "games": 3
  },
  {
   "comp": "fec",
-  "venue": "tectake ARENA",
-  "club": "Wurzburg Baskets",
-  "games": 3
- },
- {
-  "comp": "fec",
   "venue": "Vidzemes Olimpiskas Centrs",
   "club": "Valmiera Glass/ViA",
-  "games": 3
- },
- {
-  "comp": "fec",
-  "venue": "Baku Sports Palace",
-  "club": "LANDAU Lions",
   "games": 3
  },
  {
@@ -61,12 +25,6 @@
  },
  {
   "comp": "fec",
-  "venue": "Minatori",
-  "club": "BC Trepca",
-  "games": 2
- },
- {
-  "comp": "fec",
   "venue": "Arena of Split Croatia Insurance",
   "club": "KK Split",
   "games": 2
@@ -75,12 +33,6 @@
   "comp": "fec",
   "venue": "Haleon Arena",
   "club": "BK Patrioti Levice",
-  "games": 2
- },
- {
-  "comp": "fec",
-  "venue": "Besiktas Gain Sport Complex",
-  "club": "Esenler Erokspor",
   "games": 2
  },
  {
@@ -97,20 +49,8 @@
  },
  {
   "comp": "fec",
-  "venue": "Kition Athletic Center",
-  "club": "Petrolina AEK Larnaca Basketball Club",
-  "games": 2
- },
- {
-  "comp": "fec",
   "venue": "Kola Arena",
   "club": "Dziki Warszawa",
-  "games": 2
- },
- {
-  "comp": "fec",
-  "venue": "Ivanofio",
-  "club": "Iraklis B.C.",
   "games": 2
  },
  {
@@ -121,26 +61,8 @@
  },
  {
   "comp": "fec",
-  "venue": "ŠH Prievidza",
-  "club": "BC Prievidza",
-  "games": 2
- },
- {
-  "comp": "fec",
   "venue": "Arena Samokov",
   "club": "BC Rilski Sportist",
-  "games": 1
- },
- {
-  "comp": "fec",
-  "venue": "Kallithea Indoor Hall",
-  "club": "Kolossos Rodou B.C.",
-  "games": 1
- },
- {
-  "comp": "fec",
-  "venue": "Dom Sportu Arena",
-  "club": "King Wilki Morskie Szczecin",
   "games": 1
  },
  {

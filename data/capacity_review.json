@@ -1,0 +1,729 @@
+[
+ {
+  "venue": "Salle Gaston Medecin",
+  "club": "AS Monaco Basket",
+  "other_clubs": [],
+  "comps": [
+   "euroleague"
+  ],
+  "seasons": [
+   "2023-24",
+   "2024-25",
+   "2025-26"
+  ],
+  "games": 53,
+  "official": {
+   "5000": 36,
+   "4090": 17
+  }
+ },
+ {
+  "venue": "Samokov Arena",
+  "club": "Hapoel Jerusalem",
+  "other_clubs": [
+   "Hapoel Tel Aviv"
+  ],
+  "comps": [
+   "eurocup"
+  ],
+  "seasons": [
+   "2024-25"
+  ],
+  "games": 18,
+  "official": {
+   "2000": 18
+  }
+ },
+ {
+  "venue": "Costas Papaellinas Arena",
+  "club": "Keravnos BC",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2023-24",
+   "2024-25",
+   "2025-26",
+   "2026-27"
+  ],
+  "games": 11,
+  "official": {
+   "2000": 9
+  }
+ },
+ {
+  "venue": "Pala Ferraris",
+  "club": "Derthona Basket",
+  "other_clubs": [],
+  "comps": [
+   "bcl"
+  ],
+  "seasons": [
+   "2023-24",
+   "2024-25"
+  ],
+  "games": 11,
+  "official": {
+   "3510": 11
+  }
+ },
+ {
+  "venue": "Haleon Arena",
+  "club": "BK Patrioti Levice",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2023-24",
+   "2024-25",
+   "2026-27"
+  ],
+  "games": 8,
+  "official": {
+   "2250": 6
+  }
+ },
+ {
+  "venue": "Caledonia Gladiators Arena",
+  "club": "Caledonia Gladiators",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2023-24",
+   "2024-25"
+  ],
+  "games": 6,
+  "official": {
+   "1650": 6
+  }
+ },
+ {
+  "venue": "Dome Charleroi",
+  "club": "Spirou Basket",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2024-25"
+  ],
+  "games": 6,
+  "official": {
+   "6000": 6
+  }
+ },
+ {
+  "venue": "Hala Osir",
+  "club": "Spojnia Stargard",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2023-24",
+   "2024-25"
+  ],
+  "games": 6,
+  "official": {
+   "1800": 6
+  }
+ },
+ {
+  "venue": "Le Chaudron",
+  "club": "ESSM Le Portel",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2024-25"
+  ],
+  "games": 6,
+  "official": {
+   "3459": 6
+  }
+ },
+ {
+  "venue": "Sparkassen-Arena",
+  "club": "BG Gottingen",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2023-24"
+  ],
+  "games": 6,
+  "official": {
+   "3447": 6
+  }
+ },
+ {
+  "venue": "DVTK Arena",
+  "club": "Szolnoki Olaj",
+  "other_clubs": [],
+  "comps": [
+   "bcl"
+  ],
+  "seasons": [
+   "2025-26"
+  ],
+  "games": 5,
+  "official": {
+   "3300": 5
+  }
+ },
+ {
+  "venue": "Sezai Surroi",
+  "club": "Basketball Club \"Bashkimi\"",
+  "other_clubs": [
+   "Basketball Club Bashkimi"
+  ],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2025-26",
+   "2026-27"
+  ],
+  "games": 5,
+  "official": {
+   "2500": 3
+  }
+ },
+ {
+  "venue": "Vijf Meihal",
+  "club": "ZZ Leiden Basketball",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2023-24"
+  ],
+  "games": 5,
+  "official": {
+   "2000": 5
+  }
+ },
+ {
+  "venue": "Accor Arena",
+  "club": "Paris Basketball",
+  "other_clubs": [],
+  "comps": [
+   "euroleague"
+  ],
+  "seasons": [
+   "2024-25",
+   "2025-26"
+  ],
+  "games": 4,
+  "official": {
+   "14500": 4
+  }
+ },
+ {
+  "venue": "Arena Samokov",
+  "club": "BC Rilski Sportist",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2024-25",
+   "2026-27"
+  ],
+  "games": 4,
+  "official": {
+   "2320": 3
+  }
+ },
+ {
+  "venue": "Saint-Quentin Arena",
+  "club": "Saint - Quentin BB",
+  "other_clubs": [],
+  "comps": [
+   "bcl"
+  ],
+  "seasons": [
+   "2024-25"
+  ],
+  "games": 4,
+  "official": {
+   "3088": 4
+  }
+ },
+ {
+  "venue": "D.Popescu Colibasi",
+  "club": "CSM Corona Brasov",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2025-26"
+  ],
+  "games": 3,
+  "official": {
+   "2000": 3
+  }
+ },
+ {
+  "venue": "P. Chanioti Ano Mera Indoor Hall",
+  "club": "Mykonos B.C.",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2026-27"
+  ],
+  "games": 3,
+  "official": {}
+ },
+ {
+  "venue": "Pala Shark",
+  "club": "Trapani Shark",
+  "other_clubs": [],
+  "comps": [
+   "bcl"
+  ],
+  "seasons": [
+   "2025-26"
+  ],
+  "games": 3,
+  "official": {
+   "4390": 3
+  }
+ },
+ {
+  "venue": "Palestra e Sporteve \"Karagac\"",
+  "club": "KB Peja",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2023-24"
+  ],
+  "games": 3,
+  "official": {
+   "3000": 3
+  }
+ },
+ {
+  "venue": "SNP Dome",
+  "club": "MLP Academics Heidelberg",
+  "other_clubs": [],
+  "comps": [
+   "bcl"
+  ],
+  "seasons": [
+   "2025-26"
+  ],
+  "games": 3,
+  "official": {
+   "4568": 3
+  }
+ },
+ {
+  "venue": "Sala Polivalenta Craiova",
+  "club": "Sport Club Municipal Craiova",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2026-27"
+  ],
+  "games": 3,
+  "official": {}
+ },
+ {
+  "venue": "Sarkhadchi Sport Center",
+  "club": "Sabah BC",
+  "other_clubs": [
+   "Neftchi Sports Club Public Union"
+  ],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2023-24",
+   "2026-27"
+  ],
+  "games": 3,
+  "official": {
+   "2300": 2
+  }
+ },
+ {
+  "venue": "Sila Complex",
+  "club": "\"Basketball Club Lokomotiv Plovdiv\" Association",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2026-27"
+  ],
+  "games": 3,
+  "official": {}
+ },
+ {
+  "venue": "Sporthal Alverberg",
+  "club": "Hubo Limburg United",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2024-25"
+  ],
+  "games": 3,
+  "official": {
+   "1700": 3
+  }
+ },
+ {
+  "venue": "Sportica",
+  "club": "BCM Gravelines - Dunkerque",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2023-24"
+  ],
+  "games": 3,
+  "official": {
+   "2500": 3
+  }
+ },
+ {
+  "venue": "Sports Hall Simona Amanar",
+  "club": "CSM Constanta",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2024-25"
+  ],
+  "games": 3,
+  "official": {
+   "2000": 3
+  }
+ },
+ {
+  "venue": "Spyros Kyprianou Arena",
+  "club": "Anorthosis Famagusta",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2025-26"
+  ],
+  "games": 3,
+  "official": {
+   "8000": 3
+  }
+ },
+ {
+  "venue": "Vidzemes Olimpiskas Centrs",
+  "club": "Valmiera Glass/ViA",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2026-27"
+  ],
+  "games": 3,
+  "official": {}
+ },
+ {
+  "venue": "Volkswagen Arena Istanbul",
+  "club": "Darussafaka Basketbol",
+  "other_clubs": [],
+  "comps": [
+   "bcl"
+  ],
+  "seasons": [
+   "2023-24"
+  ],
+  "games": 3,
+  "official": {
+   "5000": 3
+  }
+ },
+ {
+  "venue": "Arena of Split Croatia Insurance",
+  "club": "KK Split",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2026-27"
+  ],
+  "games": 2,
+  "official": {}
+ },
+ {
+  "venue": "Enteria Arena",
+  "club": "Era Nymburk",
+  "other_clubs": [
+   "BK Pardubice"
+  ],
+  "comps": [
+   "bcl"
+  ],
+  "seasons": [
+   "2026-27"
+  ],
+  "games": 2,
+  "official": {
+   "10000": 2
+  }
+ },
+ {
+  "venue": "Ganja Sports Palace",
+  "club": "Gence BC",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2026-27"
+  ],
+  "games": 2,
+  "official": {}
+ },
+ {
+  "venue": "Heylen Vastgoed Basketcampus",
+  "club": "Antwerp Giants",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2024-25"
+  ],
+  "games": 2,
+  "official": {
+   "1500": 2
+  }
+ },
+ {
+  "venue": "Kola Arena",
+  "club": "Dziki Warszawa",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2026-27"
+  ],
+  "games": 2,
+  "official": {}
+ },
+ {
+  "venue": "Palazzetto dello Sport \"Elio Pentassuglia\"",
+  "club": "New Basket Brindisi",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2023-24"
+  ],
+  "games": 2,
+  "official": {
+   "3534": 2
+  }
+ },
+ {
+  "venue": "Pitesti Arena",
+  "club": "Fotbal Club Arges",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2024-25"
+  ],
+  "games": 2,
+  "official": {
+   "4900": 2
+  }
+ },
+ {
+  "venue": "Antalya Sports Hall",
+  "club": "Anadolu Efes S.K.",
+  "other_clubs": [],
+  "comps": [
+   "euroleague"
+  ],
+  "seasons": [
+   "2025-26"
+  ],
+  "games": 1,
+  "official": {
+   "9500": 1
+  }
+ },
+ {
+  "venue": "Arena of COB Calais",
+  "club": "BCM Gravelines - Dunkerque",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2023-24"
+  ],
+  "games": 1,
+  "official": {
+   "3300": 1
+  }
+ },
+ {
+  "venue": "Arena of Spartak",
+  "club": "KK Spartak Subotica",
+  "other_clubs": [],
+  "comps": [
+   "bcl"
+  ],
+  "seasons": [
+   "2025-26"
+  ],
+  "games": 1,
+  "official": {
+   "2500": 1
+  }
+ },
+ {
+  "venue": "Centro de Desportos e Congressos de Matosinhos",
+  "club": "FC Porto",
+  "other_clubs": [],
+  "comps": [
+   "bcl"
+  ],
+  "seasons": [
+   "2026-27"
+  ],
+  "games": 1,
+  "official": {
+   "4300": 1
+  }
+ },
+ {
+  "venue": "GBG Halle am Herzogenried",
+  "club": "MLP Academics Heidelberg",
+  "other_clubs": [],
+  "comps": [
+   "bcl"
+  ],
+  "seasons": [
+   "2025-26"
+  ],
+  "games": 1,
+  "official": {
+   "2000": 1
+  }
+ },
+ {
+  "venue": "Kupittaa Hall",
+  "club": "Salon Vilpas",
+  "other_clubs": [],
+  "comps": [
+   "bcl"
+  ],
+  "seasons": [
+   "2026-27"
+  ],
+  "games": 1,
+  "official": {
+   "3115": 1
+  }
+ },
+ {
+  "venue": "Metro Energy Sports Hall",
+  "club": "Bahcesehir Koleji",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2023-24"
+  ],
+  "games": 1,
+  "official": {
+   "1200": 1
+  }
+ },
+ {
+  "venue": "National Basketball Performance Centre",
+  "club": "Manchester Basketball Club",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2026-27"
+  ],
+  "games": 1,
+  "official": {}
+ },
+ {
+  "venue": "Nova Pg Arena",
+  "club": "U-BT Cluj - Napoca",
+  "other_clubs": [],
+  "comps": [
+   "eurocup"
+  ],
+  "seasons": [
+   "2025-26"
+  ],
+  "games": 1,
+  "official": {
+   "3200": 1
+  }
+ },
+ {
+  "venue": "Rytas Arena",
+  "club": "Rytas Vilnius",
+  "other_clubs": [],
+  "comps": [
+   "bcl"
+  ],
+  "seasons": [
+   "2023-24"
+  ],
+  "games": 1,
+  "official": {
+   "2000": 1
+  }
+ },
+ {
+  "venue": "Sala Sporturilor Pitesti",
+  "club": "Fotbal Club Arges",
+  "other_clubs": [],
+  "comps": [
+   "fec"
+  ],
+  "seasons": [
+   "2024-25"
+  ],
+  "games": 1,
+  "official": {
+   "1000": 1
+  }
+ }
+]
