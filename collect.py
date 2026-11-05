@@ -250,9 +250,10 @@ class ArenaMatcher:
             return self.cache[key]
         vk, vt, ck = nkey(venue), vtoks(venue), nkey(club)
         res = None
-        for a in self.A:
-            if vk and vk in a["keys"]:
-                res = (a["cap"], a["arena"], "exact"); break
+        exact = [a for a in self.A if vk and vk in a["keys"]]
+        if exact:                       # tas pats pavadinimas keliose eilutėse – pirmenybė arenai su šiuo klubu
+            a = next((a for a in exact if ck and ck in a["clubs"]), exact[0])
+            res = (a["cap"], a["arena"], "exact")
         if res is None:
             best = None
             for a in self.A:
