@@ -9,7 +9,7 @@ Klubų pavadinimai – kaip Google Sheets lapuose „Budgets“ (failas Basketba
 - **Einamasis sezonas (26/27)** – `collect.py` per GitHub Actions kas 6 val. (`.github/workflows/update.yml`) → `data/2026-27/`.
 - **Pasibaigę sezonai (23/24–25/26)** – Google Sheets lape **EuroAttendance**: po vieną sezono lentelę kiekvienam turnyrui
   (Nation | Club | Average attendance | Available arena capacity | Filling rate), puslapis jas skaito iš ten.
-- **Flashscore papildymai** – `data/2026-27/flashscore_attendance.csv`: lankomumas iš Flashscore rungtynėms, kurių oficialiai nepaskelbė. `collect.py` jį pritaiko tik kai oficialaus skaičiaus nėra (oficialus visada svarbesnis).
+- **Lankomumas** – viskas viename faile `data/2026-27/games.csv`. Stulpelis `att_src`: `official` (oficialus šaltinis) arba `flashscore` (oficialiai nepaskelbta, rasta Flashscore). Jau surinktas skaičius niekada neištrinamas; rungtynės be lankomumo kiekvieno paleidimo metu tikrinamos iš naujo – pirma oficialiai, tada Flashscore. Oficialus skaičius visada svarbesnis už Flashscore.
 - **Einamojo sezono lentelės** – `data/2026-27/season_tables.csv` (tokiu pat formatu – sezonui pasibaigus įklijuojama į EuroAttendance).
 - **Skaičiavimas (kaip ACBattendance)** – rungtynės be lankomumo neįskaičiuojamos; talpa iš lapo „Arenas“; svertinė talpa =
   efektyvių talpų vidurkis (efektyvi talpa = max(talpa, lankomumas)); užpildymas = lankomumo suma / efektyvių talpų suma.

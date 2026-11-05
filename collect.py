@@ -46,7 +46,7 @@ COMPS = {
                      "2025-26": "https://www.fiba.basketball/en/events/fiba-europe-cup-25-26/games",
                      "2026-27": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games"}},
 }
-FIELDS = ["comp", "season", "game_id", "date", "round", "home", "away", "attendance", "capacity", "cap_src",
+FIELDS = ["comp", "season", "game_id", "date", "round", "home", "away", "attendance", "att_src", "capacity", "cap_src",
           "venue", "home_src", "away_src", "url"]
 
 
@@ -469,6 +469,96 @@ def venue_capacities(AM, cur_rows, out_root):
 
 
 # ---------------------------------------------------------------- pagrindinė dalis
+# ---------------------------------------------------------------- Flashscore (tik trūkstamam lankomumui)
+FS_BASE = "https://www.flashscore.com"
+FS_PATHS = {"euroleague": "/basketball/europe/euroleague/results/", "eurocup": "/basketball/europe/eurocup/results/",
+            "bcl": "/basketball/europe/champions-league/results/", "fec": "/basketball/europe/fiba-europe-cup/results/"}
+FS_UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+                       "Chrome/130.0 Safari/537.36", "Accept-Language": "en-US,en;q=0.9"}
+FS_STOP = {"bc", "b", "c", "kk", "bk", "sk", "s", "k", "cb", "fc", "ks", "ok", "club", "basket", "basketball", "baskets",
+           "basquet", "baloncesto", "pallacanestro", "basketbol", "the", "de", "of", "and", "a", "ss", "as", "us"}
+
+
+def _fs_toks(*names):
+    t = set()
+    for n in names:
+        n = unicodedata.normalize("NFKD", n or "").encode("ascii", "ignore").decode().lower()
+        t |= {w for w in re.split(r"[^a-z0-9]+", n) if len(w) > 1 and w not in FS_STOP}
+    return t
+
+
+def _fs_side(fs_name, *ours):
+    a, b = _fs_toks(fs_name), _fs_toks(*ours)
+    return any(x == y or (min(len(x), len(y)) >= 4 and (x.startswith(y) or y.startswith(x))) for x in a for y in b)
+
+
+def _fs_games(path):
+    """[(id, utc_date, home, away)] iš rezultatų puslapio HTML (duomenys įdėti į puslapį)."""
+    r = requests.get(FS_BASE + path, headers=FS_UA, timeout=40)
+    r.raise_for_status()
+    h = r.text
+    m = re.search(r'feed_sign"\s*:\s*"([^"]+)"', h)
+    sign = m.group(1) if m else "SW9D1eZo"
+    out = {}
+    for blk in h.split("~AA÷")[1:]:
+        blk = blk.split("~", 1)[0]
+        f = dict(p.split("÷", 1) for p in blk.split("¬") if "÷" in p)
+        gid = blk.split("¬", 1)[0]
+        if gid and f.get("AD") and f.get("AE") and f.get("AF"):
+            d = datetime.fromtimestamp(int(f["AD"]), timezone.utc).date()
+            out[gid] = (gid, d, f["AE"], f["AF"])
+    return list(out.values()), sign
+
+
+def _fs_attendance(gid, sign):
+    r = requests.get(f"{FS_BASE}/x/feed/df_sui_1_{gid}", headers={**FS_UA, "x-fsign": sign}, timeout=30)
+    r.raise_for_status()
+    m = re.search(r"MIT÷ATT¬MIV÷([^¬]*)", r.text)
+    v = re.sub(r"\D", "", m.group(1)) if m else ""
+    return int(v) if v else 0
+
+
+def flashscore_fill(rows):
+    """Rungtynėms be lankomumo ieško skaičiaus Flashscore ir įrašo jį su att_src=flashscore."""
+    from datetime import date as _date
+    missing = [r for r in rows if not r.get("attendance") and r.get("date")]
+    found = checked = 0
+    for comp in sorted({r["comp"] for r in missing}):
+        if comp not in FS_PATHS:
+            continue
+        try:
+            games, sign = _fs_games(FS_PATHS[comp])
+        except Exception as e:
+            print(f"! Flashscore {comp}: {e}", file=sys.stderr); continue
+        for r in (x for x in missing if x["comp"] == comp):
+            d = _date.fromisoformat(r["date"])
+            cands = []
+            for gid, gd, fh, fa in games:
+                dd = abs((gd - d).days)
+                if dd > 1:
+                    continue
+                hm = _fs_side(fh, r["home"], r["home_src"])
+                am = _fs_side(fa, r["away"], r["away_src"])
+                if hm and am:
+                    cands.append((2, -dd, gid))
+                elif (hm or am) and dd == 0:
+                    cands.append((1, 0, gid))
+            if not cands:
+                continue
+            cands.sort(reverse=True)
+            if cands[0][0] == 1 and len(cands) > 1:      # neaišku, kurios rungtynės – praleidžiama
+                continue
+            checked += 1
+            try:
+                a = _fs_attendance(cands[0][2], sign)
+            except Exception as e:
+                print(f"! Flashscore {cands[0][2]}: {e}", file=sys.stderr); continue
+            if a >= MIN_ATT:
+                r["attendance"] = a; r["att_src"] = "flashscore"; found += 1
+            time.sleep(0.5)
+    print(f"Flashscore: rungtynių be lankomumo {len(missing)}, rasta Flashscore {checked}, su lankomumu {found}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--season", required=True, help="pvz. 2026-27")
@@ -544,18 +634,27 @@ def main():
         status[comp] = st
         time.sleep(1)
 
-    # Flashscore papildymai: naudojami tik ten, kur oficialaus lankomumo nėra
-    fs_path = out_dir / "flashscore_attendance.csv"
-    if fs_path.exists():
-        fs = {(r["comp"], r["game_id"]): r["attendance"] for r in csv.DictReader(fs_path.open(encoding="utf-8"))}
-        n_fs = 0
-        for r in rows:
-            v = fs.get((r["comp"], r["game_id"]), "")
-            if not r["attendance"] and v and int(v) >= MIN_ATT:
-                r["attendance"] = int(v); n_fs += 1
-        print(f"Flashscore papildymų pritaikyta: {n_fs}")
-        for comp, st in status.items():
-            st["games_with_attendance"] = sum(1 for r in rows if r["comp"] == comp and r["attendance"])
+    # 1) Jau surinktas lankomumas neištrinamas: jei oficialus šaltinis skaičiaus (dar ar nebe) neduoda,
+    #    paliekamas anksčiau games.csv įrašytas skaičius. Naujas oficialus skaičius visada svarbesnis.
+    old = {(r["comp"], r["game_id"]): r for r in old_rows}
+    kept = 0
+    for r in rows:
+        if r.get("attendance"):
+            r["att_src"] = r.get("att_src") or "official"
+            continue
+        o = old.get((r["comp"], r["game_id"]))
+        if o and o.get("attendance") and int(o["attendance"]) >= MIN_ATT:
+            r["attendance"] = int(o["attendance"]); r["att_src"] = o.get("att_src") or "official"; kept += 1
+        else:
+            r["att_src"] = ""
+    print(f"Išsaugota anksčiau surinkto lankomumo: {kept}")
+    # 2) Rungtynėms, kurioms lankomumo vis dar nėra – tikrinamas Flashscore
+    try:
+        flashscore_fill(rows)
+    except Exception as e:
+        print(f"! Flashscore: {e}", file=sys.stderr)
+    for comp, st in status.items():
+        st["games_with_attendance"] = sum(1 for r in rows if r["comp"] == comp and r["attendance"])
 
     rows.sort(key=lambda r: (r["comp"], r["date"], r["game_id"]))
     season_tables(rows, season, out_dir, M, src_cn)
