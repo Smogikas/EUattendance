@@ -1,0 +1,54 @@
+name: Atnaujinti lankomumą (einamasis sezonas)
+
+# Einamasis sezonas (26/27) – kas 6 val. EuroLeague, EuroCup, BCL ir FIBA Europe Cup.
+# Pasibaigę sezonai saugomi Google Sheets lape „EuroAttendance“ ir nebeatnaujinami.
+
+on:
+  schedule:
+    - cron: "47 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: attendance
+  cancel-in-progress: false
+
+env:
+  SEASON: "2026-27"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Įdiegti priklausomybes
+        run: pip install requests
+      - name: Surinkti lankomumą
+        id: collect
+        continue-on-error: true
+        run: python collect.py --season "$SEASON"
+      - name: Įrašyti pakeitimus
+        run: |
+          git config user.name "attendance-bot"
+          git config user.email "attendance-bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Pakeitimų nėra"
+          else
+            git commit -m "Lankomumas: $(date -u +'%Y-%m-%d %H:%M') UTC"
+            for i in 1 2 3 4 5; do
+              git pull --rebase && git push && break
+              sleep $((RANDOM % 15 + 5))
+            done
+          fi
+      - name: Pažymėti nesėkmę
+        if: steps.collect.outcome == 'failure'
+        run: |
+          echo "Bent vieno turnyro duomenų nepavyko nuskaityti – žr. data/$SEASON/status.json"
+          exit 1
