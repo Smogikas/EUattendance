@@ -2,12 +2,6 @@
  {
   "comp": "eurocup",
   "season": "2026-27",
-  "source": "La Laguna Tenerife",
-  "country": ""
- },
- {
-  "comp": "eurocup",
-  "season": "2026-27",
   "source": "Riga Zelli",
   "country": ""
  },
@@ -27,13 +21,13 @@
   "comp": "fec",
   "season": "2026-27",
   "source": "\"Basketball Club Lokomotiv Plovdiv\" Association",
-  "country": ""
+  "country": "Bulgaria"
  },
  {
   "comp": "fec",
   "season": "2026-27",
   "source": "BC Batumi 2010",
-  "country": ""
+  "country": "Georgia"
  },
  {
   "comp": "fec",
@@ -57,19 +51,19 @@
   "comp": "fec",
   "season": "2026-27",
   "source": "Biotekno Korfez Basket",
-  "country": ""
+  "country": "Türkiye"
  },
  {
   "comp": "fec",
   "season": "2026-27",
   "source": "Coretec Oostende",
-  "country": ""
+  "country": "Belgium"
  },
  {
   "comp": "fec",
   "season": "2026-27",
   "source": "Gence BC",
-  "country": ""
+  "country": "Azerbaijan"
  },
  {
   "comp": "fec",
@@ -93,25 +87,25 @@
   "comp": "fec",
   "season": "2026-27",
   "source": "Manchester Basketball Club",
-  "country": ""
- },
- {
-  "comp": "fec",
-  "season": "2026-27",
-  "source": "NHSZ-Szolnoki Olajbanyasz",
-  "country": "Hungary"
+  "country": "England"
  },
  {
   "comp": "fec",
   "season": "2026-27",
   "source": "Neftchi Sports Club Public Union",
-  "country": ""
+  "country": "Azerbaijan"
+ },
+ {
+  "comp": "fec",
+  "season": "2026-27",
+  "source": "Petrolina AEK Larnaca Basketball Club",
+  "country": "Cyprus"
  },
  {
   "comp": "fec",
   "season": "2026-27",
   "source": "Sport Club Municipal Craiova",
-  "country": ""
+  "country": "Romania"
  },
  {
   "comp": "fec",
