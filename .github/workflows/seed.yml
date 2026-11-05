@@ -1,0 +1,34 @@
+name: Surinkti pasibaigusius sezonus (vienkartinis)
+
+# Paleidžiama ranka. Surenka 23/24, 24/25 ir 25/26 sezonų rungtynes į seed/<sezonas>/games.csv,
+# kad jas būtų galima perkelti į Google Sheets lapą „EuroAttendance“. Perkėlus – aplanką seed galima ištrinti.
+
+on:
+  workflow_dispatch:
+    inputs:
+      seasons:
+        description: "Sezonai (per tarpą)"
+        default: "2023-24 2024-25 2025-26"
+
+permissions:
+  contents: write
+
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Surinkti
+        run: |
+          for s in ${{ inputs.seasons }}; do python collect.py --season "$s" --out seed || true; done
+      - name: Įrašyti
+        run: |
+          git config user.name "attendance-bot"
+          git config user.email "attendance-bot@users.noreply.github.com"
+          git add seed
+          git diff --cached --quiet || (git commit -m "Pasibaigę sezonai (seed)" && git pull --rebase && git push)
