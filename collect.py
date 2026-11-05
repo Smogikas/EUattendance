@@ -218,10 +218,10 @@ def _cover(a, b):
 
 
 class ArenaMatcher:
-    """Arenos talpa: lapas „Arenas“ (pavadinimas, „Also known as“, klubai), data/capacities.csv (rankiniai),
-    data/arena_aliases.csv (turnyro pavadinimas → arena lape arba „-“, jei tokios arenos nėra)."""
+    """Arenos talpa tik iš lapo „Arenas“: tikslus pavadinimo ar „Also known as“ atitikmuo arba,
+    jei jo nėra, panašus pavadinimas (tos pačios arenos klubas arba ≥2 sutampantys žodžiai)."""
 
-    def __init__(self, sheet_rows, manual, aliases):
+    def __init__(self, sheet_rows):
         self.A = []
         if sheet_rows:
             h = [x.strip().lower() for x in sheet_rows[0]]
@@ -229,16 +229,10 @@ class ArenaMatcher:
                 return r[h.index(n)].strip() if n in h and h.index(n) < len(r) else ""
             for r in sheet_rows[1:]:
                 self._add(col(r, "arena"), col(r, "also known as"), col(r, "capacity"),
-                          ";".join([col(r, "home clubs"), col(r, "main arena for"), col(r, "club")]), "arenas")
-        for m in manual:
-            self._add(m.get("arena", ""), m.get("also known as", ""), m.get("capacity", ""), m.get("club", ""), "manual")
-        self.alias = {nkey(k): v for k, v in aliases.items()}
-        self.byname = {}
-        for a in self.A:
-            self.byname.setdefault(nkey(a["arena"]), a)
+                          ";".join([col(r, "home clubs"), col(r, "main arena for"), col(r, "club")]))
         self.cache = {}
 
-    def _add(self, arena, aka, cap, clubs, src):
+    def _add(self, arena, aka, cap, clubs):
         try:
             cap = int(float(re.sub(r"[^0-9.]", "", str(cap).replace(",", ""))))
         except Exception:
@@ -246,50 +240,38 @@ class ArenaMatcher:
         if not arena or cap <= 0:
             return
         names = [arena] + [x for x in re.split(r"[;/]", aka or "") if x.strip()]
-        self.A.append({"arena": arena, "cap": cap, "src": src, "keys": {nkey(n) for n in names if nkey(n)},
+        self.A.append({"arena": arena, "cap": cap, "keys": {nkey(n) for n in names if nkey(n)},
                        "toks": [vtoks(n) for n in names], "clubs": {nkey(c) for c in re.split(r"[;,]", clubs or "") if c.strip()}})
 
     def match(self, venue, club=""):
-        """Grąžina (talpa, šaltinis, arenos pavadinimas lape) arba None."""
+        """Grąžina (talpa, arenos pavadinimas lape, 'exact'|'similar') arba None."""
         key = (venue, club)
         if key in self.cache:
             return self.cache[key]
-        res = None
-        al = self.alias.get(nkey(venue))
-        if al is not None:
-            a = self.byname.get(nkey(al)) if al.strip() != "-" else None
-            res = (a["cap"], a["src"], a["arena"]) if a else None
-            self.cache[key] = res
-            return res
         vk, vt, ck = nkey(venue), vtoks(venue), nkey(club)
-        best = None
+        res = None
         for a in self.A:
-            sc = 0
             if vk and vk in a["keys"]:
-                sc = 10
-            else:
+                res = (a["cap"], a["arena"], "exact"); break
+        if res is None:
+            best = None
+            for a in self.A:
+                ov = 0
                 for t in a["toks"]:
                     if t and vt and (_cover(vt, t) or _cover(t, vt)):
-                        sc = max(sc, 5 + sum(1 for z in vt if any(_teq(z, y) for y in t)))
-            if not sc:
-                continue
-            if ck and ck in a["clubs"]:
-                sc += 3
-            if a["src"] == "manual":
-                sc += 0.5                       # rankinis įrašas laimi lygiųjų atveju
-            if not best or sc > best[0]:
-                best = (sc, a)
-        if best:
-            res = (best[1]["cap"], best[1]["src"], best[1]["arena"])
+                        ov = max(ov, sum(1 for z in vt if any(_teq(z, y) for y in t)))
+                if not ov:
+                    continue
+                same_club = bool(ck and ck in a["clubs"])
+                if not same_club and ov < 2:
+                    continue
+                sc = ov + (3 if same_club else 0)
+                if not best or sc > best[0]:
+                    best = (sc, a)
+            if best:
+                res = (best[1]["cap"], best[1]["arena"], "similar")
         self.cache[key] = res
         return res
-
-
-def read_csv(path):
-    p = Path(path)
-    if not p.exists():
-        return []
-    return [{k.strip().lower(): (v or "").strip() for k, v in r.items() if k} for r in csv.DictReader(p.open(encoding="utf-8"))]
 
 
 def arena_matcher():
@@ -297,8 +279,7 @@ def arena_matcher():
         rows = sheet_csv("Arenas", headers=1)
     except Exception as e:
         print(f"! Arenas: {e}", file=sys.stderr); rows = []
-    aliases = {r["source"]: r["arena"] for r in read_csv("data/arena_aliases.csv") if r.get("source")}
-    return ArenaMatcher(rows, read_csv("data/capacities.csv"), aliases)
+    return ArenaMatcher(rows)
 
 
 # ---------------------------------------------------------------- pavadinimų suvedimas
@@ -422,20 +403,24 @@ def venue_capacities(AM, cur_rows, out_root):
         c = re.sub(r"[^0-9]", "", str(g.get("capacity") or ""))
         if c and g.get("cap_src") != "arenas":
             x["official"][c] = x["official"].get(c, 0) + 1
-    caps, review = {}, []
+    caps, review, similar = {}, [], []
     for v, x in sorted(V.items()):
         club = max(x["clubs"], key=x["clubs"].get)
         m = AM.match(v, club)
         if m:
-            caps[v] = {"capacity": m[0], "src": m[1], "arena": m[2]}
+            caps[v] = {"capacity": m[0], "src": "arenas", "arena": m[1], "match": m[2]}
+            if m[2] == "similar":
+                similar.append({"venue": v, "arena": m[1], "capacity": m[0], "club": club, "games": x["games"]})
         else:
             review.append({"venue": v, "club": club, "other_clubs": sorted(c for c in x["clubs"] if c != club),
                            "comps": sorted(x["comps"]), "seasons": sorted(x["seasons"]), "games": x["games"],
                            "official": {k: n for k, n in sorted(x["official"].items(), key=lambda kv: -kv[1])}})
     review.sort(key=lambda r: -r["games"])
     (out_root / "venue_capacity.json").write_text(json.dumps(caps, ensure_ascii=False, indent=0), encoding="utf-8")
-    (out_root / "capacity_review.json").write_text(json.dumps(review, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"Arenų talpos: lape/rankiniai {len(caps)}, peržiūrai {len(review)}")
+    similar.sort(key=lambda r: -r["games"])
+    (out_root / "capacity_review.json").write_text(json.dumps({"missing": review, "similar_names": similar},
+                                                              ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"Arenų talpos: rasta {len(caps)} (panašus pavadinimas {len(similar)}), nėra lape {len(review)}")
 
 
 # ---------------------------------------------------------------- pagrindinė dalis
@@ -459,7 +444,7 @@ def main():
     print(f"Klubų iš lapų: {len(clubs)}")
     M = Matcher(clubs, aliases)
     AM = arena_matcher()
-    print(f"Arenų (lapas + rankiniai): {len(AM.A)}")
+    print(f"Arenų lape: {len(AM.A)}")
     if args.out != "data":                      # pagalbinis sąrašas tikrinimui
         (Path(args.out) / "sheet_clubs.json").write_text(json.dumps(sorted(set(clubs)), ensure_ascii=False, indent=0), encoding="utf-8")
 
@@ -495,11 +480,8 @@ def main():
                     if not ok_:
                         unresolved.setdefault((comp, nm), {"comp": comp, "season": season, "source": nm, "country": cc})
                 m = AM.match(g["venue"], h or g["home_src"]) if g["venue"] else None
-                if m:                                  # pirmenybė – lapo „Arenas“ talpa
-                    cap, csrc = m[0], m[1]
-                else:
-                    cap, csrc = g["capacity"], "official" if g["capacity"] else ""
-                if not cap and g["attendance"]:
+                cap, csrc = (m[0], "arenas") if m else ("", "")   # talpa – tik iš lapo „Arenas“
+                if not cap:
                     nocap.setdefault((comp, g["venue"]), {"comp": comp, "venue": g["venue"], "club": h or g["home_src"], "games": 0})
                     nocap[(comp, g["venue"])]["games"] += 1
                 rows.append({"comp": comp, "season": season, "game_id": g["game_id"], "date": g["date"], "round": g["round"],
