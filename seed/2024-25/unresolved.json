@@ -3,7 +3,7 @@
   "comp": "bcl",
   "season": "2024-25",
   "source": "Aliaga Petkimspor",
-  "country": ""
+  "country": "Türkiye"
  },
  {
   "comp": "bcl",
@@ -20,20 +20,26 @@
  {
   "comp": "bcl",
   "season": "2024-25",
+  "source": "Hapoel Netanel Holon",
+  "country": "Hungary"
+ },
+ {
+  "comp": "bcl",
+  "season": "2024-25",
   "source": "Kolossos H Hotels Collection",
-  "country": ""
+  "country": "Greece"
  },
  {
   "comp": "bcl",
   "season": "2024-25",
   "source": "La Laguna Tenerife",
-  "country": ""
+  "country": "Spain"
  },
  {
   "comp": "bcl",
   "season": "2024-25",
   "source": "Manisa Büyüksehir Belediye Sport Club",
-  "country": ""
+  "country": "Türkiye"
  },
  {
   "comp": "fec",
@@ -45,19 +51,19 @@
   "comp": "fec",
   "season": "2024-25",
   "source": "BC \"Dnipro\"",
-  "country": ""
+  "country": "Portugal"
  },
  {
   "comp": "fec",
   "season": "2024-25",
   "source": "BC Kutaisi 2010",
-  "country": ""
+  "country": "Georgia"
  },
  {
   "comp": "fec",
   "season": "2024-25",
   "source": "BC Trepca",
-  "country": ""
+  "country": "Kosovo"
  },
  {
   "comp": "fec",
@@ -69,7 +75,7 @@
   "comp": "fec",
   "season": "2024-25",
   "source": "Caledonia Gladiators",
-  "country": ""
+  "country": "Great Britain"
  },
  {
   "comp": "fec",
@@ -87,19 +93,25 @@
   "comp": "fec",
   "season": "2024-25",
   "source": "Keravnos BC",
-  "country": ""
+  "country": "Cyprus"
  },
  {
   "comp": "fec",
   "season": "2024-25",
   "source": "NHSZ-Szolnoki Olajbanyasz",
-  "country": ""
+  "country": "Hungary"
  },
  {
   "comp": "fec",
   "season": "2024-25",
   "source": "Norrköping Dolphins",
-  "country": ""
+  "country": "Sweden"
+ },
+ {
+  "comp": "fec",
+  "season": "2024-25",
+  "source": "Petrolina AEK Larnaca Basketball Club",
+  "country": "Cyprus"
  },
  {
   "comp": "fec",

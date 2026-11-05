@@ -2,14 +2,32 @@
  {
   "comp": "bcl",
   "season": "2025-26",
+  "source": "Bnei Penlink Herzliya",
+  "country": "Czechia"
+ },
+ {
+  "comp": "bcl",
+  "season": "2025-26",
   "source": "Filou Oostende",
   "country": "Belgium"
  },
  {
   "comp": "bcl",
   "season": "2025-26",
+  "source": "Galatasaray Spor Kulübü Dernegi",
+  "country": "Bulgaria"
+ },
+ {
+  "comp": "bcl",
+  "season": "2025-26",
+  "source": "Hapoel Netanel Holon",
+  "country": "Hungary"
+ },
+ {
+  "comp": "bcl",
+  "season": "2025-26",
   "source": "La Laguna Tenerife",
-  "country": ""
+  "country": "Spain"
  },
  {
   "comp": "bcl",
@@ -27,7 +45,7 @@
   "comp": "fec",
   "season": "2025-26",
   "source": "Anorthosis Famagusta",
-  "country": ""
+  "country": "Cyprus"
  },
  {
   "comp": "fec",
@@ -39,36 +57,48 @@
   "comp": "fec",
   "season": "2025-26",
   "source": "BC Trepca",
-  "country": ""
+  "country": "Kosovo"
  },
  {
   "comp": "fec",
   "season": "2025-26",
   "source": "Basketball Club \"Bashkimi\"",
-  "country": ""
+  "country": "Kosovo"
  },
  {
   "comp": "fec",
   "season": "2025-26",
   "source": "CSM Corona Brasov",
-  "country": ""
+  "country": "Romania"
  },
  {
   "comp": "fec",
   "season": "2025-26",
   "source": "KK Bosna BH Telecom",
-  "country": ""
+  "country": "Bosnia and Herzegovina"
+ },
+ {
+  "comp": "fec",
+  "season": "2025-26",
+  "source": "KK Cedevita Junior",
+  "country": "Croatia"
  },
  {
   "comp": "fec",
   "season": "2025-26",
   "source": "Keravnos BC",
-  "country": ""
+  "country": "Cyprus"
  },
  {
   "comp": "fec",
   "season": "2025-26",
   "source": "Neftchi Sports Club Public Union",
-  "country": ""
+  "country": "Azerbaijan"
+ },
+ {
+  "comp": "fec",
+  "season": "2025-26",
+  "source": "Petrolina AEK Larnaca Basketball Club",
+  "country": "Cyprus"
  }
 ]
