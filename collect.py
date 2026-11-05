@@ -229,6 +229,10 @@ CN = {"turkiye": "turkey", "czechia": "czechrepublic", "bosnia": "bosniaandherze
       "russianfederation": "russia", "holland": "netherlands"}
 
 
+# šių šalių klubai „namų“ rungtynes dažnai žaidžia kitose šalyse
+EXILE = {"israel", "ukraine", "russia", "belarus"}
+
+
 def ckey(s):
     k = nkey(s)
     return CN.get(k, k)
@@ -300,9 +304,10 @@ class Matcher:
                 if sc <= 0: continue
                 if c in self.by_season.get(ss, ()): sc += 0.3
                 if country and self.nation.get(c):
-                    if ckey(self.nation[c]) != ckey(country):
+                    if ckey(self.nation[c]) == ckey(country):
+                        sc += 0.5
+                    elif ckey(self.nation[c]) not in EXILE:
                         continue                                # kitos šalies klubas – netinka
-                    sc += 0.5
                 best.append((sc, c))
             best.sort(reverse=True)
             if best and (len(best) == 1 or best[0][0] - best[1][0] >= 0.25):
@@ -355,14 +360,16 @@ def main():
         if raw is None:                        # nepavyko – paliekami ankstesni duomenys
             rows += [r for r in old_rows if r["comp"] == comp]
         else:
-            home_cn = {}                       # komandos šalis – iš jos namų rungtynių
+            cnt = {}                           # komandos šalis – dažniausia jos namų rungtynių šalis
             for g in raw:
-                if g["country"]: home_cn.setdefault(g["home_src"], g["country"])
+                if g["country"]:
+                    d = cnt.setdefault(g["home_src"], {}); d[g["country"]] = d.get(g["country"], 0) + 1
+            home_cn = {k: max(d, key=d.get) for k, d in cnt.items()}
             for g in raw:
-                acn = home_cn.get(g["away_src"], "")
-                h = M.match([g["home_src"]] + g["home_alt"], season, g["country"])
+                hcn, acn = home_cn.get(g["home_src"], ""), home_cn.get(g["away_src"], "")
+                h = M.match([g["home_src"]] + g["home_alt"], season, hcn)
                 a = M.match([g["away_src"]] + g["away_alt"], season, acn)
-                for nm, ok_, cc in ((g["home_src"], h, g["country"]), (g["away_src"], a, acn)):
+                for nm, ok_, cc in ((g["home_src"], h, hcn), (g["away_src"], a, acn)):
                     if not ok_:
                         unresolved.setdefault((comp, nm), {"comp": comp, "season": season, "source": nm, "country": cc})
                 cap, csrc = g["capacity"], "official" if g["capacity"] else ""
