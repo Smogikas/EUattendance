@@ -18,23 +18,6 @@
   }
  },
  {
-  "venue": "Samokov Arena",
-  "club": "Hapoel Jerusalem",
-  "other_clubs": [
-   "Hapoel Tel Aviv"
-  ],
-  "comps": [
-   "eurocup"
-  ],
-  "seasons": [
-   "2024-25"
-  ],
-  "games": 18,
-  "official": {
-   "2000": 18
-  }
- },
- {
   "venue": "Costas Papaellinas Arena",
   "club": "Keravnos BC",
   "other_clubs": [],
@@ -224,22 +207,6 @@
   "games": 4,
   "official": {
    "14500": 4
-  }
- },
- {
-  "venue": "Arena Samokov",
-  "club": "BC Rilski Sportist",
-  "other_clubs": [],
-  "comps": [
-   "fec"
-  ],
-  "seasons": [
-   "2024-25",
-   "2026-27"
-  ],
-  "games": 4,
-  "official": {
-   "2320": 3
   }
  },
  {

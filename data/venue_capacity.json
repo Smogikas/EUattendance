@@ -84,6 +84,11 @@
 "src": "arenas",
 "arena": "Arena Samelyon"
 },
+"Arena Samokov": {
+"capacity": 3000,
+"src": "arenas",
+"arena": "Arena Samelyon"
+},
 "Arena Stozice": {
 "capacity": 12480,
 "src": "arenas",
@@ -758,6 +763,11 @@
 "capacity": 2789,
 "src": "arenas",
 "arena": "Salle Saint-Léonard"
+},
+"Samokov Arena": {
+"capacity": 3000,
+"src": "arenas",
+"arena": "Arena Samelyon"
 },
 "Santiago Martin Arena": {
 "capacity": 5100,
