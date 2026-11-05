@@ -291,6 +291,17 @@
     "lowest": 3893
    },
    {
+    "nation": "Germany",
+    "club": "Rostock Seawolves",
+    "average_attendance": 3952,
+    "weighted_capacity": 5000,
+    "filling_rate": 0.7905,
+    "games_with_attendance": 2,
+    "home_games": 2,
+    "highest": 4620,
+    "lowest": 3285
+   },
+   {
     "nation": "France",
     "club": "Le Mans Sarthe Basket",
     "average_attendance": 3753,
@@ -300,17 +311,6 @@
     "home_games": 3,
     "highest": 3972,
     "lowest": 3484
-   },
-   {
-    "nation": "Germany",
-    "club": "Rostock Seawolves",
-    "average_attendance": 3285,
-    "weighted_capacity": 5000,
-    "filling_rate": 0.657,
-    "games_with_attendance": 1,
-    "home_games": 2,
-    "highest": 3285,
-    "lowest": 3285
    },
    {
     "nation": "France",
@@ -357,6 +357,17 @@
     "lowest": 2849
    },
    {
+    "nation": "Germany",
+    "club": "Niners Chemnitz",
+    "average_attendance": 2973,
+    "weighted_capacity": 5000,
+    "filling_rate": 0.5946,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 3817,
+    "lowest": 2482
+   },
+   {
     "nation": "Lithuania",
     "club": "BC Šiauliai",
     "average_attendance": 2596,
@@ -366,17 +377,6 @@
     "home_games": 3,
     "highest": 3382,
     "lowest": 2041
-   },
-   {
-    "nation": "Germany",
-    "club": "Niners Chemnitz",
-    "average_attendance": 2551,
-    "weighted_capacity": 5000,
-    "filling_rate": 0.5102,
-    "games_with_attendance": 2,
-    "home_games": 3,
-    "highest": 2620,
-    "lowest": 2482
    },
    {
     "nation": "Poland",
@@ -647,24 +647,35 @@
    {
     "nation": "Spain",
     "club": "UCAM Murcia",
-    "average_attendance": 4212,
+    "average_attendance": 4012,
     "weighted_capacity": 7454,
-    "filling_rate": 0.5651,
-    "games_with_attendance": 1,
+    "filling_rate": 0.5382,
+    "games_with_attendance": 2,
     "home_games": 2,
     "highest": 4212,
-    "lowest": 4212
+    "lowest": 3811
    },
    {
     "nation": "Germany",
     "club": "Bamberg Baskets",
-    "average_attendance": 3980,
+    "average_attendance": 3908,
     "weighted_capacity": 5700,
-    "filling_rate": 0.6982,
-    "games_with_attendance": 1,
+    "filling_rate": 0.6857,
+    "games_with_attendance": 2,
     "home_games": 2,
     "highest": 3980,
-    "lowest": 3980
+    "lowest": 3837
+   },
+   {
+    "nation": "France",
+    "club": "SIG Strasbourg",
+    "average_attendance": 3833,
+    "weighted_capacity": 6200,
+    "filling_rate": 0.6182,
+    "games_with_attendance": 1,
+    "home_games": 2,
+    "highest": 3833,
+    "lowest": 3833
    },
    {
     "nation": "France",
@@ -711,6 +722,17 @@
     "lowest": 2300
    },
    {
+    "nation": "Italy",
+    "club": "Pallacanestro Varese",
+    "average_attendance": 2481,
+    "weighted_capacity": 5677,
+    "filling_rate": 0.437,
+    "games_with_attendance": 1,
+    "home_games": 1,
+    "highest": 2481,
+    "lowest": 2481
+   },
+   {
     "nation": "Germany",
     "club": "Rasta Vechta",
     "average_attendance": 2218,
@@ -735,13 +757,46 @@
    {
     "nation": "Italy",
     "club": "Pallacanestro Reggiana",
-    "average_attendance": 1816,
+    "average_attendance": 2006,
     "weighted_capacity": 4530,
-    "filling_rate": 0.4009,
-    "games_with_attendance": 1,
+    "filling_rate": 0.4429,
+    "games_with_attendance": 2,
     "home_games": 2,
-    "highest": 1816,
+    "highest": 2197,
     "lowest": 1816
+   },
+   {
+    "nation": "France",
+    "club": "Nanterre 92",
+    "average_attendance": 1942,
+    "weighted_capacity": 3000,
+    "filling_rate": 0.6473,
+    "games_with_attendance": 1,
+    "home_games": 1,
+    "highest": 1942,
+    "lowest": 1942
+   },
+   {
+    "nation": "Czech Republic",
+    "club": "Era Nymburk",
+    "average_attendance": 1793,
+    "weighted_capacity": 10300,
+    "filling_rate": 0.1741,
+    "games_with_attendance": 1,
+    "home_games": 1,
+    "highest": 1793,
+    "lowest": 1793
+   },
+   {
+    "nation": "Serbia",
+    "club": "KK Spartak Subotica",
+    "average_attendance": 1742,
+    "weighted_capacity": 3500,
+    "filling_rate": 0.4977,
+    "games_with_attendance": 2,
+    "home_games": 2,
+    "highest": 1890,
+    "lowest": 1594
    },
    {
     "nation": "Croatia",
@@ -755,26 +810,15 @@
     "lowest": 1300
    },
    {
-    "nation": "Serbia",
-    "club": "KK Spartak Subotica",
-    "average_attendance": 1594,
-    "weighted_capacity": 3500,
-    "filling_rate": 0.4554,
-    "games_with_attendance": 1,
-    "home_games": 2,
-    "highest": 1594,
-    "lowest": 1594
-   },
-   {
     "nation": "Greece",
     "club": "AEK B.C.",
-    "average_attendance": 1329,
+    "average_attendance": 1232,
     "weighted_capacity": 9025,
-    "filling_rate": 0.1473,
-    "games_with_attendance": 1,
+    "filling_rate": 0.1366,
+    "games_with_attendance": 2,
     "home_games": 2,
     "highest": 1329,
-    "lowest": 1329
+    "lowest": 1136
    },
    {
     "nation": "Turkey",
@@ -786,6 +830,17 @@
     "home_games": 1,
     "highest": 1223,
     "lowest": 1223
+   },
+   {
+    "nation": "Lithuania",
+    "club": "Utena Juventus",
+    "average_attendance": 1204,
+    "weighted_capacity": 9000,
+    "filling_rate": 0.1338,
+    "games_with_attendance": 1,
+    "home_games": 2,
+    "highest": 1204,
+    "lowest": 1204
    },
    {
     "nation": "Greece",
@@ -801,72 +856,17 @@
    {
     "nation": "Bosnia and Herzegovina",
     "club": "KK Igokea",
-    "average_attendance": 600,
+    "average_attendance": 775,
     "weighted_capacity": 3050,
-    "filling_rate": 0.1967,
-    "games_with_attendance": 1,
+    "filling_rate": 0.2541,
+    "games_with_attendance": 2,
     "home_games": 2,
-    "highest": 600,
+    "highest": 950,
     "lowest": 600
-   },
-   {
-    "nation": "France",
-    "club": "SIG Strasbourg",
-    "average_attendance": null,
-    "weighted_capacity": null,
-    "filling_rate": null,
-    "games_with_attendance": 0,
-    "home_games": 2,
-    "highest": null,
-    "lowest": null
    },
    {
     "nation": "Israel",
     "club": "Hapoel Holon",
-    "average_attendance": null,
-    "weighted_capacity": null,
-    "filling_rate": null,
-    "games_with_attendance": 0,
-    "home_games": 1,
-    "highest": null,
-    "lowest": null
-   },
-   {
-    "nation": "Lithuania",
-    "club": "Utena Juventus",
-    "average_attendance": null,
-    "weighted_capacity": null,
-    "filling_rate": null,
-    "games_with_attendance": 0,
-    "home_games": 2,
-    "highest": null,
-    "lowest": null
-   },
-   {
-    "nation": "Czech Republic",
-    "club": "Era Nymburk",
-    "average_attendance": null,
-    "weighted_capacity": null,
-    "filling_rate": null,
-    "games_with_attendance": 0,
-    "home_games": 1,
-    "highest": null,
-    "lowest": null
-   },
-   {
-    "nation": "France",
-    "club": "Nanterre 92",
-    "average_attendance": null,
-    "weighted_capacity": null,
-    "filling_rate": null,
-    "games_with_attendance": 0,
-    "home_games": 1,
-    "highest": null,
-    "lowest": null
-   },
-   {
-    "nation": "Italy",
-    "club": "Pallacanestro Varese",
     "average_attendance": null,
     "weighted_capacity": null,
     "filling_rate": null,
@@ -1120,17 +1120,6 @@
     "lowest": 400
    },
    {
-    "nation": "Greece",
-    "club": "Iraklis B.C.",
-    "average_attendance": 1152,
-    "weighted_capacity": 2580,
-    "filling_rate": 0.4463,
-    "games_with_attendance": 2,
-    "home_games": 3,
-    "highest": 1500,
-    "lowest": 803
-   },
-   {
     "nation": "Estonia",
     "club": "Tartu Ulikool",
     "average_attendance": 1098,
@@ -1175,15 +1164,15 @@
     "lowest": 911
    },
    {
-    "nation": "Czech Republic",
-    "club": "BK Opava",
-    "average_attendance": 950,
-    "weighted_capacity": 3006,
-    "filling_rate": 0.316,
-    "games_with_attendance": 1,
-    "home_games": 2,
-    "highest": 950,
-    "lowest": 950
+    "nation": "Greece",
+    "club": "Iraklis B.C.",
+    "average_attendance": 960,
+    "weighted_capacity": 2580,
+    "filling_rate": 0.3722,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 1500,
+    "lowest": 578
    },
    {
     "nation": "Switzerland",
@@ -1206,6 +1195,17 @@
     "home_games": 2,
     "highest": 992,
     "lowest": 857
+   },
+   {
+    "nation": "Czech Republic",
+    "club": "BK Opava",
+    "average_attendance": 920,
+    "weighted_capacity": 3006,
+    "filling_rate": 0.3062,
+    "games_with_attendance": 2,
+    "home_games": 2,
+    "highest": 950,
+    "lowest": 891
    },
    {
     "nation": "Hungary",
