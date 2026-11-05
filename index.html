@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lankomumas · EuroLeague + EuroCup + BCL + FIBA Europe Cup</title>
+  <meta name="description" content="Europos klubinių turnyrų (EuroLeague, EuroCup, BCL, FIBA Europe Cup) namų rungtynių lankomumo statistika, 2023/24–2026/27" />
+  <style>
+    :root {
+      --bg: #0c1118; --surface: #151c27; --surface2: #1b2433; --row: #121821; --row-alt: #161e2a;
+      --border: #243044; --text: #eef2f8; --muted: #8b9bb0; --accent: #f5a623; --blue: #3d8bfd;
+      --green: #3dd68c; --red: #f07178; --rank1: #ffd700; --rank2: #c0c0c0; --rank3: #cd7f32;
+      --radius: 14px; --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font); background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.45;
+      background-image: radial-gradient(ellipse 70% 40% at 20% -10%, rgba(61,139,253,.12), transparent),
+        radial-gradient(ellipse 50% 35% at 100% 0%, rgba(245,166,35,.08), transparent);
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+    header { text-align: center; margin-bottom: 1.25rem; }
+    header h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; letter-spacing: -.02em; }
+    header h1 span { color: var(--accent); }
+    .subtitle { color: var(--muted); font-size: .92rem; margin-top: .25rem; }
+    .tabs { display: flex; justify-content: center; gap: .6rem; margin: 1.1rem 0 .9rem; flex-wrap: wrap; }
+    .tab {
+      display: inline-flex; align-items: center; gap: .55rem; background: var(--surface); border: 1px solid var(--border);
+      border-radius: 999px; padding: .45rem .95rem .45rem .55rem; cursor: pointer; color: var(--muted);
+      font-weight: 600; font-size: .9rem; transition: .15s ease; font-family: inherit;
+    }
+    .tab img { width: 32px; height: 32px; object-fit: contain; border-radius: 8px; background: #fff; padding: 2px; }
+    .tab .ph { width: 32px; height: 32px; border-radius: 8px; background: var(--surface2); display: inline-flex; align-items: center; justify-content: center; font-size: .7rem; }
+    .tab:hover { border-color: var(--blue); color: var(--text); }
+    .tab.active { background: linear-gradient(135deg, rgba(61,139,253,.2), rgba(245,166,35,.12)); border-color: var(--blue); color: var(--text); box-shadow: 0 0 0 1px rgba(61,139,253,.25); }
+    .seasons { display: flex; justify-content: center; gap: .45rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .season { background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: .3rem .8rem; color: var(--muted); font: 600 .85rem var(--font); cursor: pointer; }
+    .season:hover { border-color: var(--blue); color: var(--text); }
+    .season.active { border-color: var(--accent); color: var(--text); background: rgba(245,166,35,.12); }
+    .live { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--green); margin-right: .35rem; box-shadow: 0 0 0 0 rgba(61,214,140,.6); animation: pulse 1.8s infinite; vertical-align: middle; }
+    @keyframes pulse { 70% { box-shadow: 0 0 0 7px rgba(61,214,140,0); } 100% { box-shadow: 0 0 0 0 rgba(61,214,140,0); } }
+    .meta { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; justify-content: center; font-size: .82rem; color: var(--muted); margin-bottom: 1rem; text-align: center; }
+    .meta strong { color: var(--text); }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: .65rem; margin-bottom: 1.15rem; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: .85rem; text-align: center; }
+    .card .label { font-size: .68rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: .2rem; }
+    .card .value { font-size: 1.35rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .card .value.accent { color: var(--accent); } .card .value.blue { color: var(--blue); } .card .value.green { color: var(--green); }
+    .panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+    .panel-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem; padding: .8rem 1rem; border-bottom: 1px solid var(--border); background: var(--surface2); }
+    .panel-header h2 { font-size: .95rem; font-weight: 600; }
+    .search { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; color: var(--text); padding: .35rem .65rem; font-size: .85rem; width: 170px; outline: none; }
+    .search:focus { border-color: var(--blue); }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+    thead th { text-align: left; padding: .65rem .9rem; font-size: .7rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--border); white-space: nowrap; cursor: pointer; user-select: none; background: var(--surface2); }
+    thead th:hover { color: var(--text); }
+    thead th.num, tbody td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background .12s; }
+    tbody tr:nth-child(odd) { background: var(--row); } tbody tr:nth-child(even) { background: var(--row-alt); }
+    tbody tr.club-row { cursor: pointer; }
+    tbody tr:hover { background: rgba(61,139,253,.08); }
+    tbody tr:last-child { border-bottom: none; }
+    tbody td { padding: .7rem .9rem; vertical-align: middle; }
+    .club-cell { display: flex; align-items: center; gap: .65rem; }
+    .club-logo { width: 30px; height: 30px; object-fit: contain; border-radius: 6px; background: #fff; padding: 2px; flex-shrink: 0; }
+    .club-logo.missing { display: inline-flex; align-items: center; justify-content: center; font-size: .7rem; color: var(--muted); background: var(--surface2); width: 28px; height: 28px; border-radius: 6px; }
+    .club-name { font-weight: 600; }
+    .rank { display: inline-flex; align-items: center; justify-content: center; width: 1.65rem; height: 1.65rem; border-radius: 50%; font-size: .78rem; font-weight: 700; background: var(--surface2); color: var(--muted); }
+    .rank.r1 { background: var(--rank1); color: #1a1a1a; } .rank.r2 { background: var(--rank2); color: #1a1a1a; } .rank.r3 { background: var(--rank3); color: #1a1a1a; }
+    .bar-track { height: 6px; background: var(--surface2); border-radius: 3px; overflow: hidden; min-width: 80px; }
+    .bar-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, #f5a623, #3d8bfd); }
+    tr.games-row td { padding: 0 .9rem .8rem 3.4rem; background: var(--bg); }
+    .glist { width: 100%; font-size: .82rem; }
+    .glist td { padding: .32rem .5rem; border-bottom: 1px solid var(--border); }
+    .glist tr:last-child td { border-bottom: 0; }
+    .glist a { color: var(--blue); text-decoration: none; }
+    .muted { color: var(--muted); }
+    .warn { margin: .9rem 0 0; padding: .6rem .85rem; border-radius: 10px; background: rgba(245,166,35,.1); border: 1px solid rgba(245,166,35,.35); color: #ffd28a; font-size: .82rem; }
+    .warn b { color: #ffe2a8; }
+    .section-title { font-size: .95rem; font-weight: 600; margin: 1.75rem 0 .65rem; display: flex; align-items: center; gap: .45rem; }
+    .section-title .badge { font-size: .68rem; background: var(--surface2); color: var(--muted); padding: .12rem .45rem; border-radius: 999px; }
+    footer { text-align: center; margin-top: 2rem; font-size: .78rem; color: var(--muted); }
+    footer a { color: var(--blue); text-decoration: none; }
+    .loading, .error { text-align: center; padding: 2.5rem 1rem; color: var(--muted); }
+    .error { color: var(--red); }
+    th.sorted-asc::after { content: " ▲"; } th.sorted-desc::after { content: " ▼"; }
+    @media (max-width: 640px) { .hide-sm { display: none; } tbody td, thead th { padding: .6rem .55rem; } tr.games-row td { padding-left: .6rem; } .search { width: 130px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Europos turnyrų <span>lankomumas</span></h1>
+      <p class="subtitle">Namų rungtynių žiūrovų skaičius · EuroLeague, EuroCup, BCL, FIBA Europe Cup</p>
+    </header>
+    <nav class="tabs" id="tabs"></nav>
+    <div class="seasons" id="seasons"></div>
+    <div class="meta" id="meta"></div>
+    <div class="cards" id="cards"></div>
+    <div class="panel">
+      <div class="panel-header">
+        <h2 id="ptitle">Klubai</h2>
+        <input class="search" id="q" type="search" placeholder="Ieškoti klubo…" />
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr>
+            <th data-key="rank" style="width:2.8rem">#</th>
+            <th data-key="club">Klubas</th>
+            <th class="num" data-key="average">Vidurkis</th>
+            <th class="num hide-sm" data-key="capacity" title="Vidutinė talpa pagal arenas, kuriose iš tikrųjų žaista">Galima arenos talpa</th>
+            <th class="num hide-sm" data-key="fill" title="Žiūrovų suma / arenų talpų suma">Užpildymas</th>
+            <th class="num hide-sm" data-key="games">Rungt.</th>
+            <th class="num hide-sm" data-key="max">Maks.</th>
+            <th class="num hide-sm" data-key="min">Min.</th>
+            <th class="hide-sm">Santykis</th>
+          </tr></thead>
+          <tbody id="tbody"><tr><td colspan="9" class="loading">Kraunama…</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div id="warns"></div>
+    <footer id="foot"></footer>
+  </div>
+<script>
+(function () {
+  "use strict";
+  var SHEET_ID = "1Qt4ijFGDmvoLLHb-gCbcAF9KGts6ZC-RHwWzQw68cZI", OLD_SHEET = "EuroAttendance";
+  var CURRENT = "2026-27", SEASONS = ["2026-27", "2025-26", "2024-25", "2023-24"];
+  var COMPS = [
+    { id: "euroleague", name: "EuroLeague", logo: "league: Euroleague", rule: "Tik reguliarusis sezonas" },
+    { id: "eurocup", name: "EuroCup", logo: "league: Eurocup", rule: "Tik reguliarusis sezonas" },
+    { id: "bcl", name: "BCL", logo: "league: BCL", rule: "Reguliarusis sezonas + Play-ins + Top 16 (iškritusios komandos – tik su reguliariojo sezono rungtynėmis)" },
+    { id: "fec", name: "FIBA Europe Cup", logo: "league: FIBA Europe Cup", rule: "Reguliarusis sezonas + antrasis etapas (viskas iki atkrintamųjų)" }
+  ];
+  var st = { comp: "euroleague", season: CURRENT, sort: "average", dir: "desc", q: "", open: {} };
+  try { var h = (location.hash || "").slice(1).split("/"); if (COMPS.some(function (c) { return c.id === h[0]; })) st.comp = h[0]; if (SEASONS.indexOf(h[1]) >= 0) st.season = h[1]; } catch (e) {}
+  var CACHE = {}, LOGOS = {}, CUR = { status: {}, unresolved: [], nocap: [] };
+
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function norm(s) { return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]/g, ""); }
+  function fmt(n) { return n == null || isNaN(n) ? "—" : Math.round(n).toLocaleString("lt-LT"); }
+  function fmtPct(x) { return x == null ? "—" : Math.round(x * 100) + "%"; }
+  function sLabel(s) { return s.slice(2, 4) + "/" + s.slice(5, 7); }
+  function csv(t) {
+    var out = [], row = [], cur = "", q = false;
+    for (var i = 0; i < t.length; i++) {
+      var c = t[i];
+      if (q) { if (c === '"') { if (t[i + 1] === '"') { cur += '"'; i++; } else q = false; } else cur += c; }
+      else if (c === '"') q = true; else if (c === ",") { row.push(cur); cur = ""; }
+      else if (c === "\n") { row.push(cur); out.push(row); row = []; cur = ""; } else if (c !== "\r") cur += c;
+    }
+    if (cur || row.length) { row.push(cur); out.push(row); }
+    return out;
+  }
+  function objs(rows) {
+    if (!rows.length) return [];
+    var h = rows[0].map(function (x) { return x.trim(); });
+    return rows.slice(1).filter(function (r) { return r.some(function (x) { return x !== ""; }); }).map(function (r) {
+      var o = {}; h.forEach(function (k, i) { o[k] = (r[i] || "").trim(); }); return o;
+    });
+  }
+  function getJSON(u) { return fetch(u, { cache: "no-store" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); }
+
+  // einamasis sezonas – iš šio repo (atnaujinama kas 6 val.), senesni – iš Google Sheets lapo „EuroAttendance“
+  function loadSeason(s) {
+    if (CACHE[s]) return CACHE[s];
+    var p;
+    if (s === CURRENT) {
+      p = fetch("data/" + s + "/games.csv", { cache: "no-store" }).then(function (r) { return r.ok ? r.text() : ""; }).then(function (t) { return objs(csv(t)); });
+      getJSON("data/" + s + "/status.json").then(function (j) { CUR.status = j; render(); }).catch(function () {});
+      getJSON("data/" + s + "/unresolved.json").then(function (j) { CUR.unresolved = j; render(); }).catch(function () {});
+      getJSON("data/" + s + "/missing_capacity.json").then(function (j) { CUR.nocap = j; render(); }).catch(function () {});
+    } else {
+      var u = "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/gviz/tq?tqx=out:csv&headers=1&sheet=" + encodeURIComponent(OLD_SHEET);
+      p = (CACHE._old || (CACHE._old = fetch(u).then(function (r) { return r.text(); }).then(function (t) { return objs(csv(t)); })))
+        .then(function (all) { return all.filter(function (g) { return g.season === s; }); });
+    }
+    CACHE[s] = p.catch(function () { return []; });
+    return CACHE[s];
+  }
+
+  function aggregate(games) {
+    var by = {};
+    games.forEach(function (g) {
+      var c = by[g.home] || (by[g.home] = { club: g.home, src: g.home_src, games: [], counted: 0, total: 0, max: null, min: null, capSum: 0, attCap: 0, capN: 0, capTot: 0 });
+      c.games.push(g);
+      var a = parseInt(g.attendance, 10), cap = parseInt(g.capacity, 10);
+      if (a > 0) {
+        c.counted++; c.total += a; c.max = c.max == null ? a : Math.max(c.max, a); c.min = c.min == null ? a : Math.min(c.min, a);
+        if (cap > 0) { c.capN++; c.capTot += cap; c.attCap += a; }
+      }
+    });
+    return Object.keys(by).map(function (k) {
+      var c = by[k];
+      c.average = c.counted ? c.total / c.counted : null;
+      c.capacity = c.capN ? c.capTot / c.capN : null;
+      c.fill = c.capN ? c.attCap / c.capTot : null;
+      return c;
+    });
+  }
+
+  function logoOf(name) { return LOGOS[norm(name)] || ""; }
+  function clubLogo(name) {
+    var u = logoOf(name);
+    if (u) return '<img class="club-logo" src="' + esc(u) + '" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'club-logo missing\',textContent:\'' + esc(String(name).slice(0, 2)).replace(/'/g, "") + '\'}))">';
+    return '<span class="club-logo missing">' + esc(String(name).replace(/[^A-Za-zÀ-ž]/g, "").slice(0, 2).toUpperCase()) + "</span>";
+  }
+
+  function renderTabs() {
+    document.getElementById("tabs").innerHTML = COMPS.map(function (c) {
+      var u = logoOf(c.logo);
+      return '<button class="tab' + (c.id === st.comp ? " active" : "") + '" data-c="' + c.id + '">' + (u ? '<img src="' + esc(u) + '" alt="">' : '<span class="ph">' + esc(c.name.slice(0, 3)) + "</span>") + esc(c.name) + "</button>";
+    }).join("");
+    document.getElementById("seasons").innerHTML = SEASONS.map(function (s) {
+      return '<button class="season' + (s === st.season ? " active" : "") + '" data-s="' + s + '">' + (s === CURRENT ? '<span class="live"></span>' : "") + "Sezonas " + sLabel(s) + "</button>";
+    }).join("");
+  }
+
+  var REQ = 0;
+  function render() {
+    renderTabs();
+    var my = ++REQ, comp = COMPS.filter(function (c) { return c.id === st.comp; })[0];
+    try { history.replaceState(null, "", "#" + st.comp + "/" + st.season); } catch (e) {}
+    loadSeason(st.season).then(function (all) {
+      if (my !== REQ) return;
+      var games = all.filter(function (g) { return g.comp === st.comp; });
+      var clubs = aggregate(games);
+      var withAtt = games.filter(function (g) { return parseInt(g.attendance, 10) > 0; });
+      var tot = withAtt.reduce(function (t, g) { return t + parseInt(g.attendance, 10); }, 0);
+      var capG = withAtt.filter(function (g) { return parseInt(g.capacity, 10) > 0; });
+      var fill = capG.length ? capG.reduce(function (t, g) { return t + parseInt(g.attendance, 10); }, 0) / capG.reduce(function (t, g) { return t + parseInt(g.capacity, 10); }, 0) : null;
+      var stt = st.season === CURRENT ? (CUR.status[st.comp] || {}) : null;
+      document.getElementById("meta").innerHTML =
+        "<span>" + esc(comp.rule) + "</span>" +
+        (stt && stt.last_ok ? "<span>Atnaujinta: <strong>" + esc(new Date(stt.last_ok).toLocaleString("lt-LT")) + "</strong></span>" : "") +
+        (st.season !== CURRENT ? "<span>Pasibaigęs sezonas – duomenys nebeatnaujinami</span>" : "");
+      document.getElementById("cards").innerHTML = [
+        ["Vidurkis", withAtt.length ? fmt(tot / withAtt.length) : "—", "accent"],
+        ["Rungtynės su lankomumu", withAtt.length + (games.length > withAtt.length ? ' <span style="font-size:.8rem;color:var(--muted)">/ ' + games.length + "</span>" : ""), "blue"],
+        ["Iš viso žiūrovų", fmt(tot), ""],
+        ["Užpildymas", fmtPct(fill), "green"],
+        ["Klubų", clubs.length, ""]
+      ].map(function (c) { return '<div class="card"><div class="label">' + c[0] + '</div><div class="value ' + c[2] + '">' + c[1] + "</div></div>"; }).join("");
+      document.getElementById("ptitle").textContent = comp.name + " · " + sLabel(st.season);
+
+      var ranked = clubs.filter(function (c) { return c.average != null; }).sort(function (a, b) { return b.average - a.average; });
+      var rankMap = {}; ranked.forEach(function (c, i) { rankMap[c.club] = i + 1; });
+      var maxAvg = ranked.length ? ranked[0].average : 0;
+      var q = norm(st.q), list = clubs.filter(function (c) { return !q || norm(c.club).indexOf(q) >= 0 || norm(c.src).indexOf(q) >= 0; });
+      var k = st.sort, d = st.dir === "asc" ? 1 : -1;
+      list.sort(function (a, b) {
+        if (k === "club") return d * a.club.localeCompare(b.club);
+        if (k === "rank") return d * ((rankMap[a.club] || 999) - (rankMap[b.club] || 999));
+        var x = a[k], y = b[k];
+        if (x == null && y == null) return 0; if (x == null) return 1; if (y == null) return -1;
+        return d * (x - y);
+      });
+      document.querySelectorAll("thead th").forEach(function (th) {
+        th.classList.remove("sorted-asc", "sorted-desc");
+        if (th.dataset.key === st.sort) th.classList.add(st.dir === "asc" ? "sorted-asc" : "sorted-desc");
+      });
+      var html = list.map(function (c) {
+        var has = c.average != null, r = rankMap[c.club], cls = r === 1 ? "r1" : r === 2 ? "r2" : r === 3 ? "r3" : "";
+        var pct = has && maxAvg ? Math.round(c.average / maxAvg * 100) : 0, open = st.open[c.club];
+        var row = '<tr class="club-row" data-club="' + esc(c.club) + '" style="' + (has ? "" : "opacity:.55") + '">' +
+          '<td><span class="rank ' + cls + '">' + (r || "—") + "</span></td>" +
+          '<td><div class="club-cell">' + clubLogo(c.club) + '<span class="club-name"' + (c.src && c.src !== c.club ? ' title="' + esc(c.src) + '"' : "") + ">" + esc(c.club) + "</span></div></td>" +
+          '<td class="num" style="font-weight:700;color:' + (has ? "var(--accent)" : "var(--muted)") + '">' + fmt(c.average) + "</td>" +
+          '<td class="num hide-sm">' + fmt(c.capacity) + "</td>" +
+          '<td class="num hide-sm">' + fmtPct(c.fill) + "</td>" +
+          '<td class="num hide-sm">' + c.counted + (c.games.length > c.counted ? '<span class="muted"> / ' + c.games.length + "</span>" : "") + "</td>" +
+          '<td class="num hide-sm">' + fmt(c.max) + "</td>" +
+          '<td class="num hide-sm">' + fmt(c.min) + "</td>" +
+          '<td class="hide-sm"><div class="bar-track"><div class="bar-fill" style="width:' + pct + '%"></div></div></td></tr>';
+        if (open) {
+          row += '<tr class="games-row"><td colspan="9"><table class="glist">' + c.games.slice().sort(function (a, b) { return a.date < b.date ? -1 : 1; }).map(function (g) {
+            var a = parseInt(g.attendance, 10), cap = parseInt(g.capacity, 10);
+            return "<tr><td class=\"muted\">" + esc(g.date) + '</td><td class="muted hide-sm">' + esc(g.round) + "</td><td>– " + esc(g.away) + '</td><td class="num">' + (a > 0 ? fmt(a) : '<span class="muted">nėra</span>') + '</td><td class="num muted hide-sm">' + (cap > 0 ? fmt(cap) + (g.cap_src === "arenas" ? "*" : "") : "") + '</td><td class="muted hide-sm">' + esc(g.venue) + "</td><td>" + (g.url ? '<a href="' + esc(g.url) + '" target="_blank" rel="noopener">↗</a>' : "") + "</td></tr>";
+          }).join("") + "</table></td></tr>";
+        }
+        return row;
+      }).join("");
+      document.getElementById("tbody").innerHTML = html || '<tr><td colspan="9" class="loading">' + (games.length ? "Nerasta" : (st.season === CURRENT ? "Duomenys dar renkami…" : "Šio sezono duomenų nėra (lapas „" + OLD_SHEET + "“)")) + "</td></tr>";
+
+      // įspėjimai (kaip ACBattendance)
+      var w = [];
+      if (stt) {
+        if (stt.ok === false) w.push("⚠ Paskutinis duomenų nuskaitymas (" + esc(comp.name) + ") nepavyko: " + esc(stt.error || ""));
+        if (stt.last_ok && (Date.now() - new Date(stt.last_ok)) / 864e5 > 2) w.push("⚠ Duomenys sėkmingai nuskaityti tik prieš " + Math.floor((Date.now() - new Date(stt.last_ok)) / 864e5) + " d.");
+        var mo = new Date().getMonth() + 1;
+        if (stt.last_new_attendance && (mo >= 10 || mo <= 4) && (Date.now() - new Date(stt.last_new_attendance)) / 864e5 > 14) w.push("⚠ Naujo lankomumo nėra nuo " + esc(new Date(stt.last_new_attendance).toLocaleDateString("lt-LT")) + ".");
+        var un = (CUR.unresolved || []).filter(function (u) { return u.comp === st.comp; });
+        if (un.length) w.push("⚠ Klubai, kurių nėra lapuose „Budgets“ (rodomas turnyro pavadinimas): <b>" + un.map(function (u) { return esc(u.source); }).join(", ") + "</b>");
+        var nc = (CUR.nocap || []).filter(function (u) { return u.comp === st.comp; });
+        if (nc.length) w.push("⚠ Trūksta arenos talpos (lapas „Arenas“): " + nc.map(function (u) { return "<b>" + esc(u.venue || "?") + "</b> (" + esc(u.club) + ", " + u.games + " rungt.)"; }).join(", "));
+      }
+      document.getElementById("warns").innerHTML = w.map(function (x) { return '<div class="warn">' + x + "</div>"; }).join("");
+      document.getElementById("foot").innerHTML = "Šaltiniai: <a href=\"https://www.euroleaguebasketball.net\" target=\"_blank\" rel=\"noopener\">euroleaguebasketball.net</a>, " +
+        "<a href=\"https://www.championsleague.basketball\" target=\"_blank\" rel=\"noopener\">championsleague.basketball</a>, <a href=\"https://www.fiba.basketball\" target=\"_blank\" rel=\"noopener\">fiba.basketball</a> · " +
+        "Rungtynės be lankomumo į vidurkį neįskaičiuojamos; * – talpa iš lapo „Arenas“ · Paspauskite klubą – matysite rungtynes";
+    });
+  }
+
+  document.getElementById("tabs").addEventListener("click", function (e) { var b = e.target.closest("[data-c]"); if (!b) return; st.comp = b.dataset.c; st.open = {}; render(); });
+  document.getElementById("seasons").addEventListener("click", function (e) { var b = e.target.closest("[data-s]"); if (!b) return; st.season = b.dataset.s; st.open = {}; render(); });
+  document.querySelector("thead").addEventListener("click", function (e) {
+    var th = e.target.closest("th[data-key]"); if (!th) return;
+    var k = th.dataset.key; if (st.sort === k) st.dir = st.dir === "asc" ? "desc" : "asc"; else { st.sort = k; st.dir = k === "club" || k === "rank" ? "asc" : "desc"; }
+    render();
+  });
+  document.getElementById("tbody").addEventListener("click", function (e) { var r = e.target.closest("tr.club-row"); if (!r || e.target.closest("a")) return; var c = r.dataset.club; st.open[c] = !st.open[c]; render(); });
+  document.getElementById("q").addEventListener("input", function (e) { st.q = e.target.value; render(); });
+
+  render();
+  getJSON("https://andriuspanama.github.io/krepsiniofinansai/logos.json").then(function (j) {
+    Object.keys(j).forEach(function (k) { LOGOS[norm(k)] = j[k]; }); render();
+  }).catch(function () {});
+})();
+</script>
+</body>
+</html>
