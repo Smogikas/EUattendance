@@ -185,7 +185,8 @@
   function fixRow(g) {
     ["attendance", "capacity"].forEach(function (k) { g[k] = String(g[k] == null ? "" : g[k]).replace(/[^0-9]/g, ""); });
     var d = String(g.date || "").trim(), m;
-    if ((m = d.match(/^(\d{4})[-.\/](\d{1,2})[-.\/](\d{1,2})/))) d = m[1] + "-" + ("0" + m[2]).slice(-2) + "-" + ("0" + m[3]).slice(-2);
+    if (/^\d{5}(\.\d+)?$/.test(d)) d = new Date(Date.UTC(1899, 11, 30) + Math.floor(+d) * 864e5).toISOString().slice(0, 10);   // lapo datos serijinis numeris
+    else if ((m = d.match(/^(\d{4})[-.\/](\d{1,2})[-.\/](\d{1,2})/))) d = m[1] + "-" + ("0" + m[2]).slice(-2) + "-" + ("0" + m[3]).slice(-2);
     else if ((m = d.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/))) d = m[3] + "-" + ("0" + m[1]).slice(-2) + "-" + ("0" + m[2]).slice(-2);
     else if ((m = d.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})/))) d = m[3] + "-" + ("0" + m[2]).slice(-2) + "-" + ("0" + m[1]).slice(-2);
     g.date = d;
