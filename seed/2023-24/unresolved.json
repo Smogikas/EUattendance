@@ -1,47 +1,5 @@
 [
  {
-  "comp": "bcl",
-  "season": "2023-24",
-  "source": "Bursaspor Basketbol Sportif Hizmetleri A.S.",
-  "country": "Bosnia and Herzegovina"
- },
- {
-  "comp": "bcl",
-  "season": "2023-24",
-  "source": "Filou Oostende",
-  "country": "Belgium"
- },
- {
-  "comp": "bcl",
-  "season": "2023-24",
-  "source": "Galatasaray Spor Kulübü Dernegi",
-  "country": "Bosnia and Herzegovina"
- },
- {
-  "comp": "bcl",
-  "season": "2023-24",
-  "source": "Hapoel Bank Yahav Jerusalem",
-  "country": "Serbia"
- },
- {
-  "comp": "bcl",
-  "season": "2023-24",
-  "source": "Lenovo Tenerife",
-  "country": "Spain"
- },
- {
-  "comp": "bcl",
-  "season": "2023-24",
-  "source": "Pinar Karsiyaka Izmir",
-  "country": "Bosnia and Herzegovina"
- },
- {
-  "comp": "eurocup",
-  "season": "2023-24",
-  "source": "Cedevita Olimpija Ljubljana",
-  "country": ""
- },
- {
   "comp": "eurocup",
   "season": "2023-24",
   "source": "Prometey Slobozhanske",
@@ -62,32 +20,14 @@
  {
   "comp": "fec",
   "season": "2023-24",
-  "source": "Bahcesehir College",
-  "country": "Türkiye"
- },
- {
-  "comp": "fec",
-  "season": "2023-24",
   "source": "Caledonia Gladiators",
   "country": "Great Britain"
  },
  {
   "comp": "fec",
   "season": "2023-24",
-  "source": "Happy Casa Brindisi",
-  "country": "Italy"
- },
- {
-  "comp": "fec",
-  "season": "2023-24",
   "source": "KB Peja",
   "country": "Kosovo"
- },
- {
-  "comp": "fec",
-  "season": "2023-24",
-  "source": "KK Mornar - Barsko zlato ",
-  "country": "Montenegro"
  },
  {
   "comp": "fec",

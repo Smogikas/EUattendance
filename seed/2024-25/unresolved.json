@@ -2,42 +2,6 @@
  {
   "comp": "bcl",
   "season": "2024-25",
-  "source": "Aliaga Petkimspor",
-  "country": "Türkiye"
- },
- {
-  "comp": "bcl",
-  "season": "2024-25",
-  "source": "FMP SoccerBet",
-  "country": "Serbia"
- },
- {
-  "comp": "bcl",
-  "season": "2024-25",
-  "source": "Filou Oostende",
-  "country": "Belgium"
- },
- {
-  "comp": "bcl",
-  "season": "2024-25",
-  "source": "Hapoel Netanel Holon",
-  "country": "Hungary"
- },
- {
-  "comp": "bcl",
-  "season": "2024-25",
-  "source": "Kolossos H Hotels Collection",
-  "country": "Greece"
- },
- {
-  "comp": "bcl",
-  "season": "2024-25",
-  "source": "La Laguna Tenerife",
-  "country": "Spain"
- },
- {
-  "comp": "bcl",
-  "season": "2024-25",
   "source": "Manisa Büyüksehir Belediye Sport Club",
   "country": "Türkiye"
  },
@@ -94,12 +58,6 @@
   "season": "2024-25",
   "source": "Keravnos BC",
   "country": "Cyprus"
- },
- {
-  "comp": "fec",
-  "season": "2024-25",
-  "source": "NHSZ-Szolnoki Olajbanyasz",
-  "country": "Hungary"
  },
  {
   "comp": "fec",
