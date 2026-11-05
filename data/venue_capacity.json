@@ -341,6 +341,12 @@
 "arena": "Costas Papaellinas Arena",
 "match": "exact"
 },
+"D.Popescu Colibasi": {
+"capacity": 1700,
+"src": "arenas",
+"arena": "Sala Sporturilor Dumitru Popescu Colibași",
+"match": "exact"
+},
 "DVTK Arena": {
 "capacity": 3600,
 "src": "arenas",
@@ -864,9 +870,9 @@
 "match": "exact"
 },
 "Palacio de los Deportes": {
-"capacity": 8100,
+"capacity": 7454,
 "src": "arenas",
-"arena": "Palacio Municipal de Deportes de Granada",
+"arena": "Palacio de Deportes de Murcia",
 "match": "exact"
 },
 "Paladozza": {
