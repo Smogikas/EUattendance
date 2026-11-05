@@ -544,6 +544,19 @@ def main():
         status[comp] = st
         time.sleep(1)
 
+    # Flashscore papildymai: naudojami tik ten, kur oficialaus lankomumo nėra
+    fs_path = out_dir / "flashscore_attendance.csv"
+    if fs_path.exists():
+        fs = {(r["comp"], r["game_id"]): r["attendance"] for r in csv.DictReader(fs_path.open(encoding="utf-8"))}
+        n_fs = 0
+        for r in rows:
+            v = fs.get((r["comp"], r["game_id"]), "")
+            if not r["attendance"] and v and int(v) >= MIN_ATT:
+                r["attendance"] = int(v); n_fs += 1
+        print(f"Flashscore papildymų pritaikyta: {n_fs}")
+        for comp, st in status.items():
+            st["games_with_attendance"] = sum(1 for r in rows if r["comp"] == comp and r["attendance"])
+
     rows.sort(key=lambda r: (r["comp"], r["date"], r["game_id"]))
     season_tables(rows, season, out_dir, M, src_cn)
     with games_path.open("w", encoding="utf-8", newline="") as f:
