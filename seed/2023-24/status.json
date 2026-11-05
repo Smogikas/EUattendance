@@ -1,0 +1,46 @@
+{
+ "euroleague": {
+  "comp": "euroleague",
+  "name": "EuroLeague",
+  "ok": true,
+  "error": "",
+  "run_at": "2026-11-05T08:45:31+00:00",
+  "games": 306,
+  "games_with_attendance": 290,
+  "last_ok": "2026-11-05T08:45:31+00:00",
+  "last_new_attendance": "2026-11-05T08:45:31+00:00"
+ },
+ "eurocup": {
+  "comp": "eurocup",
+  "name": "EuroCup",
+  "ok": true,
+  "error": "",
+  "run_at": "2026-11-05T08:45:31+00:00",
+  "games": 180,
+  "games_with_attendance": 172,
+  "last_ok": "2026-11-05T08:45:31+00:00",
+  "last_new_attendance": "2026-11-05T08:45:31+00:00"
+ },
+ "bcl": {
+  "comp": "bcl",
+  "name": "BCL",
+  "ok": true,
+  "error": "",
+  "run_at": "2026-11-05T08:45:31+00:00",
+  "games": 165,
+  "games_with_attendance": 145,
+  "last_ok": "2026-11-05T08:45:31+00:00",
+  "last_new_attendance": "2026-11-05T08:45:31+00:00"
+ },
+ "fec": {
+  "comp": "fec",
+  "name": "FIBA Europe Cup",
+  "ok": true,
+  "error": "",
+  "run_at": "2026-11-05T08:45:31+00:00",
+  "games": 150,
+  "games_with_attendance": 150,
+  "last_ok": "2026-11-05T08:45:31+00:00",
+  "last_new_attendance": "2026-11-05T08:45:31+00:00"
+ }
+}
