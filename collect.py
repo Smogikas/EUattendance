@@ -89,7 +89,7 @@ def fetch_el(comp, season):
             "round": f"{ph} {g.get('round') or ''}".strip(), "home_src": h.get("name", ""), "away_src": a.get("name", ""),
             "home_alt": [h.get("abbreviatedName") or "", h.get("editorialName") or ""],
             "away_alt": [a.get("abbreviatedName") or "", a.get("editorialName") or ""],
-            "country": "", "attendance": int(aud) if aud and int(aud) > 0 else "",
+            "country": "", "attendance": int(aud) if aud and int(aud) >= MIN_ATT else "",
             "capacity": int(v["capacity"]) if v.get("capacity") else "", "venue": (v.get("name") or "").title(),
             "url": f"https://www.euroleaguebasketball.net/{site}/game-center/{season[:5]}{season[5:]}/"
                    f"{el_slug(h.get('name', ''))}-{el_slug(a.get('name', ''))}/{sc}/{g.get('gameCode')}/",
@@ -149,7 +149,7 @@ def fetch_fiba(comp, season):
             "round": (rnd.get("roundName") or rc) + (f" {rnd.get('roundNumber')}" if rc == "RS" and rnd.get("roundNumber") else ""),
             "home_src": A.get("officialName") or A.get("shortName") or "", "away_src": B.get("officialName") or B.get("shortName") or "",
             "home_alt": [A.get("shortName") or ""], "away_alt": [B.get("shortName") or ""],
-            "country": g.get("hostCountry") or "", "attendance": int(sp) if sp and int(sp) > 0 else "",
+            "country": g.get("hostCountry") or "", "attendance": int(sp) if sp and int(sp) >= MIN_ATT else "",
             "capacity": int(cap) if cap and int(cap) > 0 else "", "venue": g.get("venueName") or "",
             "url": f"{base}/{g.get('gameId')}-{A.get('code', '')}-{B.get('code', '')}",
         })
@@ -382,6 +382,9 @@ class Matcher:
         return res
 
 
+MIN_ATT = 15        # mažiau nei 15 žiūrovų – laikoma, kad lankomumas nepateiktas
+
+
 TITLES = {"euroleague": "Euroleague", "eurocup": "Eurocup", "bcl": "Basketball Champions League", "fec": "FIBA Europe Cup"}
 CN_EN = {"Türkiye": "Turkey", "Czechia": "Czech Republic", "England": "United Kingdom", "Great Britain": "United Kingdom"}
 
@@ -413,13 +416,16 @@ def season_tables(rows, season, out_dir, M, src_cn):
             wc = round(sum(c["eff"]) / len(c["eff"])) if c["eff"] else None
             fr = round(sum(c["attc"]) / sum(c["eff"]), 4) if c["eff"] else None
             tab.append({"nation": nation, "club": club, "average_attendance": avg, "weighted_capacity": wc,
-                        "filling_rate": fr, "games_with_attendance": len(c["att"]), "home_games": c["games"]})
+                        "filling_rate": fr, "games_with_attendance": len(c["att"]), "home_games": c["games"],
+                        "highest": max(c["att"]) if c["att"] else None, "lowest": min(c["att"]) if c["att"] else None})
         tab.sort(key=lambda t: -(t["average_attendance"] or -1))
         js[comp] = tab
-        lines += [["", f"{TITLES[comp]} {label}"], ["", "Nation", "Club", "Average attendance", "Available arena capacity", "Filling rate"]]
+        lines += [["", f"{TITLES[comp]} {label}"], ["", "Nation", "Club", "Average attendance", "Available arena capacity",
+                                                     "Filling rate", "Games", "Highest attendance", "Lowest attendance"]]
         for t in tab:
             lines.append(["", t["nation"], t["club"], t["average_attendance"] or "", t["weighted_capacity"] or "",
-                          f"{round(t['filling_rate'] * 100)}%" if t["filling_rate"] is not None else ""])
+                          f"{round(t['filling_rate'] * 100)}%" if t["filling_rate"] is not None else "",
+                          t["games_with_attendance"], t["highest"] or "", t["lowest"] or ""])
         lines += [["", "", "END"], [], []]
     with (out_dir / "season_tables.csv").open("w", encoding="utf-8", newline="") as f:
         csv.writer(f).writerows(lines)
@@ -430,14 +436,7 @@ def season_tables(rows, season, out_dir, M, src_cn):
 def venue_capacities(AM, cur_rows, out_root):
     """Visų sezonų arenų talpos iš lapo „Arenas“ (puslapis jas pritaiko ir pasibaigusiems sezonams)
     + sąrašas arenų, kurių lape nėra (naudojama turnyro talpa) – peržiūrai."""
-    allrows = [dict(r) for r in cur_rows]
-    try:
-        old = sheet_csv("EuroAttendance", headers=1)
-        h = [x.strip() for x in old[0]]
-        allrows += [dict(zip(h, r)) for r in old[1:]]
-    except Exception as e:
-        print(f"! EuroAttendance: {e}", file=sys.stderr)
-        return
+    allrows = [dict(r) for r in cur_rows]      # pasibaigę sezonai – jau sezonų lentelės lape „EuroAttendance“
     V = {}
     for g in allrows:
         v = (g.get("venue") or "").strip()

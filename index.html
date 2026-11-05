@@ -199,7 +199,8 @@
       var num = function (v) { v = String(v || "").replace(/[^0-9.,]/g, "").replace(",", "."); return v === "" ? null : parseFloat(v); };
       var avg = num(cells[c + 2]), cap = num(cells[c + 3]), fr = num(cells[c + 4]);
       if (fr != null && fr > 1.5) fr = fr / 100;
-      out.push({ comp: cur.comp, season: cur.season, nation: cells[c], club: club, average: avg, capacity: cap, fill: fr, table: true });
+      out.push({ comp: cur.comp, season: cur.season, nation: cells[c], club: club, average: avg, capacity: cap, fill: fr,
+                 games: num(cells[c + 5]), max: num(cells[c + 6]), min: num(cells[c + 7]), table: true });
     });
     return out;
   }
@@ -272,7 +273,7 @@
       if (my !== REQ) return;
       var games = all.filter(function (g) { return g.comp === st.comp; });
       var isTable = games.length && games[0].table;
-      var clubs = isTable ? games.map(function (r) { return { club: r.club, src: r.nation, nation: r.nation, average: r.average, capacity: r.capacity, fill: r.fill, counted: null, games: [], max: null, min: null }; }) : aggregate(games);
+      var clubs = isTable ? games.map(function (r) { return { club: r.club, src: r.nation, nation: r.nation, average: r.average, capacity: r.capacity, fill: r.fill, counted: r.games, games: [], max: r.max, min: r.min }; }) : aggregate(games);
       if (isTable) games = [];
       var withAtt = games.filter(function (g) { return parseInt(g.attendance, 10) > 0; });
       var tot = withAtt.reduce(function (t, g) { return t + parseInt(g.attendance, 10); }, 0);
@@ -282,7 +283,9 @@
       var avgAll = withAtt.length ? tot / withAtt.length : null;
       if (isTable) {                       // sezono lentelė: bendri rodikliai iš klubų eilučių
         var cl = clubs.filter(function (c) { return c.average != null; });
-        avgAll = cl.length ? cl.reduce(function (t, c) { return t + c.average; }, 0) / cl.length : null;
+        var gsum = cl.reduce(function (t, c) { return t + (c.counted || 0); }, 0);
+        avgAll = gsum ? cl.reduce(function (t, c) { return t + c.average * (c.counted || 0); }, 0) / gsum
+                      : (cl.length ? cl.reduce(function (t, c) { return t + c.average; }, 0) / cl.length : null);
         var cc = cl.filter(function (c) { return c.capacity; });
         fill = cc.length ? cc.reduce(function (t, c) { return t + c.average; }, 0) / cc.reduce(function (t, c) { return t + c.capacity; }, 0) : null;
       }
@@ -292,9 +295,9 @@
         (stt && stt.last_ok ? "<span>Atnaujinta: <strong>" + esc(new Date(stt.last_ok).toLocaleString("lt-LT")) + "</strong></span>" : "") +
         (st.season !== CURRENT ? "<span>Pasibaigęs sezonas – duomenys nebeatnaujinami</span>" : "");
       document.getElementById("cards").innerHTML = [
-        [isTable ? "Klubų vidurkių vidurkis" : "Vidurkis", fmt(avgAll), "accent"],
-        ["Rungtynės su lankomumu", isTable ? "—" : withAtt.length + (games.length > withAtt.length ? ' <span style="font-size:.8rem;color:var(--muted)">/ ' + games.length + "</span>" : ""), "blue"],
-        ["Iš viso žiūrovų", isTable ? "—" : fmt(tot), ""],
+        ["Vidurkis", fmt(avgAll), "accent"],
+        ["Rungtynės su lankomumu", isTable ? fmt(clubs.reduce(function (t, c) { return t + (c.counted || 0); }, 0)) : withAtt.length + (games.length > withAtt.length ? ' <span style="font-size:.8rem;color:var(--muted)">/ ' + games.length + "</span>" : ""), "blue"],
+        ["Iš viso žiūrovų", isTable ? fmt(clubs.reduce(function (t, c) { return t + (c.average || 0) * (c.counted || 0); }, 0)) : fmt(tot), ""],
         ["Užpildymas", fmtPct(fill), "green"],
         ["Klubų", clubs.length, ""]
       ].map(function (c) { return '<div class="card"><div class="label">' + c[0] + '</div><div class="value ' + c[2] + '">' + c[1] + "</div></div>"; }).join("");
