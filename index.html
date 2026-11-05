@@ -345,7 +345,9 @@
       // įspėjimai (kaip ACBattendance)
       var w = [];
       if (stt) {
-        if (stt.ok === false) w.push("⚠ Paskutinis duomenų nuskaitymas (" + esc(comp.name) + ") nepavyko: " + esc(stt.error || ""));
+        if (stt.ok === false) w.push("⚠ Paskutinis duomenų nuskaitymas (" + esc(comp.name) + ") nepavyko: " + esc(stt.error || "nežinoma klaida") +
+          (stt.last_ok ? ". Paskutinį kartą pavyko " + esc(new Date(stt.last_ok).toLocaleString("lt-LT")) : ""));
+        (stt.notes || []).forEach(function (n) { w.push("⚠ " + esc(n)); });
         if (stt.last_ok && (Date.now() - new Date(stt.last_ok)) / 864e5 > 2) w.push("⚠ Duomenys sėkmingai nuskaityti tik prieš " + Math.floor((Date.now() - new Date(stt.last_ok)) / 864e5) + " d.");
         var mo = new Date().getMonth() + 1;
         if (stt.last_new_attendance && (mo >= 10 || mo <= 4) && (Date.now() - new Date(stt.last_new_attendance)) / 864e5 > 14) w.push("⚠ Naujo lankomumo nėra nuo " + esc(new Date(stt.last_new_attendance).toLocaleDateString("lt-LT")) + ".");

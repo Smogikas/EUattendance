@@ -523,13 +523,16 @@ def flashscore_fill(rows):
     from datetime import date as _date
     missing = [r for r in rows if not r.get("attendance") and r.get("date")]
     found = checked = 0
+    notes = {}
     for comp in sorted({r["comp"] for r in missing}):
         if comp not in FS_PATHS:
             continue
         try:
             games, sign = _fs_games(FS_PATHS[comp])
         except Exception as e:
-            print(f"! Flashscore {comp}: {e}", file=sys.stderr); continue
+            print(f"! Flashscore {comp}: {e}", file=sys.stderr)
+            notes[comp] = f"Flashscore nepasiekiamas (rungtynių be lankomumo nepavyko patikrinti): {str(e)[:150]}"
+            continue
         for r in (x for x in missing if x["comp"] == comp):
             d = _date.fromisoformat(r["date"])
             cands = []
@@ -557,6 +560,7 @@ def flashscore_fill(rows):
                 r["attendance"] = a; r["att_src"] = "flashscore"; found += 1
             time.sleep(0.5)
     print(f"Flashscore: rungtynių be lankomumo {len(missing)}, rasta Flashscore {checked}, su lankomumu {found}")
+    return notes
 
 
 def main():
@@ -590,6 +594,7 @@ def main():
     if games_path.exists():
         old_rows = list(csv.DictReader(games_path.open(encoding="utf-8")))
     rows, unresolved, nocap = [], {}, {}
+    prev_att = {}                                # kiek rungtynių su lankomumu buvo prieš šį paleidimą
     src_cn = {}                                  # turnyro pavadinimas -> šalis (FIBA namų rungtynės)
     for comp in args.comps.split(","):
         c = COMPS[comp]
@@ -625,12 +630,10 @@ def main():
                              "home": h or g["home_src"], "away": a or g["away_src"], "attendance": g["attendance"],
                              "capacity": cap, "cap_src": csrc, "venue": g["venue"], "home_src": g["home_src"],
                              "away_src": g["away_src"], "url": g["url"]})
-        n_att = sum(1 for r in rows if r["comp"] == comp and r["attendance"])
-        prev_att = st.get("games_with_attendance", 0)
+        prev_att[comp] = st.get("games_with_attendance", 0)
         st.update({"comp": comp, "name": c["name"], "ok": ok, "error": err, "run_at": now,
-                   "games": sum(1 for r in rows if r["comp"] == comp), "games_with_attendance": n_att})
+                   "games": sum(1 for r in rows if r["comp"] == comp)})
         if ok: st["last_ok"] = now
-        if n_att > prev_att: st["last_new_attendance"] = now
         status[comp] = st
         time.sleep(1)
 
@@ -650,11 +653,18 @@ def main():
     print(f"Išsaugota anksčiau surinkto lankomumo: {kept}")
     # 2) Rungtynėms, kurioms lankomumo vis dar nėra – tikrinamas Flashscore
     try:
-        flashscore_fill(rows)
+        fs_notes = flashscore_fill(rows)
     except Exception as e:
         print(f"! Flashscore: {e}", file=sys.stderr)
+        fs_notes = {comp: f"Flashscore patikra nepavyko: {str(e)[:150]}" for comp in prev_att}
+    # 3) būsena skaičiuojama jau po visų papildymų (oficialus + išsaugotas + Flashscore)
     for comp, st in status.items():
-        st["games_with_attendance"] = sum(1 for r in rows if r["comp"] == comp and r["attendance"])
+        if comp not in prev_att:
+            continue
+        n_att = sum(1 for r in rows if r["comp"] == comp and r["attendance"])
+        st["games_with_attendance"] = n_att
+        if n_att > prev_att[comp]: st["last_new_attendance"] = now
+        st["notes"] = [fs_notes[comp]] if fs_notes.get(comp) else []
 
     rows.sort(key=lambda r: (r["comp"], r["date"], r["game_id"]))
     season_tables(rows, season, out_dir, M, src_cn)
