@@ -224,6 +224,16 @@ STOP = set("bc kk bk b c fc sc cb sk ks kb club basket basketball basketbol basq
 TR = str.maketrans({"ł": "l", "Ł": "l", "ø": "o", "Ø": "o", "đ": "d", "Đ": "d", "ß": "ss", "ı": "i", "æ": "ae", "œ": "oe"})
 
 
+CN = {"turkiye": "turkey", "czechia": "czechrepublic", "bosnia": "bosniaandherzegovina", "bih": "bosniaandherzegovina",
+      "northmacedonia": "macedonia", "unitedkingdom": "greatbritain", "england": "greatbritain", "scotland": "greatbritain",
+      "russianfederation": "russia", "holland": "netherlands"}
+
+
+def ckey(s):
+    k = nkey(s)
+    return CN.get(k, k)
+
+
 def nkey(s):
     s = unicodedata.normalize("NFD", str(s or "").translate(TR)).encode("ascii", "ignore").decode().lower()
     return re.sub(r"[^a-z0-9]+", "", s)
@@ -289,8 +299,10 @@ class Matcher:
                     sc = max(sc, s1)
                 if sc <= 0: continue
                 if c in self.by_season.get(ss, ()): sc += 0.3
-                if country and self.nation.get(c) and nkey(self.nation[c]) == nkey(country): sc += 0.5
-                elif country and self.nation.get(c): sc -= 0.8
+                if country and self.nation.get(c):
+                    if ckey(self.nation[c]) != ckey(country):
+                        continue                                # kitos šalies klubas – netinka
+                    sc += 0.5
                 best.append((sc, c))
             best.sort(reverse=True)
             if best and (len(best) == 1 or best[0][0] - best[1][0] >= 0.25):
@@ -321,6 +333,8 @@ def main():
     M = Matcher(clubs, aliases)
     arenas = arenas_table()
     print(f"Arenų lape: {len(arenas)}")
+    if args.out != "data":                      # pagalbinis sąrašas tikrinimui
+        (Path(args.out) / "sheet_clubs.json").write_text(json.dumps(sorted(set(clubs)), ensure_ascii=False, indent=0), encoding="utf-8")
 
     status_path = out_dir / "status.json"
     status = json.loads(status_path.read_text(encoding="utf-8")) if status_path.exists() else {}
@@ -341,10 +355,14 @@ def main():
         if raw is None:                        # nepavyko – paliekami ankstesni duomenys
             rows += [r for r in old_rows if r["comp"] == comp]
         else:
+            home_cn = {}                       # komandos šalis – iš jos namų rungtynių
             for g in raw:
+                if g["country"]: home_cn.setdefault(g["home_src"], g["country"])
+            for g in raw:
+                acn = home_cn.get(g["away_src"], "")
                 h = M.match([g["home_src"]] + g["home_alt"], season, g["country"])
-                a = M.match([g["away_src"]] + g["away_alt"], season, "")
-                for nm, ok_, cc in ((g["home_src"], h, g["country"]), (g["away_src"], a, "")):
+                a = M.match([g["away_src"]] + g["away_alt"], season, acn)
+                for nm, ok_, cc in ((g["home_src"], h, g["country"]), (g["away_src"], a, acn)):
                     if not ok_:
                         unresolved.setdefault((comp, nm), {"comp": comp, "season": season, "source": nm, "country": cc})
                 cap, csrc = g["capacity"], "official" if g["capacity"] else ""
