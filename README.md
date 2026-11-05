@@ -15,7 +15,7 @@ Klubų pavadinimai – kaip Google Sheets lapuose „Budgets“ (failas Basketba
   efektyvių talpų vidurkis (efektyvi talpa = max(talpa, lankomumas)); užpildymas = lankomumo suma / efektyvių talpų suma.
 - **Pavadinimų išimtys** – `data/aliases.csv` (`source` – turnyro pavadinimas, `sheet` – pavadinimas lape).
   Nesuvesti pavadinimai rodomi puslapyje geltona eilute ir `data/2026-27/unresolved.json`.
-- **Talpa** – turnyro oficiali; jei jos nėra – lapas „Arenas“ (stulpeliai Arena, Capacity, Also known as).
+- **Talpa** – tik iš lapo „Arenas“ (stulpeliai Arena, Capacity, Also known as); turnyrų talpos nenaudojamos.
 
 Sezonui pasibaigus: `data/2026-27/season_tables.csv` lenteles įklijuoti į lapą „EuroAttendance“, `collect.py` ir
 `index.html` pakeisti einamąjį sezoną (CURRENT / SEASON), papildyti BCL ir FIBA Europe Cup puslapių adresus.
