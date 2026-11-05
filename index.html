@@ -173,12 +173,35 @@
       getJSON("data/" + s + "/unresolved.json").then(function (j) { CUR.unresolved = j; render(); }).catch(function () {});
       getJSON("data/" + s + "/missing_capacity.json").then(function (j) { CUR.nocap = j; render(); }).catch(function () {});
     } else {
-      var u = "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/gviz/tq?tqx=out:csv&headers=1&sheet=" + encodeURIComponent(OLD_SHEET);
-      p = (CACHE._old || (CACHE._old = fetch(u).then(function (r) { return r.text(); }).then(function (t) { return objs(csv(t)); })))
-        .then(function (all) { return all.filter(function (g) { return g.season === s; }).map(fixRow); });
+      // pasibaigę sezonai – lapo „EuroAttendance“ sezonų lentelės (Nation | Club | Average attendance | Available arena capacity | Filling rate)
+      var u = "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/gviz/tq?tqx=out:csv&headers=0&sheet=" + encodeURIComponent(OLD_SHEET);
+      p = (CACHE._old || (CACHE._old = fetch(u).then(function (r) { return r.text(); }).then(function (t) { return parseTables(csv(t)); })))
+        .then(function (all) { return all.filter(function (g) { return g.season === s; }); });
+      CACHE[s] = p.catch(function () { return []; });
+      return CACHE[s];
     }
     CACHE[s] = Promise.all([p, VCAP]).then(function (x) { VMAP = x[1] || {}; return x[0].map(applyCap); }).catch(function () { return []; });
     return CACHE[s];
+  }
+
+  var TITLE = { "euroleague": "euroleague", "eurocup": "eurocup", "basketballchampionsleague": "bcl", "bcl": "bcl", "fibaeuropecup": "fec" };
+  function parseTables(rows) {
+    var out = [], cur = null;
+    rows.forEach(function (r) {
+      var cells = r.map(function (x) { return (x || "").trim(); });
+      for (var i = 0; i < cells.length; i++) {
+        var m = cells[i].match(/^(.*\S)\s+(\d\d)\s*\/\s*(\d\d)$/);
+        if (m && TITLE[norm(m[1])]) { cur = { comp: TITLE[norm(m[1])], season: "20" + m[2] + "-" + m[3], col: i }; return; }
+      }
+      if (!cur) return;
+      var c = cur.col, club = cells[c + 1] || "";
+      if (!club || /^(club|end)$/i.test(club)) { if (/^end$/i.test(club)) cur = null; return; }
+      var num = function (v) { v = String(v || "").replace(/[^0-9.,]/g, "").replace(",", "."); return v === "" ? null : parseFloat(v); };
+      var avg = num(cells[c + 2]), cap = num(cells[c + 3]), fr = num(cells[c + 4]);
+      if (fr != null && fr > 1.5) fr = fr / 100;
+      out.push({ comp: cur.comp, season: cur.season, nation: cells[c], club: club, average: avg, capacity: cap, fill: fr, table: true });
+    });
+    return out;
   }
 
   // arenų talpos iš lapo „Arenas“ (collect.py → data/venue_capacity.json) – taikoma ir pasibaigusiems sezonams
@@ -211,7 +234,7 @@
       var a = parseInt(g.attendance, 10), cap = parseInt(g.capacity, 10);
       if (a > 0) {
         c.counted++; c.total += a; c.max = c.max == null ? a : Math.max(c.max, a); c.min = c.min == null ? a : Math.min(c.min, a);
-        if (cap > 0) { c.capN++; c.capTot += cap; c.attCap += a; }
+        if (cap > 0) { c.capN++; c.capTot += Math.max(cap, a); c.attCap += a; }   // svertinė talpa kaip ACBattendance
       }
     });
     return Object.keys(by).map(function (k) {
@@ -248,20 +271,30 @@
     loadSeason(st.season).then(function (all) {
       if (my !== REQ) return;
       var games = all.filter(function (g) { return g.comp === st.comp; });
-      var clubs = aggregate(games);
+      var isTable = games.length && games[0].table;
+      var clubs = isTable ? games.map(function (r) { return { club: r.club, src: r.nation, nation: r.nation, average: r.average, capacity: r.capacity, fill: r.fill, counted: null, games: [], max: null, min: null }; }) : aggregate(games);
+      if (isTable) games = [];
       var withAtt = games.filter(function (g) { return parseInt(g.attendance, 10) > 0; });
       var tot = withAtt.reduce(function (t, g) { return t + parseInt(g.attendance, 10); }, 0);
       var capG = withAtt.filter(function (g) { return parseInt(g.capacity, 10) > 0; });
-      var fill = capG.length ? capG.reduce(function (t, g) { return t + parseInt(g.attendance, 10); }, 0) / capG.reduce(function (t, g) { return t + parseInt(g.capacity, 10); }, 0) : null;
+      // užpildymas kaip ACBattendance: efektyvi talpa = max(talpa, lankomumas)
+      var fill = capG.length ? capG.reduce(function (t, g) { return t + parseInt(g.attendance, 10); }, 0) / capG.reduce(function (t, g) { return t + Math.max(parseInt(g.capacity, 10), parseInt(g.attendance, 10)); }, 0) : null;
+      var avgAll = withAtt.length ? tot / withAtt.length : null;
+      if (isTable) {                       // sezono lentelė: bendri rodikliai iš klubų eilučių
+        var cl = clubs.filter(function (c) { return c.average != null; });
+        avgAll = cl.length ? cl.reduce(function (t, c) { return t + c.average; }, 0) / cl.length : null;
+        var cc = cl.filter(function (c) { return c.capacity; });
+        fill = cc.length ? cc.reduce(function (t, c) { return t + c.average; }, 0) / cc.reduce(function (t, c) { return t + c.capacity; }, 0) : null;
+      }
       var stt = st.season === CURRENT ? (CUR.status[st.comp] || {}) : null;
       document.getElementById("meta").innerHTML =
         "<span>" + esc(comp.rule) + "</span>" +
         (stt && stt.last_ok ? "<span>Atnaujinta: <strong>" + esc(new Date(stt.last_ok).toLocaleString("lt-LT")) + "</strong></span>" : "") +
         (st.season !== CURRENT ? "<span>Pasibaigęs sezonas – duomenys nebeatnaujinami</span>" : "");
       document.getElementById("cards").innerHTML = [
-        ["Vidurkis", withAtt.length ? fmt(tot / withAtt.length) : "—", "accent"],
-        ["Rungtynės su lankomumu", withAtt.length + (games.length > withAtt.length ? ' <span style="font-size:.8rem;color:var(--muted)">/ ' + games.length + "</span>" : ""), "blue"],
-        ["Iš viso žiūrovų", fmt(tot), ""],
+        [isTable ? "Klubų vidurkių vidurkis" : "Vidurkis", fmt(avgAll), "accent"],
+        ["Rungtynės su lankomumu", isTable ? "—" : withAtt.length + (games.length > withAtt.length ? ' <span style="font-size:.8rem;color:var(--muted)">/ ' + games.length + "</span>" : ""), "blue"],
+        ["Iš viso žiūrovų", isTable ? "—" : fmt(tot), ""],
         ["Užpildymas", fmtPct(fill), "green"],
         ["Klubų", clubs.length, ""]
       ].map(function (c) { return '<div class="card"><div class="label">' + c[0] + '</div><div class="value ' + c[2] + '">' + c[1] + "</div></div>"; }).join("");
@@ -292,11 +325,11 @@
           '<td class="num" style="font-weight:700;color:' + (has ? "var(--accent)" : "var(--muted)") + '">' + fmt(c.average) + "</td>" +
           '<td class="num hide-sm">' + fmt(c.capacity) + "</td>" +
           '<td class="num hide-sm">' + fmtPct(c.fill) + "</td>" +
-          '<td class="num hide-sm">' + c.counted + (c.games.length > c.counted ? '<span class="muted"> / ' + c.games.length + "</span>" : "") + "</td>" +
+          '<td class="num hide-sm">' + (c.counted == null ? '<span class="muted">—</span>' : c.counted + (c.games.length > c.counted ? '<span class="muted"> / ' + c.games.length + "</span>" : "")) + "</td>" +
           '<td class="num hide-sm">' + fmt(c.max) + "</td>" +
           '<td class="num hide-sm">' + fmt(c.min) + "</td>" +
           '<td class="hide-sm"><div class="bar-track"><div class="bar-fill" style="width:' + pct + '%"></div></div></td></tr>';
-        if (open) {
+        if (open && c.games.length) {
           row += '<tr class="games-row"><td colspan="9"><table class="glist">' + c.games.slice().sort(function (a, b) { return a.date < b.date ? -1 : 1; }).map(function (g) {
             var a = parseInt(g.attendance, 10), cap = parseInt(g.capacity, 10);
             return "<tr><td class=\"muted\">" + esc(g.date) + '</td><td class="muted hide-sm">' + esc(g.round) + "</td><td>– " + esc(g.away) + '</td><td class="num">' + (a > 0 ? fmt(a) : '<span class="muted">nėra</span>') + '</td><td class="num muted hide-sm">' + (cap > 0 ? fmt(cap) : "") + '</td><td class="muted hide-sm">' + esc(g.venue) + "</td><td>" + (g.url ? '<a href="' + esc(g.url) + '" target="_blank" rel="noopener">↗</a>' : "") + "</td></tr>";
@@ -304,7 +337,7 @@
         }
         return row;
       }).join("");
-      document.getElementById("tbody").innerHTML = html || '<tr><td colspan="9" class="loading">' + (games.length ? "Nerasta" : (st.season === CURRENT ? "Duomenys dar renkami…" : "Šio sezono duomenų nėra (lapas „" + OLD_SHEET + "“)")) + "</td></tr>";
+      document.getElementById("tbody").innerHTML = html || '<tr><td colspan="9" class="loading">' + (games.length || isTable ? "Nerasta" : (st.season === CURRENT ? "Duomenys dar renkami…" : "Šio sezono duomenų nėra (lapas „" + OLD_SHEET + "“)")) + "</td></tr>";
 
       // įspėjimai (kaip ACBattendance)
       var w = [];
@@ -321,7 +354,8 @@
       document.getElementById("warns").innerHTML = w.map(function (x) { return '<div class="warn">' + x + "</div>"; }).join("");
       document.getElementById("foot").innerHTML = "Šaltiniai: <a href=\"https://www.euroleaguebasketball.net\" target=\"_blank\" rel=\"noopener\">euroleaguebasketball.net</a>, " +
         "<a href=\"https://www.championsleague.basketball\" target=\"_blank\" rel=\"noopener\">championsleague.basketball</a>, <a href=\"https://www.fiba.basketball\" target=\"_blank\" rel=\"noopener\">fiba.basketball</a> · " +
-        "Rungtynės be lankomumo į vidurkį neįskaičiuojamos; talpa – iš lapo „Arenas“ · Paspauskite klubą – matysite rungtynes";
+        "Rungtynės be lankomumo (nepateiktas ar uždaros durys) į vidurkį neįskaičiuojamos; talpa – iš lapo „Arenas“, svertinė (kaip ACBattendance: max(talpa, lankomumas)) · " +
+        (st.season === CURRENT ? "Paspauskite klubą – matysite rungtynes" : "Pasibaigęs sezonas – sezono lentelė iš lapo „EuroAttendance“");
     });
   }
 

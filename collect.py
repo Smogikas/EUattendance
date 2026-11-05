@@ -382,6 +382,51 @@ class Matcher:
         return res
 
 
+TITLES = {"euroleague": "Euroleague", "eurocup": "Eurocup", "bcl": "Basketball Champions League", "fec": "FIBA Europe Cup"}
+CN_EN = {"Türkiye": "Turkey", "Czechia": "Czech Republic", "England": "United Kingdom", "Great Britain": "United Kingdom"}
+
+
+def season_tables(rows, season, out_dir, M, src_cn):
+    """Sezono lentelės kaip lape „EuroAttendance“: Nation | Club | Average attendance | Available arena capacity |
+    Filling rate. Rungtynės be lankomumo neįskaičiuojamos; talpa – lapas „Arenas“, svertinė kaip ACBattendance
+    (efektyvi talpa = max(talpa, lankomumas))."""
+    label = f"{season[2:4]}/{season[5:7]}"
+    lines, js = [], {}
+    for comp in COMPS:
+        by = {}
+        for r in rows:
+            if r["comp"] != comp:
+                continue
+            c = by.setdefault(r["home"], {"src": r["home_src"], "att": [], "eff": [], "attc": [], "games": 0})
+            c["games"] += 1
+            a = int(r["attendance"]) if str(r["attendance"]).isdigit() else 0
+            cap = int(r["capacity"]) if str(r["capacity"]).isdigit() else 0
+            if a > 0:
+                c["att"].append(a)
+                if cap > 0:
+                    c["eff"].append(max(cap, a)); c["attc"].append(a)
+        tab = []
+        for club, c in by.items():
+            nation = M.nation.get(club) or src_cn.get(c["src"], "")
+            nation = CN_EN.get(nation, nation)
+            avg = round(sum(c["att"]) / len(c["att"])) if c["att"] else None
+            wc = round(sum(c["eff"]) / len(c["eff"])) if c["eff"] else None
+            fr = round(sum(c["attc"]) / sum(c["eff"]), 4) if c["eff"] else None
+            tab.append({"nation": nation, "club": club, "average_attendance": avg, "weighted_capacity": wc,
+                        "filling_rate": fr, "games_with_attendance": len(c["att"]), "home_games": c["games"]})
+        tab.sort(key=lambda t: -(t["average_attendance"] or -1))
+        js[comp] = tab
+        lines += [["", f"{TITLES[comp]} {label}"], ["", "Nation", "Club", "Average attendance", "Available arena capacity", "Filling rate"]]
+        for t in tab:
+            lines.append(["", t["nation"], t["club"], t["average_attendance"] or "", t["weighted_capacity"] or "",
+                          f"{round(t['filling_rate'] * 100)}%" if t["filling_rate"] is not None else ""])
+        lines += [["", "", "END"], [], []]
+    with (out_dir / "season_tables.csv").open("w", encoding="utf-8", newline="") as f:
+        csv.writer(f).writerows(lines)
+    (out_dir / "season_tables.json").write_text(json.dumps({"season": season, "competitions": js}, ensure_ascii=False, indent=1),
+                                                encoding="utf-8")
+
+
 def venue_capacities(AM, cur_rows, out_root):
     """Visų sezonų arenų talpos iš lapo „Arenas“ (puslapis jas pritaiko ir pasibaigusiems sezonams)
     + sąrašas arenų, kurių lape nėra (naudojama turnyro talpa) – peržiūrai."""
@@ -456,6 +501,7 @@ def main():
     if games_path.exists():
         old_rows = list(csv.DictReader(games_path.open(encoding="utf-8")))
     rows, unresolved, nocap = [], {}, {}
+    src_cn = {}                                  # turnyro pavadinimas -> šalis (FIBA namų rungtynės)
     for comp in args.comps.split(","):
         c = COMPS[comp]
         st = status.get(comp, {})
@@ -473,6 +519,7 @@ def main():
                 if g["country"]:
                     d = cnt.setdefault(g["home_src"], {}); d[g["country"]] = d.get(g["country"], 0) + 1
             home_cn = {k: max(d, key=d.get) for k, d in cnt.items()}
+            src_cn.update(home_cn)
             for g in raw:
                 hcn, acn = home_cn.get(g["home_src"], ""), home_cn.get(g["away_src"], "")
                 h = M.match([g["home_src"]] + g["home_alt"], season, hcn)
@@ -499,6 +546,7 @@ def main():
         time.sleep(1)
 
     rows.sort(key=lambda r: (r["comp"], r["date"], r["game_id"]))
+    season_tables(rows, season, out_dir, M, src_cn)
     with games_path.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS); w.writeheader(); w.writerows(rows)
     status_path.write_text(json.dumps(status, ensure_ascii=False, indent=1), encoding="utf-8")
