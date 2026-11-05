@@ -125,6 +125,12 @@
 "arena": "Arena Stožice",
 "match": "exact"
 },
+"Arena of COB Calais": {
+"capacity": 3300,
+"src": "arenas",
+"arena": "Arena of COB Calais",
+"match": "exact"
+},
 "Arena of Dinamo": {
 "capacity": 2538,
 "src": "arenas",
@@ -419,6 +425,12 @@
 "arena": "GOPASS Arena",
 "match": "exact"
 },
+"Ganja Sports Palace": {
+"capacity": 3050,
+"src": "arenas",
+"arena": "Ganja Sports Palace",
+"match": "exact"
+},
 "Giannis Bourousis Karditsa Municipal Indoor Sports Hall": {
 "capacity": 3500,
 "src": "arenas",
@@ -503,6 +515,12 @@
 "arena": "Hayri Gür Spor Salonu",
 "match": "exact"
 },
+"Heylen Vastgoed Basketcampus": {
+"capacity": 1500,
+"src": "arenas",
+"arena": "Heylen Vastgoed Basketcampus",
+"match": "exact"
+},
 "IKH Areena": {
 "capacity": 3500,
 "src": "arenas",
@@ -561,6 +579,12 @@
 "capacity": 2000,
 "src": "arenas",
 "arena": "Kition Athletic Center",
+"match": "exact"
+},
+"Kola Arena": {
+"capacity": 1298,
+"src": "arenas",
+"arena": "Hala Koło",
 "match": "exact"
 },
 "Komandas Sporta Spelu Halle": {
@@ -1067,6 +1091,12 @@
 "arena": "SAP Garden",
 "match": "exact"
 },
+"Sarkhadchi Sport Center": {
+"capacity": 3250,
+"src": "arenas",
+"arena": "Sərhədçi İdman Kompleksi",
+"match": "exact"
+},
 "Schaeffler Arena Savaria": {
 "capacity": 3070,
 "src": "arenas",
@@ -1103,6 +1133,12 @@
 "arena": "Šiaulių arena",
 "match": "exact"
 },
+"Sila Complex": {
+"capacity": 1600,
+"src": "arenas",
+"arena": "Sila Complex",
+"match": "exact"
+},
 "Sinan Erdem Dome": {
 "capacity": 16500,
 "src": "arenas",
@@ -1134,7 +1170,7 @@
 "match": "exact"
 },
 "Sportica": {
-"capacity": 3043,
+"capacity": 3500,
 "src": "arenas",
 "arena": "Sportica",
 "match": "exact"
@@ -1356,13 +1392,13 @@
 "match": "exact"
 },
 "Virtus Arena": {
-"capacity": 10220,
+"capacity": 10500,
 "src": "arenas",
 "arena": "Virtus Arena",
 "match": "exact"
 },
 "Virtus Segafredo Arena": {
-"capacity": 10220,
+"capacity": 10500,
 "src": "arenas",
 "arena": "Virtus Arena",
 "match": "exact"
