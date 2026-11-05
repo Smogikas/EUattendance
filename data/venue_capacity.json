@@ -2,1036 +2,1009 @@
 "\"Juan Antonio Samaranch\" - Zetra": {
 "capacity": 12000,
 "src": "arenas",
-"arena": "Zetra Olympic Hall"
+"arena": "Zetra Olympic Hall",
+"match": "similar"
 },
 "Adidas Arena": {
 "capacity": 8000,
 "src": "arenas",
-"arena": "Adidas Arena"
+"arena": "Adidas Arena",
+"match": "exact"
 },
 "Alba Regia Sportcsarnok": {
 "capacity": 2400,
 "src": "arenas",
-"arena": "Alba Regia Sportcsarnok"
+"arena": "Alba Regia Sportcsarnok",
+"match": "exact"
 },
 "Alcott Arena": {
 "capacity": 3980,
 "src": "arenas",
-"arena": "Alcott Arena"
+"arena": "Alcott Arena",
+"match": "exact"
 },
 "Aleksandar Nikolic Hall": {
 "capacity": 8000,
 "src": "arenas",
-"arena": "Košarkaška dvorana Aleksandar Nikolić"
+"arena": "Košarkaška dvorana Aleksandar Nikolić",
+"match": "exact"
 },
 "Alexandreio Athlitiko Melathro": {
 "capacity": 6200,
 "src": "arenas",
-"arena": "ΑΛΕΞΑΝΔΡΕΙΟ"
+"arena": "ΑΛΕΞΑΝΔΡΕΙΟ",
+"match": "similar"
 },
 "Aliaga Belediyesi Enka Arena": {
 "capacity": 2500,
 "src": "arenas",
-"arena": "Enka Spor Salonu"
+"arena": "Enka Spor Salonu",
+"match": "similar"
 },
 "Allianz Cloud": {
 "capacity": 5309,
 "src": "arenas",
-"arena": "Allianz Cloud"
+"arena": "Allianz Cloud",
+"match": "exact"
 },
 "Andreas Papandreou Indoor Peristeri": {
 "capacity": 4000,
 "src": "arenas",
-"arena": "Κ.Γ. ΠΕΡΙΣΤΕΡΙΟΥ \"ΑΝΔΡΕΑΣ ΠΑΠΑΝΔΡΕΟΥ\""
+"arena": "Κ.Γ. ΠΕΡΙΣΤΕΡΙΟΥ \"ΑΝΔΡΕΑΣ ΠΑΠΑΝΔΡΕΟΥ\"",
+"match": "similar"
 },
 "Ankara Spor Salonu": {
 "capacity": 10400,
 "src": "arenas",
-"arena": "Ankara Spor Salonu"
+"arena": "Ankara Spor Salonu",
+"match": "exact"
 },
 "Antares": {
 "capacity": 6023,
 "src": "arenas",
-"arena": "Antarès"
+"arena": "Antarès",
+"match": "exact"
 },
 "Antares Arena": {
 "capacity": 6023,
 "src": "arenas",
-"arena": "Antarès"
-},
-"Arena 8888 Sofia": {
-"capacity": 12373,
-"src": "manual",
-"arena": "Arena 8888 Sofia"
+"arena": "Antarès",
+"match": "similar"
 },
 "Arena Botevgrad": {
 "capacity": 3500,
 "src": "arenas",
-"arena": "Arena Botevgrad"
+"arena": "Arena Botevgrad",
+"match": "exact"
 },
 "Arena Husejin Smajlovic Zenica": {
 "capacity": 6200,
 "src": "arenas",
-"arena": "Husejin Smajlović Arena (Zenica)"
-},
-"Arena Riga": {
-"capacity": 11200,
-"src": "arenas",
-"arena": "Xiaomi Arena"
+"arena": "Husejin Smajlović Arena (Zenica)",
+"match": "similar"
 },
 "Arena SamElyon": {
 "capacity": 3000,
 "src": "arenas",
-"arena": "Arena Samelyon"
-},
-"Arena Samokov": {
-"capacity": 3000,
-"src": "arenas",
-"arena": "Arena Samelyon"
+"arena": "Arena Samelyon",
+"match": "exact"
 },
 "Arena Stozice": {
 "capacity": 12480,
 "src": "arenas",
-"arena": "Arena Stožice"
+"arena": "Arena Stožice",
+"match": "exact"
 },
 "Arena of Dinamo": {
 "capacity": 2538,
 "src": "arenas",
-"arena": "Sala Polivalentă Dinamo"
+"arena": "Sala Polivalentă Dinamo",
+"match": "exact"
 },
 "Astroballe": {
 "capacity": 5556,
 "src": "arenas",
-"arena": "Astroballe"
-},
-"Avia Solutions Group Arena": {
-"capacity": 9000,
-"src": "arenas",
-"arena": "Arena Vilnius"
+"arena": "Astroballe",
+"match": "exact"
 },
 "BC Vienna Arena": {
 "capacity": 1530,
 "src": "arenas",
-"arena": "BC Vienna Arena"
-},
-"Baku Sports Palace": {
-"capacity": 2000,
-"src": "manual",
-"arena": "Baku Sports Palace"
-},
-"Basketball Development Center": {
-"capacity": 10000,
-"src": "arenas",
-"arena": "Turkcell Basketbol Gelişim Merkezi"
+"arena": "BC Vienna Arena",
+"match": "exact"
 },
 "Belgrade Arena": {
 "capacity": 21000,
 "src": "arenas",
-"arena": "Beogradska Arena"
+"arena": "Beogradska Arena",
+"match": "exact"
 },
 "Bemowo": {
 "capacity": 1991,
 "src": "arenas",
-"arena": "OSiR Warszawa Bemowo"
-},
-"Berlin Arena": {
-"capacity": 13488,
-"src": "arenas",
-"arena": "Uber Arena"
+"arena": "OSiR Warszawa Bemowo",
+"match": "similar"
 },
 "Besiktas Akatlar Sports & Events Hall": {
 "capacity": 3200,
 "src": "arenas",
-"arena": "Beşiktaş Akatlar Spor Kompleksi"
-},
-"Besiktas Fibabanka Sports Complex": {
-"capacity": 3200,
-"src": "arenas",
-"arena": "Beşiktaş Akatlar Spor Kompleksi"
+"arena": "Beşiktaş Akatlar Spor Kompleksi",
+"match": "similar"
 },
 "Besiktas Gain Sport Complex": {
 "capacity": 3200,
 "src": "arenas",
-"arena": "Beşiktaş Akatlar Spor Kompleksi"
+"arena": "Beşiktaş Akatlar Spor Kompleksi",
+"match": "similar"
 },
 "Bilbao Arena": {
 "capacity": 10014,
 "src": "arenas",
-"arena": "Bilbao Arena"
-},
-"Bjk Emlakjet Sports&Event Hall": {
-"capacity": 3200,
-"src": "arenas",
-"arena": "Beşiktaş Akatlar Spor Kompleksi"
-},
-"Bjk Gain Sports Complex": {
-"capacity": 3200,
-"src": "arenas",
-"arena": "Beşiktaş Akatlar Spor Kompleksi"
+"arena": "Bilbao Arena",
+"match": "exact"
 },
 "Bmw Park": {
 "capacity": 6731,
 "src": "arenas",
-"arena": "BMW Park München"
-},
-"Boro Churlevski": {
-"capacity": 4000,
-"src": "arenas",
-"arena": "Boro Čurlevski Sports Hall"
+"arena": "BMW Park München",
+"match": "similar"
 },
 "Brose Arena": {
 "capacity": 5700,
 "src": "arenas",
-"arena": "Brose Arena Bamberg"
+"arena": "Brose Arena Bamberg",
+"match": "similar"
 },
 "Bt Arena": {
 "capacity": 10000,
 "src": "arenas",
-"arena": "BT Arena"
+"arena": "BT Arena",
+"match": "exact"
 },
 "Bt-Arena": {
 "capacity": 10000,
 "src": "arenas",
-"arena": "BT Arena"
+"arena": "BT Arena",
+"match": "exact"
 },
 "Bts Arena": {
 "capacity": 4360,
 "src": "arenas",
-"arena": "BTS Arena"
+"arena": "BTS Arena",
+"match": "exact"
 },
 "Buesa Arena": {
 "capacity": 15504,
 "src": "arenas",
-"arena": "Fernando Buesa Arena"
+"arena": "Fernando Buesa Arena",
+"match": "similar"
 },
 "CEZ Sportovni Hala Nymburk": {
 "capacity": 1000,
 "src": "arenas",
-"arena": "Sportovní centrum Nymburk"
+"arena": "Sportovní centrum Nymburk",
+"match": "similar"
 },
 "COREtec Dôme": {
 "capacity": 5000,
 "src": "arenas",
-"arena": "COREtec Dôme"
-},
-"Centennial Hall": {
-"capacity": 10000,
-"src": "arenas",
-"arena": "Hala Stulecia"
-},
-"Centre sportif de la Queue-d'Arve": {
-"capacity": 18575,
-"src": "arenas",
-"arena": "AFAS Dome"
+"arena": "COREtec Dôme",
+"match": "exact"
 },
 "Centrum Rekreacyjno-Sportowe Zielona Gora": {
 "capacity": 5080,
 "src": "arenas",
-"arena": "Centrum Rekreacyjno-Sportowe"
+"arena": "Centrum Rekreacyjno-Sportowe",
+"match": "similar"
 },
 "Coca-Cola Arena": {
 "capacity": 15000,
 "src": "arenas",
-"arena": "Coca Cola Arena"
+"arena": "Coca Cola Arena",
+"match": "exact"
 },
 "Coliseum Burgos": {
 "capacity": 9604,
 "src": "arenas",
-"arena": "Coliseum Burgos"
+"arena": "Coliseum Burgos",
+"match": "exact"
 },
 "Copper Box Arena": {
 "capacity": 6000,
 "src": "arenas",
-"arena": "Copper Box Arena"
+"arena": "Copper Box Arena",
+"match": "exact"
 },
 "Darussafaka Ayhan Sahenk Spor Salonu": {
 "capacity": 3509,
 "src": "arenas",
-"arena": "Darussafaka Ayhan Sahenk Spor Salonu"
+"arena": "Darussafaka Ayhan Sahenk Spor Salonu",
+"match": "exact"
 },
 "Dimitris Tofalos Arena": {
 "capacity": 4200,
 "src": "arenas",
-"arena": "ΠΕΑΚ ΠΑΤΡΑΣ \"ΔΗΜ. ΤΟΦΑΛΟΣ\""
+"arena": "ΠΕΑΚ ΠΑΤΡΑΣ \"ΔΗΜ. ΤΟΦΑΛΟΣ\"",
+"match": "exact"
 },
 "Dom Sportu Arena": {
 "capacity": 1215,
 "src": "arenas",
-"arena": "Hala SDS 2.0"
+"arena": "Hala SDS 2.0",
+"match": "similar"
 },
 "Dragao Arena": {
 "capacity": 2179,
 "src": "arenas",
-"arena": "Dragão Arena"
+"arena": "Dragão Arena",
+"match": "exact"
 },
 "Drazen Petrovic Basketball Center": {
 "capacity": 5400,
 "src": "arenas",
-"arena": "Košarkaški centar Dražen Petrović"
+"arena": "Košarkaški centar Dražen Petrović",
+"match": "similar"
 },
 "Dvorana \"Mirza Delibasic\" - Skenderija": {
 "capacity": 5616,
 "src": "arenas",
-"arena": "Mirza Delibašić Hall (Sarajevo)"
+"arena": "Mirza Delibašić Hall (Sarajevo)",
+"match": "similar"
 },
 "ERGO Arena": {
 "capacity": 11409,
 "src": "arenas",
-"arena": "Ergo Arena"
+"arena": "Ergo Arena",
+"match": "exact"
 },
 "EWE Arena": {
 "capacity": 6335,
 "src": "arenas",
-"arena": "Große EWE Arena Oldenburg"
-},
-"Edel-Optics.De Arena": {
-"capacity": 3400,
-"src": "arenas",
-"arena": "Inselpark Arena"
+"arena": "Große EWE Arena Oldenburg",
+"match": "similar"
 },
 "Ekinox": {
 "capacity": 3548,
 "src": "arenas",
-"arena": "Ekinox"
+"arena": "Ekinox",
+"match": "exact"
 },
 "Enea Arena": {
 "capacity": 5055,
 "src": "arenas",
-"arena": "Hala Enea Arena"
+"arena": "Hala Enea Arena",
+"match": "exact"
 },
 "Ergo Arena": {
 "capacity": 11409,
 "src": "arenas",
-"arena": "Ergo Arena"
+"arena": "Ergo Arena",
+"match": "exact"
 },
 "Forum": {
 "capacity": 12700,
 "src": "arenas",
-"arena": "Unipol Forum"
+"arena": "Unipol Forum",
+"match": "similar"
 },
 "GOPASS Arena": {
 "capacity": 3200,
 "src": "arenas",
-"arena": "GOPASS Arena"
+"arena": "GOPASS Arena",
+"match": "exact"
 },
 "Giannis Bourousis Karditsa Municipal Indoor Sports Hall": {
 "capacity": 3500,
 "src": "arenas",
-"arena": "Ν.Κ.Γ. \"ΓΙΑΝΝΗΣ ΜΠΟΥΡΟΥΣΗΣ\""
+"arena": "Ν.Κ.Γ. \"ΓΙΑΝΝΗΣ ΜΠΟΥΡΟΥΣΗΣ\"",
+"match": "similar"
 },
 "Globus Arena": {
 "capacity": 4119,
 "src": "arenas",
-"arena": "MOSiR Globus"
+"arena": "MOSiR Globus",
+"match": "similar"
 },
 "Gran Canaria Arena": {
 "capacity": 10000,
 "src": "arenas",
-"arena": "Gran Canaria Arena"
+"arena": "Gran Canaria Arena",
+"match": "exact"
 },
 "Hala Mistrzów": {
 "capacity": 3963,
 "src": "arenas",
-"arena": "Hala Mistrzów"
+"arena": "Hala Mistrzów",
+"match": "exact"
 },
 "Hala Orbita": {
 "capacity": 3000,
 "src": "arenas",
-"arena": "Hala Orbita"
+"arena": "Hala Orbita",
+"match": "exact"
 },
 "Hala Sportova Dudova Šuma": {
 "capacity": 3500,
 "src": "arenas",
-"arena": "Hala Sportova Dudova šuma"
+"arena": "Hala Sportova Dudova šuma",
+"match": "exact"
 },
 "Hala Sportova Ranko Zeravica": {
 "capacity": 5000,
 "src": "arenas",
-"arena": "Hala sportova Ranko Žeravica"
+"arena": "Hala sportova Ranko Žeravica",
+"match": "exact"
 },
 "Hala Stulecia": {
 "capacity": 10000,
 "src": "arenas",
-"arena": "Hala Stulecia"
-},
-"Hala Tivoli": {
-"capacity": 4500,
-"src": "arenas",
-"arena": "Mala dvorana Tivoli"
-},
-"Halle Georges Carpentier": {
-"capacity": 5009,
-"src": "manual",
-"arena": "Halle Georges Carpentier"
-},
-"Halle Georges Carpinter": {
-"capacity": 5009,
-"src": "manual",
-"arena": "Halle Georges Carpentier"
+"arena": "Hala Stulecia",
+"match": "exact"
 },
 "Hayri Gur Spor Salonu": {
 "capacity": 7500,
 "src": "arenas",
-"arena": "Hayri Gür Spor Salonu"
+"arena": "Hayri Gür Spor Salonu",
+"match": "exact"
 },
 "IKH Areena": {
 "capacity": 3500,
 "src": "arenas",
-"arena": "IKH Areena"
-},
-"Il T Quotidiano Arena": {
-"capacity": 4360,
-"src": "arenas",
-"arena": "BTS Arena"
+"arena": "IKH Areena",
+"match": "exact"
 },
 "Inselpark Arena": {
 "capacity": 3400,
 "src": "arenas",
-"arena": "Inselpark Arena"
+"arena": "Inselpark Arena",
+"match": "exact"
 },
 "Itelyum Arena": {
 "capacity": 5677,
 "src": "arenas",
-"arena": "Itelyum Arena"
+"arena": "Itelyum Arena",
+"match": "exact"
 },
 "Ivanofio": {
 "capacity": 2580,
 "src": "arenas",
-"arena": "ΙΒΑΝΩΦΕΙΟ"
+"arena": "ΙΒΑΝΩΦΕΙΟ",
+"match": "similar"
 },
 "Jonavos Sporto Arena": {
 "capacity": 2246,
 "src": "arenas",
-"arena": "Jonavos sporto arena"
+"arena": "Jonavos sporto arena",
+"match": "exact"
 },
 "Kalevi Spordihall": {
 "capacity": 1800,
 "src": "arenas",
-"arena": "Kalev Sports Hall"
+"arena": "Kalev Sports Hall",
+"match": "exact"
 },
 "Kallithea Indoor Hall": {
 "capacity": 3400,
 "src": "arenas",
-"arena": "Κ. Γ. ΚΑΛΛΙΘΕΑΣ ΡΟΔΟΥ"
+"arena": "Κ. Γ. ΚΑΛΛΙΘΕΑΣ ΡΟΔΟΥ",
+"match": "similar"
 },
 "Kalnapilio Arena": {
 "capacity": 5600,
 "src": "arenas",
-"arena": "Kalnapilio arena"
-},
-"Kition Athletic Center": {
-"capacity": 2000,
-"src": "manual",
-"arena": "Kition Athletic Center"
+"arena": "Kalnapilio arena",
+"match": "exact"
 },
 "Komandas Sporta Spelu Halle": {
 "capacity": 2400,
 "src": "arenas",
-"arena": "Komandas Sporta Spelu Halle"
+"arena": "Komandas Sporta Spelu Halle",
+"match": "exact"
 },
 "Kralovka Arena": {
 "capacity": 2500,
 "src": "arenas",
-"arena": "Královka Arena"
+"arena": "Královka Arena",
+"match": "exact"
 },
 "La Meilleraie": {
 "capacity": 5191,
 "src": "arenas",
-"arena": "La Meilleraie"
+"arena": "La Meilleraie",
+"match": "exact"
 },
 "Ldlc Arena": {
 "capacity": 12523,
 "src": "arenas",
-"arena": "LDLC Arena"
+"arena": "LDLC Arena",
+"match": "exact"
 },
 "Le Colisée": {
 "capacity": 4540,
 "src": "arenas",
-"arena": "Le Colisée"
+"arena": "Le Colisée",
+"match": "exact"
 },
 "Lotto Arena": {
 "capacity": 5218,
 "src": "arenas",
-"arena": "Lotto Arena"
+"arena": "Lotto Arena",
+"match": "exact"
 },
 "M:Tel Dvorana Moraca": {
 "capacity": 6000,
 "src": "arenas",
-"arena": "Sportski centar Morača"
-},
-"MHP Arena": {
-"capacity": 4000,
-"src": "arenas",
-"arena": "MHPArena Ludwigsburg"
+"arena": "Sportski centar Morača",
+"match": "similar"
 },
 "Maaspoort Den Bosch": {
 "capacity": 2700,
 "src": "arenas",
-"arena": "Maaspoort"
+"arena": "Maaspoort",
+"match": "similar"
 },
 "Maroussi Saint Thomas Indoor Hall": {
 "capacity": 1700,
 "src": "arenas",
-"arena": "Κ.Γ. ΑΜΑΡΟΥΣΙΟΥ"
+"arena": "Κ.Γ. ΑΜΑΡΟΥΣΙΟΥ",
+"match": "exact"
 },
 "Mediolanum Forum": {
 "capacity": 12700,
 "src": "arenas",
-"arena": "Unipol Forum"
+"arena": "Unipol Forum",
+"match": "exact"
 },
 "Menora Mivtachim Arena": {
 "capacity": 10871,
 "src": "arenas",
-"arena": "Menora Mivtachim Arena"
-},
-"Mercedes-Benz Arena": {
-"capacity": 13488,
-"src": "arenas",
-"arena": "Uber Arena"
+"arena": "Menora Mivtachim Arena",
+"match": "exact"
 },
 "Messe Chemnitz": {
 "capacity": 5000,
 "src": "arenas",
-"arena": "Messe Chemnitz"
-},
-"Minatori": {
-"capacity": 2300,
-"src": "manual",
-"arena": "Minatori"
+"arena": "Messe Chemnitz",
+"match": "exact"
 },
 "Moraca": {
 "capacity": 6000,
 "src": "arenas",
-"arena": "Sportski centar Morača"
+"arena": "Sportski centar Morača",
+"match": "similar"
 },
 "Motonet Areena": {
 "capacity": 2500,
 "src": "arenas",
-"arena": "Motonet Areena"
+"arena": "Motonet Areena",
+"match": "exact"
 },
 "Movistar Arena": {
 "capacity": 13109,
 "src": "arenas",
-"arena": "Movistar Arena"
-},
-"Muradiye Sports Hall": {
-"capacity": 3560,
-"src": "arenas",
-"arena": "Muradiye Spor Salonu"
+"arena": "Movistar Arena",
+"match": "exact"
 },
 "Mustafa Kemal Atatürk Karsiyaka Spor Salonu": {
 "capacity": 6500,
 "src": "arenas",
-"arena": "Mustafa Kemal Atatürk Karşıyaka Spor Salonu"
-},
-"National Athletic Center  Makis  Liougas": {
-"capacity": 3500,
-"src": "manual",
-"arena": "National Athletic Center Makis Liougas"
+"arena": "Mustafa Kemal Atatürk Karşıyaka Spor Salonu",
+"match": "exact"
 },
 "National Gymnastics Arena": {
 "capacity": 9000,
 "src": "arenas",
-"arena": "National Gymnastics Arena"
+"arena": "National Gymnastics Arena",
+"match": "exact"
 },
 "Nitra City Sports Hall": {
 "capacity": 2000,
 "src": "arenas",
-"arena": "Mestská športová hala Nitra"
+"arena": "Mestská športová hala Nitra",
+"match": "exact"
 },
 "Nova Arena": {
 "capacity": 5000,
 "src": "arenas",
-"arena": "Nova Arena"
+"arena": "Nova Arena",
+"match": "exact"
 },
 "Oaka Altion": {
 "capacity": 19000,
 "src": "arenas",
-"arena": "TELEKOM CENTER ATHENS"
+"arena": "TELEKOM CENTER ATHENS",
+"match": "similar"
 },
 "Oradea Arena": {
 "capacity": 5200,
 "src": "arenas",
-"arena": "Oradea Arena"
+"arena": "Oradea Arena",
+"match": "exact"
 },
 "Orbita Hall": {
 "capacity": 3000,
 "src": "arenas",
-"arena": "Hala Orbita"
-},
-"Otar Korkia and Nodar Jorjikia Tbilisi Sports Palace": {
-"capacity": 9700,
-"src": "manual",
-"arena": "Otar Korkia and Nodar Jorjikia Tbilisi Sports Palace"
+"arena": "Hala Orbita",
+"match": "similar"
 },
 "PAOK Sports Arena": {
 "capacity": 8142,
 "src": "arenas",
-"arena": "PAOK SPORTS ARENA"
-},
-"Pabellon Fuente De San Luis": {
-"capacity": 9000,
-"src": "manual",
-"arena": "Pabellon Fuente De San Luis"
+"arena": "PAOK SPORTS ARENA",
+"match": "exact"
 },
 "Pabellon Principe Felipe": {
 "capacity": 10744,
 "src": "arenas",
-"arena": "Pabellón Príncipe Felipe"
+"arena": "Pabellón Príncipe Felipe",
+"match": "exact"
 },
 "Pabellon Santiago Martin": {
 "capacity": 5100,
 "src": "arenas",
-"arena": "Pab. Dep. Tenerife Santiago Martín"
+"arena": "Pab. Dep. Tenerife Santiago Martín",
+"match": "similar"
 },
 "Pais Arena Jerusalem": {
 "capacity": 11600,
 "src": "arenas",
-"arena": "Pais Arena Jerusalem"
+"arena": "Pais Arena Jerusalem",
+"match": "exact"
 },
 "Palacio de Deportes Jose Maria Martin Carpena": {
 "capacity": 10699,
 "src": "arenas",
-"arena": "Palacio de Deportes José María Martín Carpena"
+"arena": "Palacio de Deportes José María Martín Carpena",
+"match": "exact"
 },
 "Palacio de los Deportes": {
 "capacity": 8100,
 "src": "arenas",
-"arena": "Palacio Municipal de Deportes de Granada"
+"arena": "Palacio Municipal de Deportes de Granada",
+"match": "exact"
 },
 "Paladozza": {
 "capacity": 5570,
 "src": "arenas",
-"arena": "PalaDozza"
+"arena": "PalaDozza",
+"match": "exact"
 },
 "Palaeur": {
 "capacity": 11200,
 "src": "arenas",
-"arena": "PalaEur"
-},
-"Palais De Sports": {
-"capacity": 1060,
-"src": "arenas",
-"arena": "Κ.Γ. ΙΩΑΝΝΙΝΩΝ «ΣΙΔΕΡΗΣ ΚΑΡΑΔΗΜΑΣ»"
+"arena": "PalaEur",
+"match": "exact"
 },
 "Palais des Sport Jean-Michel Geoffroy": {
 "capacity": 5000,
 "src": "arenas",
-"arena": "Palais des Sports Jean-Michel Geoffroy"
+"arena": "Palais des Sports Jean-Michel Geoffroy",
+"match": "similar"
 },
 "Palais des Sports \"Jean Weille\"": {
 "capacity": 6027,
 "src": "arenas",
-"arena": "Palais des Sports Jean Weille"
+"arena": "Palais des Sports Jean Weille",
+"match": "exact"
 },
 "Palais des Sports Maurice Thorez": {
 "capacity": 3000,
 "src": "arenas",
-"arena": "Palais des Sports Maurice-Thorez"
+"arena": "Palais des Sports Maurice-Thorez",
+"match": "exact"
 },
 "Palaserradimigni": {
 "capacity": 5000,
 "src": "arenas",
-"arena": "PalaSerradimigni"
-},
-"Palasport \"Cesare Rubini\" Trieste": {
-"capacity": 6736,
-"src": "arenas",
-"arena": "PalaTrieste"
-},
-"Palasport Giulio Bigi": {
-"capacity": 4530,
-"src": "arenas",
-"arena": "PalaBigi"
+"arena": "PalaSerradimigni",
+"match": "exact"
 },
 "Palasport Taliercio": {
 "capacity": 3509,
 "src": "arenas",
-"arena": "Palasport Taliercio"
+"arena": "Palasport Taliercio",
+"match": "exact"
 },
 "Palau Blaugrana": {
 "capacity": 7786,
 "src": "arenas",
-"arena": "Palau Blaugrana"
+"arena": "Palau Blaugrana",
+"match": "exact"
 },
 "Palau Municipal d'Esports de Badalona": {
 "capacity": 12760,
 "src": "arenas",
-"arena": "Palau Municipal D'Esports de Badalona"
+"arena": "Palau Municipal D'Esports de Badalona",
+"match": "exact"
 },
 "Palau Olimpic De Badalona": {
 "capacity": 12760,
 "src": "arenas",
-"arena": "Palau Municipal D'Esports de Badalona"
+"arena": "Palau Municipal D'Esports de Badalona",
+"match": "similar"
 },
 "Palazzetto Dello Sport": {
 "capacity": 3500,
 "src": "arenas",
-"arena": "Palazzetto dello Sport"
+"arena": "Palazzetto dello Sport",
+"match": "exact"
 },
 "Pamukkale Üniversitesi Spor Salonu": {
 "capacity": 5000,
 "src": "arenas",
-"arena": "Pamukkale Üniversitesi Spor Salonu"
+"arena": "Pamukkale Üniversitesi Spor Salonu",
+"match": "exact"
 },
 "Paok Sports Arena": {
 "capacity": 8142,
 "src": "arenas",
-"arena": "PAOK SPORTS ARENA"
+"arena": "PAOK SPORTS ARENA",
+"match": "exact"
 },
 "Pavello Fontajau": {
 "capacity": 5750,
 "src": "arenas",
-"arena": "Palau Girona-Fontajau"
+"arena": "Palau Girona-Fontajau",
+"match": "similar"
 },
 "Pavello Nou Congost": {
 "capacity": 5000,
 "src": "arenas",
-"arena": "Pavelló Nou Congost"
+"arena": "Pavelló Nou Congost",
+"match": "exact"
 },
 "Pavello Olimpic de Badalona": {
 "capacity": 12760,
 "src": "arenas",
-"arena": "Palau Municipal D'Esports de Badalona"
+"arena": "Palau Municipal D'Esports de Badalona",
+"match": "similar"
 },
 "Pavelló Nou Congost": {
 "capacity": 5000,
 "src": "arenas",
-"arena": "Pavelló Nou Congost"
+"arena": "Pavelló Nou Congost",
+"match": "exact"
 },
 "Pavilhao Fidelidade": {
 "capacity": 2456,
 "src": "arenas",
-"arena": "Pavilhão Fidelidade"
+"arena": "Pavilhão Fidelidade",
+"match": "exact"
 },
 "Pavilhao Joao Rocha": {
 "capacity": 3001,
 "src": "arenas",
-"arena": "Pavilhão João Rocha"
+"arena": "Pavilhão João Rocha",
+"match": "exact"
 },
 "Pazo Provincial Dos Deportes De Lugo": {
 "capacity": 5310,
 "src": "arenas",
-"arena": "Pazo Provincial dos Deportes de Lugo"
+"arena": "Pazo Provincial dos Deportes de Lugo",
+"match": "exact"
 },
 "Peace And Friendship Stadium": {
 "capacity": 12700,
 "src": "arenas",
-"arena": "Peace and Friendship Stadium"
+"arena": "Peace and Friendship Stadium",
+"match": "exact"
 },
 "Pärnu Sports Hall": {
 "capacity": 1820,
 "src": "arenas",
-"arena": "Pärnu Spordihall"
+"arena": "Pärnu Spordihall",
+"match": "exact"
 },
 "Rasta Dome Vechta": {
 "capacity": 3140,
 "src": "arenas",
-"arena": "RASTA Dome"
+"arena": "RASTA Dome",
+"match": "similar"
 },
 "Ratiopharm Arena": {
 "capacity": 6000,
 "src": "arenas",
-"arena": "ratiopharm arena Ulm"
+"arena": "ratiopharm arena Ulm",
+"match": "similar"
 },
 "Rhenus Sport": {
 "capacity": 6200,
 "src": "arenas",
-"arena": "Rhénus Sport"
+"arena": "Rhénus Sport",
+"match": "exact"
 },
 "Roig Arena": {
 "capacity": 15600,
 "src": "arenas",
-"arena": "Roig Arena"
+"arena": "Roig Arena",
+"match": "exact"
 },
 "SD Laktaši": {
 "capacity": 3050,
 "src": "arenas",
-"arena": "J.U. Sportska dvorana Laktaši"
+"arena": "J.U. Sportska dvorana Laktaši",
+"match": "similar"
 },
 "SUNEL Arena": {
 "capacity": 9025,
 "src": "arenas",
-"arena": "SUNEL ARENA"
+"arena": "SUNEL ARENA",
+"match": "exact"
 },
 "SWT-Arena": {
 "capacity": 5400,
 "src": "arenas",
-"arena": "SWT-Arena"
+"arena": "SWT-Arena",
+"match": "exact"
 },
 "Salle Saint Leonard": {
 "capacity": 2789,
 "src": "arenas",
-"arena": "Salle Saint-Léonard"
-},
-"Samokov Arena": {
-"capacity": 3000,
-"src": "arenas",
-"arena": "Arena Samelyon"
+"arena": "Salle Saint-Léonard",
+"match": "exact"
 },
 "Santiago Martin Arena": {
 "capacity": 5100,
 "src": "arenas",
-"arena": "Pab. Dep. Tenerife Santiago Martín"
+"arena": "Pab. Dep. Tenerife Santiago Martín",
+"match": "similar"
 },
 "Sap Garden": {
 "capacity": 11500,
 "src": "arenas",
-"arena": "SAP Garden"
+"arena": "SAP Garden",
+"match": "exact"
 },
 "Schaeffler Arena Savaria": {
 "capacity": 3070,
 "src": "arenas",
-"arena": "Arena Savaria"
+"arena": "Arena Savaria",
+"match": "similar"
 },
 "Sehit Polis Recep Topaloglu Spor Salonu": {
 "capacity": 5000,
 "src": "arenas",
-"arena": "Şehit Polis Recep Topaloğlu Spor Salonu"
+"arena": "Şehit Polis Recep Topaloğlu Spor Salonu",
+"match": "exact"
 },
 "Servet Tazegul Spor Salonu": {
 "capacity": 7500,
 "src": "arenas",
-"arena": "Servet Tazegül Spor Salonu"
+"arena": "Servet Tazegül Spor Salonu",
+"match": "exact"
 },
 "Shlomo Group Arena": {
 "capacity": 3536,
 "src": "arenas",
-"arena": "Shlomo Group Arena"
+"arena": "Shlomo Group Arena",
+"match": "exact"
 },
 "Siauliai Arena": {
 "capacity": 5500,
 "src": "arenas",
-"arena": "Šiaulių arena"
+"arena": "Šiaulių arena",
+"match": "similar"
 },
 "Sinan Erdem Dome": {
 "capacity": 16500,
 "src": "arenas",
-"arena": "Sinan Erdem Spor Salonu"
+"arena": "Sinan Erdem Spor Salonu",
+"match": "similar"
 },
 "Sinan Erdem Sports Hall": {
 "capacity": 16500,
 "src": "arenas",
-"arena": "Sinan Erdem Spor Salonu"
-},
-"Sopot Centennial Sport Hall": {
-"capacity": 1942,
-"src": "arenas",
-"arena": "Hala Sportowa 100-lecia Sopotu"
+"arena": "Sinan Erdem Spor Salonu",
+"match": "similar"
 },
 "Sports Centre Jane Sandanski": {
 "capacity": 5850,
 "src": "arenas",
-"arena": "Jane Sandanski Arena"
+"arena": "Jane Sandanski Arena",
+"match": "exact"
 },
 "Sports Hall Topolica": {
 "capacity": 2625,
 "src": "arenas",
-"arena": "SRC Topolica"
+"arena": "SRC Topolica",
+"match": "similar"
 },
 "Stades de Flandres": {
 "capacity": 2500,
 "src": "arenas",
-"arena": "Stade des Flandres"
-},
-"Stadium Arena": {
-"capacity": 3500,
-"src": "manual",
-"arena": "Stadium Arena"
+"arena": "Stade des Flandres",
+"match": "exact"
 },
 "Stadthalle Rostock": {
 "capacity": 5000,
 "src": "arenas",
-"arena": "StadtHalle Rostock"
+"arena": "StadtHalle Rostock",
+"match": "exact"
 },
 "Starez Arena Vodova": {
 "capacity": 2900,
 "src": "arenas",
-"arena": "STAREZ ARÉNA Vodova"
+"arena": "STAREZ ARÉNA Vodova",
+"match": "exact"
 },
 "Stark Arena": {
 "capacity": 21000,
 "src": "arenas",
-"arena": "Beogradska Arena"
+"arena": "Beogradska Arena",
+"match": "exact"
 },
 "Sunel Arena": {
 "capacity": 9025,
 "src": "arenas",
-"arena": "SUNEL ARENA"
+"arena": "SUNEL ARENA",
+"match": "exact"
 },
 "Suwag Energie Arena": {
 "capacity": 5002,
 "src": "arenas",
-"arena": "Süwag Energie ARENA"
+"arena": "Süwag Energie ARENA",
+"match": "exact"
 },
 "Svyturio Arena": {
 "capacity": 6200,
 "src": "arenas",
-"arena": "Švyturio arena"
-},
-"Tbilisi Olympic Palace": {
-"capacity": 9700,
-"src": "manual",
-"arena": "Otar Korkia and Nodar Jorjikia Tbilisi Sports Palace"
-},
-"Tbilisi Sports Palace": {
-"capacity": 9700,
-"src": "manual",
-"arena": "Otar Korkia and Nodar Jorjikia Tbilisi Sports Palace"
+"arena": "Švyturio arena",
+"match": "exact"
 },
 "Telekom Center Athens": {
 "capacity": 19000,
 "src": "arenas",
-"arena": "TELEKOM CENTER ATHENS"
+"arena": "TELEKOM CENTER ATHENS",
+"match": "exact"
 },
 "Telekom Dome": {
 "capacity": 6000,
 "src": "arenas",
-"arena": "Telekom Dome Bonn"
+"arena": "Telekom Dome Bonn",
+"match": "similar"
 },
 "The Copperbox Arena": {
 "capacity": 6000,
 "src": "arenas",
-"arena": "Copper Box Arena"
+"arena": "Copper Box Arena",
+"match": "similar"
 },
 "Tofas Spor Salonu": {
 "capacity": 7500,
 "src": "arenas",
-"arena": "Tofaş Spor Salonu"
+"arena": "Tofaş Spor Salonu",
+"match": "exact"
 },
 "Tondiraba Ice Hall": {
 "capacity": 5840,
 "src": "arenas",
-"arena": "Tondiraba Ice Hall (main arena)"
-},
-"Torwar Arena": {
-"capacity": 6304,
-"src": "arenas",
-"arena": "Torwar"
+"arena": "Tondiraba Ice Hall (main arena)",
+"match": "similar"
 },
 "Toto Holon Arena": {
 "capacity": 5337,
 "src": "arenas",
-"arena": "Holon Toto Hall"
+"arena": "Holon Toto Hall",
+"match": "similar"
 },
 "Traian Sports Hall": {
 "capacity": 2239,
 "src": "arenas",
-"arena": "Sala Sporturilor Traian"
+"arena": "Sala Sporturilor Traian",
+"match": "exact"
 },
 "Transilvania Hall": {
 "capacity": 1850,
 "src": "arenas",
-"arena": "Sala Transilvania"
+"arena": "Sala Transilvania",
+"match": "similar"
 },
 "Turkcell Basketball Development Center": {
 "capacity": 10000,
 "src": "arenas",
-"arena": "Turkcell Basketbol Gelişim Merkezi"
-},
-"Turkcell Basketball Development Centre": {
-"capacity": 10000,
-"src": "arenas",
-"arena": "Turkcell Basketbol Gelişim Merkezi"
-},
-"Twinsbet Arena": {
-"capacity": 9000,
-"src": "arenas",
-"arena": "Arena Vilnius"
+"arena": "Turkcell Basketbol Gelişim Merkezi",
+"match": "similar"
 },
 "Uber Arena": {
 "capacity": 13488,
 "src": "arenas",
-"arena": "Uber Arena"
+"arena": "Uber Arena",
+"match": "exact"
 },
 "Ulker Sports And Event Hall": {
 "capacity": 13500,
 "src": "arenas",
-"arena": "Ülker Spor ve Etkinlik Salonu"
+"arena": "Ülker Spor ve Etkinlik Salonu",
+"match": "similar"
 },
 "Unipol Arena": {
 "capacity": 10220,
 "src": "arenas",
-"arena": "Virtus Arena"
+"arena": "Virtus Arena",
+"match": "similar"
 },
 "Unipol Forum": {
 "capacity": 12700,
 "src": "arenas",
-"arena": "Unipol Forum"
+"arena": "Unipol Forum",
+"match": "exact"
 },
 "University of Tartu Sports Hall": {
 "capacity": 2600,
 "src": "arenas",
-"arena": "Tartu, TÜ sph (Kullami peaväljak)"
+"arena": "Tartu, TÜ sph (Kullami peaväljak)",
+"match": "exact"
 },
 "Varosi Sportcsarnok": {
 "capacity": 3200,
 "src": "arenas",
-"arena": "Városi Sportcsarnok"
+"arena": "Városi Sportcsarnok",
+"match": "exact"
 },
 "Vejlby Risskov Hallen": {
 "capacity": 1800,
 "src": "arenas",
-"arena": "Vejlby-Risskov Hallen"
+"arena": "Vejlby-Risskov Hallen",
+"match": "exact"
 },
 "Vilnius Arena": {
 "capacity": 9000,
 "src": "arenas",
-"arena": "Arena Vilnius"
+"arena": "Arena Vilnius",
+"match": "similar"
 },
 "Virtus Arena": {
 "capacity": 10220,
 "src": "arenas",
-"arena": "Virtus Arena"
+"arena": "Virtus Arena",
+"match": "exact"
 },
 "Virtus Segafredo Arena": {
 "capacity": 10220,
 "src": "arenas",
-"arena": "Virtus Arena"
+"arena": "Virtus Arena",
+"match": "exact"
 },
 "Volkswagen Halle": {
 "capacity": 6358,
 "src": "arenas",
-"arena": "Volkswagen Halle Braunschweig"
+"arena": "Volkswagen Halle Braunschweig",
+"match": "similar"
 },
 "Víceúčelová Hala Opava": {
 "capacity": 3006,
 "src": "arenas",
-"arena": "Víceúčelová hala Opava"
+"arena": "Víceúčelová hala Opava",
+"match": "exact"
 },
 "Wizink Center": {
 "capacity": 13109,
 "src": "arenas",
-"arena": "Movistar Arena"
+"arena": "Movistar Arena",
+"match": "exact"
 },
 "Xiaomi Arena": {
 "capacity": 11200,
 "src": "arenas",
-"arena": "Xiaomi Arena"
+"arena": "Xiaomi Arena",
+"match": "exact"
 },
 "Zalgirio Arena": {
 "capacity": 15415,
 "src": "arenas",
-"arena": "Žalgirio arena"
-},
-"Zetra Arena": {
-"capacity": 12000,
-"src": "arenas",
-"arena": "Zetra Olympic Hall"
+"arena": "Žalgirio arena",
+"match": "exact"
 },
 "tectake ARENA": {
 "capacity": 3140,
 "src": "arenas",
-"arena": "tectake ARENA Würzburg"
-},
-"Ülker Sports and Event Hall": {
-"capacity": 13500,
-"src": "arenas",
-"arena": "Ülker Spor ve Etkinlik Salonu"
+"arena": "tectake ARENA Würzburg",
+"match": "similar"
 },
 "ŠH Prievidza": {
 "capacity": 3400,
 "src": "arenas",
-"arena": "Niké Aréna"
+"arena": "Niké Aréna",
+"match": "similar"
 }
 }
