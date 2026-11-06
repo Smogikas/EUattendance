@@ -590,6 +590,17 @@
     "lowest": 8371
    },
    {
+    "nation": "Spain",
+    "club": "Unicaja Malaga",
+    "average_attendance": 6170,
+    "weighted_capacity": 10699,
+    "filling_rate": 0.5767,
+    "games_with_attendance": 1,
+    "home_games": 1,
+    "highest": 6170,
+    "lowest": 6170
+   },
+   {
     "nation": "Azerbaijan",
     "club": "Sabah BC",
     "average_attendance": 4430,
@@ -645,6 +656,17 @@
     "lowest": 4055
    },
    {
+    "nation": "France",
+    "club": "SIG Strasbourg",
+    "average_attendance": 4166,
+    "weighted_capacity": 6200,
+    "filling_rate": 0.672,
+    "games_with_attendance": 2,
+    "home_games": 2,
+    "highest": 4500,
+    "lowest": 3833
+   },
+   {
     "nation": "Spain",
     "club": "UCAM Murcia",
     "average_attendance": 4012,
@@ -665,17 +687,6 @@
     "home_games": 2,
     "highest": 3980,
     "lowest": 3837
-   },
-   {
-    "nation": "France",
-    "club": "SIG Strasbourg",
-    "average_attendance": 3833,
-    "weighted_capacity": 6200,
-    "filling_rate": 0.6182,
-    "games_with_attendance": 1,
-    "home_games": 2,
-    "highest": 3833,
-    "lowest": 3833
    },
    {
     "nation": "France",
@@ -702,13 +713,13 @@
    {
     "nation": "Hungary",
     "club": "Falco Szombathely",
-    "average_attendance": 3010,
+    "average_attendance": 2935,
     "weighted_capacity": 3070,
-    "filling_rate": 0.9805,
-    "games_with_attendance": 1,
+    "filling_rate": 0.956,
+    "games_with_attendance": 2,
     "home_games": 2,
     "highest": 3010,
-    "lowest": 3010
+    "lowest": 2860
    },
    {
     "nation": "Turkey",
@@ -799,6 +810,17 @@
     "lowest": 1594
    },
    {
+    "nation": "Finland",
+    "club": "Salon Vilpas",
+    "average_attendance": 1719,
+    "weighted_capacity": 2770,
+    "filling_rate": 0.6206,
+    "games_with_attendance": 1,
+    "home_games": 1,
+    "highest": 1719,
+    "lowest": 1719
+   },
+   {
     "nation": "Croatia",
     "club": "KK Cibona",
     "average_attendance": 1685,
@@ -878,28 +900,6 @@
    {
     "nation": "Israel",
     "club": "Bnei Herzliya",
-    "average_attendance": null,
-    "weighted_capacity": null,
-    "filling_rate": null,
-    "games_with_attendance": 0,
-    "home_games": 1,
-    "highest": null,
-    "lowest": null
-   },
-   {
-    "nation": "Finland",
-    "club": "Salon Vilpas",
-    "average_attendance": null,
-    "weighted_capacity": null,
-    "filling_rate": null,
-    "games_with_attendance": 0,
-    "home_games": 1,
-    "highest": null,
-    "lowest": null
-   },
-   {
-    "nation": "Spain",
-    "club": "Unicaja Malaga",
     "average_attendance": null,
     "weighted_capacity": null,
     "filling_rate": null,
