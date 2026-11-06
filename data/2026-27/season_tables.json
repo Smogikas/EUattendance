@@ -126,11 +126,11 @@
    {
     "nation": "Turkey",
     "club": "Besiktas J.K.",
-    "average_attendance": 6310,
+    "average_attendance": 6318,
     "weighted_capacity": 10000,
-    "filling_rate": 0.631,
-    "games_with_attendance": 4,
-    "home_games": 4,
+    "filling_rate": 0.6318,
+    "games_with_attendance": 5,
+    "home_games": 5,
     "highest": 8500,
     "lowest": 5103
    },
