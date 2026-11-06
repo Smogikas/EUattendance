@@ -82,22 +82,22 @@
    {
     "nation": "Turkey",
     "club": "Fenerbahce Istanbul",
-    "average_attendance": 8174,
+    "average_attendance": 8069,
     "weighted_capacity": 13500,
-    "filling_rate": 0.6055,
-    "games_with_attendance": 5,
-    "home_games": 5,
+    "filling_rate": 0.5977,
+    "games_with_attendance": 6,
+    "home_games": 6,
     "highest": 8850,
     "lowest": 7214
    },
    {
     "nation": "France",
     "club": "ASVEL Basket",
-    "average_attendance": 7530,
-    "weighted_capacity": 11130,
-    "filling_rate": 0.6765,
-    "games_with_attendance": 5,
-    "home_games": 5,
+    "average_attendance": 7448,
+    "weighted_capacity": 11362,
+    "filling_rate": 0.6556,
+    "games_with_attendance": 6,
+    "home_games": 6,
     "highest": 8712,
     "lowest": 5282
    },
@@ -115,11 +115,11 @@
    {
     "nation": "Italy",
     "club": "Olimpia Milano",
-    "average_attendance": 6500,
+    "average_attendance": 6464,
     "weighted_capacity": 12700,
-    "filling_rate": 0.5119,
-    "games_with_attendance": 4,
-    "home_games": 4,
+    "filling_rate": 0.509,
+    "games_with_attendance": 5,
+    "home_games": 5,
     "highest": 6950,
     "lowest": 5891
    },
@@ -203,12 +203,12 @@
    {
     "nation": "Israel",
     "club": "Hapoel Tel Aviv",
-    "average_attendance": 321,
-    "weighted_capacity": 9415,
-    "filling_rate": 0.0341,
-    "games_with_attendance": 3,
-    "home_games": 5,
-    "highest": 432,
+    "average_attendance": 1098,
+    "weighted_capacity": 10155,
+    "filling_rate": 0.1081,
+    "games_with_attendance": 4,
+    "home_games": 6,
+    "highest": 3428,
     "lowest": 218
    },
    {
@@ -346,17 +346,6 @@
     "lowest": 2160
    },
    {
-    "nation": "Spain",
-    "club": "CB Canarias Tenerife",
-    "average_attendance": 3036,
-    "weighted_capacity": 5100,
-    "filling_rate": 0.5954,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 3374,
-    "lowest": 2849
-   },
-   {
     "nation": "Germany",
     "club": "Niners Chemnitz",
     "average_attendance": 2973,
@@ -366,6 +355,17 @@
     "home_games": 3,
     "highest": 3817,
     "lowest": 2482
+   },
+   {
+    "nation": "Spain",
+    "club": "CB Canarias Tenerife",
+    "average_attendance": 2970,
+    "weighted_capacity": 5100,
+    "filling_rate": 0.5823,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 3374,
+    "lowest": 2769
    },
    {
     "nation": "Lithuania",
