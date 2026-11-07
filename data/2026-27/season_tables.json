@@ -3,17 +3,6 @@
  "competitions": {
   "euroleague": [
    {
-    "nation": "Serbia",
-    "club": "KK Partizan",
-    "average_attendance": 17653,
-    "weighted_capacity": 21000,
-    "filling_rate": 0.8406,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 20073,
-    "lowest": 13783
-   },
-   {
     "nation": "Greece",
     "club": "Panathinaikos B.C.",
     "average_attendance": 16750,
@@ -23,6 +12,17 @@
     "home_games": 7,
     "highest": 18768,
     "lowest": 14633
+   },
+   {
+    "nation": "Serbia",
+    "club": "KK Partizan",
+    "average_attendance": 16692,
+    "weighted_capacity": 21000,
+    "filling_rate": 0.7949,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 20073,
+    "lowest": 13783
    },
    {
     "nation": "Lithuania",
@@ -124,6 +124,17 @@
     "lowest": 5891
    },
    {
+    "nation": "Greece",
+    "club": "Olympiacos B.C.",
+    "average_attendance": 6383,
+    "weighted_capacity": 9025,
+    "filling_rate": 0.7073,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 7237,
+    "lowest": 5147
+   },
+   {
     "nation": "Turkey",
     "club": "Besiktas J.K.",
     "average_attendance": 6318,
@@ -133,17 +144,6 @@
     "home_games": 5,
     "highest": 8500,
     "lowest": 5103
-   },
-   {
-    "nation": "Greece",
-    "club": "Olympiacos B.C.",
-    "average_attendance": 6099,
-    "weighted_capacity": 9025,
-    "filling_rate": 0.6758,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 7214,
-    "lowest": 5147
    },
    {
     "nation": "Turkey",
@@ -181,11 +181,11 @@
    {
     "nation": "Italy",
     "club": "Virtus Bologna",
-    "average_attendance": 5395,
+    "average_attendance": 5408,
     "weighted_capacity": 5570,
-    "filling_rate": 0.9686,
-    "games_with_attendance": 4,
-    "home_games": 4,
+    "filling_rate": 0.9708,
+    "games_with_attendance": 5,
+    "home_games": 5,
     "highest": 5471,
     "lowest": 5167
    },
