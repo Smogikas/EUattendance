@@ -592,13 +592,13 @@
    {
     "nation": "Spain",
     "club": "Unicaja Malaga",
-    "average_attendance": 6170,
+    "average_attendance": 6370,
     "weighted_capacity": 10699,
-    "filling_rate": 0.5767,
+    "filling_rate": 0.5954,
     "games_with_attendance": 1,
     "home_games": 1,
-    "highest": 6170,
-    "lowest": 6170
+    "highest": 6370,
+    "lowest": 6370
    },
    {
     "nation": "Azerbaijan",
@@ -610,6 +610,17 @@
     "home_games": 1,
     "highest": 4430,
     "lowest": 4430
+   },
+   {
+    "nation": "Poland",
+    "club": "Legia Warszawa",
+    "average_attendance": 4407,
+    "weighted_capacity": 6304,
+    "filling_rate": 0.6991,
+    "games_with_attendance": 1,
+    "home_games": 1,
+    "highest": 4407,
+    "lowest": 4407
    },
    {
     "nation": "Spain",
@@ -634,6 +645,17 @@
     "lowest": 4380
    },
    {
+    "nation": "France",
+    "club": "SIG Strasbourg",
+    "average_attendance": 4296,
+    "weighted_capacity": 6200,
+    "filling_rate": 0.6928,
+    "games_with_attendance": 2,
+    "home_games": 2,
+    "highest": 4758,
+    "lowest": 3833
+   },
+   {
     "nation": "Lithuania",
     "club": "Rytas Vilnius",
     "average_attendance": 4229,
@@ -645,26 +667,15 @@
     "lowest": 4055
    },
    {
-    "nation": "France",
-    "club": "SIG Strasbourg",
-    "average_attendance": 4166,
-    "weighted_capacity": 6200,
-    "filling_rate": 0.672,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 4500,
-    "lowest": 3833
-   },
-   {
     "nation": "Germany",
     "club": "Telekom Baskets Bonn",
-    "average_attendance": 4122,
+    "average_attendance": 4222,
     "weighted_capacity": 6000,
-    "filling_rate": 0.6869,
+    "filling_rate": 0.7036,
     "games_with_attendance": 2,
     "home_games": 2,
     "highest": 4397,
-    "lowest": 3846
+    "lowest": 4046
    },
    {
     "nation": "Spain",
@@ -713,13 +724,13 @@
    {
     "nation": "Hungary",
     "club": "Falco Szombathely",
-    "average_attendance": 2935,
+    "average_attendance": 3030,
     "weighted_capacity": 3070,
-    "filling_rate": 0.956,
+    "filling_rate": 0.987,
     "games_with_attendance": 2,
     "home_games": 2,
-    "highest": 3010,
-    "lowest": 2860
+    "highest": 3050,
+    "lowest": 3010
    },
    {
     "nation": "Turkey",
@@ -788,6 +799,17 @@
     "lowest": 1942
    },
    {
+    "nation": "Finland",
+    "club": "Salon Vilpas",
+    "average_attendance": 1919,
+    "weighted_capacity": 2770,
+    "filling_rate": 0.6928,
+    "games_with_attendance": 1,
+    "home_games": 1,
+    "highest": 1919,
+    "lowest": 1919
+   },
+   {
     "nation": "Czech Republic",
     "club": "Era Nymburk",
     "average_attendance": 1793,
@@ -810,15 +832,15 @@
     "lowest": 1594
    },
    {
-    "nation": "Finland",
-    "club": "Salon Vilpas",
-    "average_attendance": 1719,
-    "weighted_capacity": 2770,
-    "filling_rate": 0.6206,
+    "nation": "Portugal",
+    "club": "FC Porto",
+    "average_attendance": 1727,
+    "weighted_capacity": 3875,
+    "filling_rate": 0.4457,
     "games_with_attendance": 1,
     "home_games": 1,
-    "highest": 1719,
-    "lowest": 1719
+    "highest": 1727,
+    "lowest": 1727
    },
    {
     "nation": "Croatia",
@@ -856,13 +878,13 @@
    {
     "nation": "Lithuania",
     "club": "Utena Juventus",
-    "average_attendance": 1204,
+    "average_attendance": 1072,
     "weighted_capacity": 9000,
-    "filling_rate": 0.1338,
-    "games_with_attendance": 1,
+    "filling_rate": 0.1191,
+    "games_with_attendance": 2,
     "home_games": 2,
     "highest": 1204,
-    "lowest": 1204
+    "lowest": 939
    },
    {
     "nation": "Greece",
@@ -900,28 +922,6 @@
    {
     "nation": "Israel",
     "club": "Bnei Herzliya",
-    "average_attendance": null,
-    "weighted_capacity": null,
-    "filling_rate": null,
-    "games_with_attendance": 0,
-    "home_games": 1,
-    "highest": null,
-    "lowest": null
-   },
-   {
-    "nation": "Portugal",
-    "club": "FC Porto",
-    "average_attendance": null,
-    "weighted_capacity": null,
-    "filling_rate": null,
-    "games_with_attendance": 0,
-    "home_games": 1,
-    "highest": null,
-    "lowest": null
-   },
-   {
-    "nation": "Poland",
-    "club": "Legia Warszawa",
     "average_attendance": null,
     "weighted_capacity": null,
     "filling_rate": null,
