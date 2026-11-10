@@ -260,13 +260,13 @@
    {
     "nation": "Romania",
     "club": "U-BT Cluj - Napoca",
-    "average_attendance": 6067,
+    "average_attendance": 5979,
     "weighted_capacity": 10000,
-    "filling_rate": 0.6067,
-    "games_with_attendance": 2,
-    "home_games": 2,
+    "filling_rate": 0.5979,
+    "games_with_attendance": 3,
+    "home_games": 3,
     "highest": 6147,
-    "lowest": 5987
+    "lowest": 5802
    },
    {
     "nation": "Greece",
@@ -478,6 +478,17 @@
     "lowest": 1762
    },
    {
+    "nation": "Lithuania",
+    "club": "Neptūnas Klaipėda",
+    "average_attendance": 1623,
+    "weighted_capacity": 6200,
+    "filling_rate": 0.2617,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 1757,
+    "lowest": 1530
+   },
+   {
     "nation": "Italy",
     "club": "Maxima Roma",
     "average_attendance": 1618,
@@ -487,17 +498,6 @@
     "home_games": 3,
     "highest": 2178,
     "lowest": 1208
-   },
-   {
-    "nation": "Lithuania",
-    "club": "Neptūnas Klaipėda",
-    "average_attendance": 1608,
-    "weighted_capacity": 6200,
-    "filling_rate": 0.2593,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 1757,
-    "lowest": 1530
    },
    {
     "nation": "Turkey",
@@ -546,11 +546,11 @@
    {
     "nation": "Bulgaria",
     "club": "BC Balkan Botevgrad",
-    "average_attendance": 583,
+    "average_attendance": 638,
     "weighted_capacity": 3500,
-    "filling_rate": 0.1667,
-    "games_with_attendance": 3,
-    "home_games": 3,
+    "filling_rate": 0.1821,
+    "games_with_attendance": 4,
+    "home_games": 4,
     "highest": 800,
     "lowest": 450
    },
@@ -599,17 +599,6 @@
     "home_games": 1,
     "highest": 6370,
     "lowest": 6370
-   },
-   {
-    "nation": "Azerbaijan",
-    "club": "Sabah BC",
-    "average_attendance": 4430,
-    "weighted_capacity": 9000,
-    "filling_rate": 0.4922,
-    "games_with_attendance": 1,
-    "home_games": 1,
-    "highest": 4430,
-    "lowest": 4430
    },
    {
     "nation": "Poland",
@@ -676,6 +665,17 @@
     "home_games": 2,
     "highest": 4397,
     "lowest": 4046
+   },
+   {
+    "nation": "Azerbaijan",
+    "club": "Sabah BC",
+    "average_attendance": 4215,
+    "weighted_capacity": 9000,
+    "filling_rate": 0.4683,
+    "games_with_attendance": 2,
+    "home_games": 2,
+    "highest": 4430,
+    "lowest": 4000
    },
    {
     "nation": "Spain",

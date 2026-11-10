@@ -28,7 +28,7 @@
 ,Turkey,Turk Telekom B.K.,6631,10400,64%,3,6867,6313
 ,Greece,PAOK BC,6424,8142,79%,2,7252,5595
 ,Spain,CB San Pablo Burgos,6406,9604,67%,4,6896,6007
-,Romania,U-BT Cluj - Napoca,6067,10000,61%,2,6147,5987
+,Romania,U-BT Cluj - Napoca,5979,10000,60%,3,6147,5802
 ,Greece,Aris B.C.,5935,6200,96%,3,6004,5832
 ,Latvia,Rigas Zelli,4650,11200,42%,3,5388,3893
 ,Germany,Rostock Seawolves,3952,5000,79%,2,4620,3285
@@ -48,13 +48,13 @@
 ,Montenegro,KK Buducnost,2083,6000,35%,3,3200,1230
 ,Slovenia,KK Cedevita Olimpija,1834,12480,15%,3,2268,1512
 ,Italy,Derthona Basket,1816,5000,36%,3,1866,1762
+,Lithuania,Neptūnas Klaipėda,1623,6200,26%,4,1757,1530
 ,Italy,Maxima Roma,1618,6067,27%,3,2178,1208
-,Lithuania,Neptūnas Klaipėda,1608,6200,26%,3,1757,1530
 ,Turkey,Tofas Bursa,1535,7500,20%,3,2168,1102
 ,Germany,Frankfurt Skyliners,1405,5002,28%,3,1620,1145
 ,Lithuania,Lietkabelis Panevėžys,1302,5600,23%,4,1459,1212
 ,Italy,BC Roma SPQR,877,3500,25%,3,1000,800
-,Bulgaria,BC Balkan Botevgrad,583,3500,17%,3,800,450
+,Bulgaria,BC Balkan Botevgrad,638,3500,18%,4,800,450
 ,Israel,Hapoel Jerusalem,118,5000,2%,3,227,60
 ,Bosnia and Herzegovina,KK Bosna Royal,,,,0,,
 ,,END
@@ -64,13 +64,13 @@
 ,Nation,Club,Average attendance,Available arena capacity,Filling rate,Games,Highest attendance,Lowest attendance
 ,Germany,Alba Berlin,8546,13488,63%,2,8721,8371
 ,Spain,Unicaja Malaga,6370,10699,60%,1,6370,6370
-,Azerbaijan,Sabah BC,4430,9000,49%,1,4430,4430
 ,Poland,Legia Warszawa,4407,6304,70%,1,4407,4407
 ,Spain,Bilbao Surne Basket,4400,10014,44%,1,4400,4400
 ,Czech Republic,BK Pardubice,4380,10300,43%,1,4380,4380
 ,France,SIG Strasbourg,4296,6200,69%,2,4758,3833
 ,Lithuania,Rytas Vilnius,4229,9000,47%,2,4403,4055
 ,Germany,Telekom Baskets Bonn,4222,6000,70%,2,4397,4046
+,Azerbaijan,Sabah BC,4215,9000,47%,2,4430,4000
 ,Spain,UCAM Murcia,4012,7454,54%,2,4212,3811
 ,Germany,Bamberg Baskets,3908,5700,69%,2,3980,3837
 ,France,Cholet Basket,3779,5191,73%,2,4023,3535
