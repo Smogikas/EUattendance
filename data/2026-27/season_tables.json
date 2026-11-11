@@ -297,7 +297,7 @@
     "weighted_capacity": 5000,
     "filling_rate": 0.7905,
     "games_with_attendance": 2,
-    "home_games": 2,
+    "home_games": 3,
     "highest": 4620,
     "lowest": 3285
    },
@@ -315,22 +315,22 @@
    {
     "nation": "France",
     "club": "JL Bourg Basket",
-    "average_attendance": 3200,
+    "average_attendance": 3340,
     "weighted_capacity": 3548,
-    "filling_rate": 0.9019,
-    "games_with_attendance": 1,
-    "home_games": 2,
-    "highest": 3200,
+    "filling_rate": 0.9414,
+    "games_with_attendance": 2,
+    "home_games": 3,
+    "highest": 3480,
     "lowest": 3200
    },
    {
     "nation": "Spain",
     "club": "Basquet Manresa",
-    "average_attendance": 3200,
+    "average_attendance": 3195,
     "weighted_capacity": 5000,
-    "filling_rate": 0.64,
-    "games_with_attendance": 2,
-    "home_games": 2,
+    "filling_rate": 0.6391,
+    "games_with_attendance": 3,
+    "home_games": 3,
     "highest": 3670,
     "lowest": 2730
    },
@@ -379,6 +379,17 @@
     "lowest": 2041
    },
    {
+    "nation": "Italy",
+    "club": "Aquila Trento",
+    "average_attendance": 2386,
+    "weighted_capacity": 4360,
+    "filling_rate": 0.5472,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 2563,
+    "lowest": 2113
+   },
+   {
     "nation": "Poland",
     "club": "Slask Wroclaw",
     "average_attendance": 2373,
@@ -388,17 +399,6 @@
     "home_games": 4,
     "highest": 3000,
     "lowest": 1618
-   },
-   {
-    "nation": "Italy",
-    "club": "Aquila Trento",
-    "average_attendance": 2346,
-    "weighted_capacity": 4360,
-    "filling_rate": 0.538,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 2563,
-    "lowest": 2113
    },
    {
     "nation": "Italy",
@@ -440,7 +440,7 @@
     "weighted_capacity": 6000,
     "filling_rate": 0.3572,
     "games_with_attendance": 3,
-    "home_games": 3,
+    "home_games": 4,
     "highest": 3788,
     "lowest": 1309
    },
@@ -601,6 +601,17 @@
     "lowest": 6370
    },
    {
+    "nation": "Spain",
+    "club": "Bilbao Surne Basket",
+    "average_attendance": 4536,
+    "weighted_capacity": 10014,
+    "filling_rate": 0.453,
+    "games_with_attendance": 2,
+    "home_games": 2,
+    "highest": 4672,
+    "lowest": 4400
+   },
+   {
     "nation": "Poland",
     "club": "Legia Warszawa",
     "average_attendance": 4407,
@@ -610,17 +621,6 @@
     "home_games": 1,
     "highest": 4407,
     "lowest": 4407
-   },
-   {
-    "nation": "Spain",
-    "club": "Bilbao Surne Basket",
-    "average_attendance": 4400,
-    "weighted_capacity": 10014,
-    "filling_rate": 0.4394,
-    "games_with_attendance": 1,
-    "home_games": 1,
-    "highest": 4400,
-    "lowest": 4400
    },
    {
     "nation": "Czech Republic",
@@ -821,17 +821,6 @@
     "lowest": 1793
    },
    {
-    "nation": "Serbia",
-    "club": "KK Spartak Subotica",
-    "average_attendance": 1742,
-    "weighted_capacity": 3500,
-    "filling_rate": 0.4977,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 1890,
-    "lowest": 1594
-   },
-   {
     "nation": "Portugal",
     "club": "FC Porto",
     "average_attendance": 1727,
@@ -841,6 +830,17 @@
     "home_games": 1,
     "highest": 1727,
     "lowest": 1727
+   },
+   {
+    "nation": "Serbia",
+    "club": "KK Spartak Subotica",
+    "average_attendance": 1724,
+    "weighted_capacity": 3500,
+    "filling_rate": 0.4926,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 1890,
+    "lowest": 1594
    },
    {
     "nation": "Croatia",
@@ -915,7 +915,7 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 1,
+    "home_games": 2,
     "highest": null,
     "lowest": null
    },
@@ -1406,6 +1406,17 @@
     "lowest": 200
    },
    {
+    "nation": "United Kingdom",
+    "club": "Manchester Basketball Club",
+    "average_attendance": 238,
+    "weighted_capacity": 2000,
+    "filling_rate": 0.1187,
+    "games_with_attendance": 2,
+    "home_games": 2,
+    "highest": 275,
+    "lowest": 200
+   },
+   {
     "nation": "Cyprus",
     "club": "Keravnos BC",
     "average_attendance": 225,
@@ -1426,17 +1437,6 @@
     "home_games": 2,
     "highest": 250,
     "lowest": 152
-   },
-   {
-    "nation": "United Kingdom",
-    "club": "Manchester Basketball Club",
-    "average_attendance": 200,
-    "weighted_capacity": 2000,
-    "filling_rate": 0.1,
-    "games_with_attendance": 1,
-    "home_games": 1,
-    "highest": 200,
-    "lowest": 200
    },
    {
     "nation": "Turkey",

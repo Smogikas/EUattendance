@@ -33,14 +33,14 @@
 ,Latvia,Rigas Zelli,4650,11200,42%,3,5388,3893
 ,Germany,Rostock Seawolves,3952,5000,79%,2,4620,3285
 ,France,Le Mans Sarthe Basket,3753,6023,62%,3,3972,3484
-,France,JL Bourg Basket,3200,3548,90%,1,3200,3200
-,Spain,Basquet Manresa,3200,5000,64%,2,3670,2730
+,France,JL Bourg Basket,3340,3548,94%,2,3480,3200
+,Spain,Basquet Manresa,3195,5000,64%,3,3670,2730
 ,Germany,Ratiopharm Ulm,3166,6000,53%,3,5110,2160
 ,Germany,Niners Chemnitz,2973,5000,59%,3,3817,2482
 ,Spain,CB Canarias Tenerife,2970,5100,58%,4,3374,2769
 ,Lithuania,BC Šiauliai,2596,5500,47%,3,3382,2041
+,Italy,Aquila Trento,2386,4360,55%,4,2563,2113
 ,Poland,Slask Wroclaw,2373,3000,79%,4,3000,1618
-,Italy,Aquila Trento,2346,4360,54%,3,2563,2113
 ,Italy,Napoli Basket,2323,3980,58%,1,2323,2323
 ,Italy,Umana Reyer Venezia,2291,3509,65%,3,2518,2143
 ,Turkey,Bahcesehir Koleji,2288,16500,14%,3,3127,1786
@@ -64,8 +64,8 @@
 ,Nation,Club,Average attendance,Available arena capacity,Filling rate,Games,Highest attendance,Lowest attendance
 ,Germany,Alba Berlin,8546,13488,63%,2,8721,8371
 ,Spain,Unicaja Malaga,6370,10699,60%,1,6370,6370
+,Spain,Bilbao Surne Basket,4536,10014,45%,2,4672,4400
 ,Poland,Legia Warszawa,4407,6304,70%,1,4407,4407
-,Spain,Bilbao Surne Basket,4400,10014,44%,1,4400,4400
 ,Czech Republic,BK Pardubice,4380,10300,43%,1,4380,4380
 ,France,SIG Strasbourg,4296,6200,69%,2,4758,3833
 ,Lithuania,Rytas Vilnius,4229,9000,47%,2,4403,4055
@@ -84,8 +84,8 @@
 ,France,Nanterre 92,1942,3000,65%,1,1942,1942
 ,Finland,Salon Vilpas,1919,2770,69%,1,1919,1919
 ,Czech Republic,Era Nymburk,1793,10300,17%,1,1793,1793
-,Serbia,KK Spartak Subotica,1742,3500,50%,2,1890,1594
 ,Portugal,FC Porto,1727,3875,45%,1,1727,1727
+,Serbia,KK Spartak Subotica,1724,3500,49%,3,1890,1594
 ,Croatia,KK Cibona,1685,5400,31%,2,2070,1300
 ,Greece,AEK B.C.,1232,9025,14%,2,1329,1136
 ,Turkey,Galatasaray S.K.,1223,16500,7%,1,1223,1223
@@ -142,9 +142,9 @@
 ,Azerbaijan,Neftchi Sports Club Public Union,350,2625,13%,2,400,300
 ,Portugal,Sporting CP,345,3001,12%,2,390,300
 ,Romania,CS Dinamo Bucharest,250,2538,10%,2,300,200
+,United Kingdom,Manchester Basketball Club,238,2000,12%,2,275,200
 ,Cyprus,Keravnos BC,225,2000,11%,2,250,200
 ,Austria,BC Vienna,201,1530,13%,2,250,152
-,United Kingdom,Manchester Basketball Club,200,2000,10%,1,200,200
 ,Turkey,Esenler Erokspor,130,3200,4%,2,150,110
 ,Georgia,BC Batumi 2010,70,9700,1%,3,100,45
 ,,END
