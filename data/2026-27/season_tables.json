@@ -291,17 +291,6 @@
     "lowest": 3893
    },
    {
-    "nation": "Germany",
-    "club": "Rostock Seawolves",
-    "average_attendance": 3952,
-    "weighted_capacity": 5000,
-    "filling_rate": 0.7905,
-    "games_with_attendance": 2,
-    "home_games": 3,
-    "highest": 4620,
-    "lowest": 3285
-   },
-   {
     "nation": "France",
     "club": "Le Mans Sarthe Basket",
     "average_attendance": 3753,
@@ -311,6 +300,17 @@
     "home_games": 3,
     "highest": 3972,
     "lowest": 3484
+   },
+   {
+    "nation": "Germany",
+    "club": "Rostock Seawolves",
+    "average_attendance": 3553,
+    "weighted_capacity": 5000,
+    "filling_rate": 0.7105,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 4620,
+    "lowest": 2753
    },
    {
     "nation": "France",
@@ -370,11 +370,11 @@
    {
     "nation": "Lithuania",
     "club": "BC Šiauliai",
-    "average_attendance": 2596,
+    "average_attendance": 2575,
     "weighted_capacity": 5500,
-    "filling_rate": 0.472,
-    "games_with_attendance": 3,
-    "home_games": 3,
+    "filling_rate": 0.4681,
+    "games_with_attendance": 4,
+    "home_games": 4,
     "highest": 3382,
     "lowest": 2041
    },
@@ -423,17 +423,6 @@
     "lowest": 2143
    },
    {
-    "nation": "Turkey",
-    "club": "Bahcesehir Koleji",
-    "average_attendance": 2288,
-    "weighted_capacity": 16500,
-    "filling_rate": 0.1387,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 3127,
-    "lowest": 1786
-   },
-   {
     "nation": "United Kingdom",
     "club": "London Lions",
     "average_attendance": 2143,
@@ -454,6 +443,17 @@
     "home_games": 3,
     "highest": 3200,
     "lowest": 1230
+   },
+   {
+    "nation": "Turkey",
+    "club": "Bahcesehir Koleji",
+    "average_attendance": 1967,
+    "weighted_capacity": 16500,
+    "filling_rate": 0.1192,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 3127,
+    "lowest": 1003
    },
    {
     "nation": "Slovenia",
@@ -651,7 +651,7 @@
     "weighted_capacity": 9000,
     "filling_rate": 0.4699,
     "games_with_attendance": 2,
-    "home_games": 2,
+    "home_games": 3,
     "highest": 4403,
     "lowest": 4055
    },
@@ -816,7 +816,7 @@
     "weighted_capacity": 10300,
     "filling_rate": 0.1741,
     "games_with_attendance": 1,
-    "home_games": 1,
+    "home_games": 2,
     "highest": 1793,
     "lowest": 1793
    },
@@ -1109,17 +1109,6 @@
     "lowest": 1142
    },
    {
-    "nation": "Turkey",
-    "club": "Korfez Basket (Manisa)",
-    "average_attendance": 1174,
-    "weighted_capacity": 5000,
-    "filling_rate": 0.2349,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 2123,
-    "lowest": 400
-   },
-   {
     "nation": "Estonia",
     "club": "Tartu Ulikool",
     "average_attendance": 1098,
@@ -1140,28 +1129,6 @@
     "home_games": 3,
     "highest": 2000,
     "lowest": 500
-   },
-   {
-    "nation": "Bulgaria",
-    "club": "\"Basketball Club Lokomotiv Plovdiv\" Association",
-    "average_attendance": 983,
-    "weighted_capacity": 1600,
-    "filling_rate": 0.6146,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 1100,
-    "lowest": 900
-   },
-   {
-    "nation": "Latvia",
-    "club": "Valmiera Glass/ViA",
-    "average_attendance": 961,
-    "weighted_capacity": 1500,
-    "filling_rate": 0.6407,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 1004,
-    "lowest": 911
    },
    {
     "nation": "Greece",
@@ -1186,6 +1153,28 @@
     "lowest": 900
    },
    {
+    "nation": "Turkey",
+    "club": "Korfez Basket (Manisa)",
+    "average_attendance": 936,
+    "weighted_capacity": 5000,
+    "filling_rate": 0.1872,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 2123,
+    "lowest": 221
+   },
+   {
+    "nation": "Latvia",
+    "club": "Valmiera Glass/ViA",
+    "average_attendance": 936,
+    "weighted_capacity": 1500,
+    "filling_rate": 0.6243,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 1004,
+    "lowest": 863
+   },
+   {
     "nation": "Poland",
     "club": "Dziki Warszawa",
     "average_attendance": 924,
@@ -1206,6 +1195,17 @@
     "home_games": 2,
     "highest": 950,
     "lowest": 891
+   },
+   {
+    "nation": "Bulgaria",
+    "club": "\"Basketball Club Lokomotiv Plovdiv\" Association",
+    "average_attendance": 912,
+    "weighted_capacity": 1600,
+    "filling_rate": 0.5703,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 1100,
+    "lowest": 700
    },
    {
     "nation": "Hungary",
@@ -1274,15 +1274,15 @@
     "lowest": 662
    },
    {
-    "nation": "Greece",
-    "club": "Promitheas Patras B.C.",
-    "average_attendance": 576,
-    "weighted_capacity": 4200,
-    "filling_rate": 0.1373,
-    "games_with_attendance": 2,
+    "nation": "Romania",
+    "club": "CS Dinamo Bucharest",
+    "average_attendance": 567,
+    "weighted_capacity": 2538,
+    "filling_rate": 0.2233,
+    "games_with_attendance": 3,
     "home_games": 3,
-    "highest": 798,
-    "lowest": 355
+    "highest": 1200,
+    "lowest": 200
    },
    {
     "nation": "Azerbaijan",
@@ -1296,17 +1296,6 @@
     "lowest": 500
    },
    {
-    "nation": "Romania",
-    "club": "Sport Club Municipal Craiova",
-    "average_attendance": 537,
-    "weighted_capacity": 4215,
-    "filling_rate": 0.1275,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 800,
-    "lowest": 312
-   },
-   {
     "nation": "Azerbaijan",
     "club": "Gence BC",
     "average_attendance": 521,
@@ -1318,6 +1307,17 @@
     "lowest": 500
    },
    {
+    "nation": "Greece",
+    "club": "Promitheas Patras B.C.",
+    "average_attendance": 513,
+    "weighted_capacity": 4200,
+    "filling_rate": 0.1222,
+    "games_with_attendance": 3,
+    "home_games": 4,
+    "highest": 798,
+    "lowest": 355
+   },
+   {
     "nation": "Estonia",
     "club": "BC Parnu",
     "average_attendance": 488,
@@ -1327,6 +1327,17 @@
     "home_games": 3,
     "highest": 503,
     "lowest": 458
+   },
+   {
+    "nation": "Romania",
+    "club": "Sport Club Municipal Craiova",
+    "average_attendance": 482,
+    "weighted_capacity": 4215,
+    "filling_rate": 0.1144,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 800,
+    "lowest": 312
    },
    {
     "nation": "Cyprus",
@@ -1362,28 +1373,6 @@
     "lowest": 366
    },
    {
-    "nation": "Slovakia",
-    "club": "Nitra Blue Wings",
-    "average_attendance": 367,
-    "weighted_capacity": 2000,
-    "filling_rate": 0.1833,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 550,
-    "lowest": 270
-   },
-   {
-    "nation": "Azerbaijan",
-    "club": "Neftchi Sports Club Public Union",
-    "average_attendance": 350,
-    "weighted_capacity": 2625,
-    "filling_rate": 0.1333,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 400,
-    "lowest": 300
-   },
-   {
     "nation": "Portugal",
     "club": "Sporting CP",
     "average_attendance": 345,
@@ -1395,15 +1384,26 @@
     "lowest": 300
    },
    {
-    "nation": "Romania",
-    "club": "CS Dinamo Bucharest",
-    "average_attendance": 250,
-    "weighted_capacity": 2538,
-    "filling_rate": 0.0985,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 300,
-    "lowest": 200
+    "nation": "Azerbaijan",
+    "club": "Neftchi Sports Club Public Union",
+    "average_attendance": 340,
+    "weighted_capacity": 4750,
+    "filling_rate": 0.0716,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 400,
+    "lowest": 300
+   },
+   {
+    "nation": "Slovakia",
+    "club": "Nitra Blue Wings",
+    "average_attendance": 322,
+    "weighted_capacity": 2000,
+    "filling_rate": 0.1613,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 550,
+    "lowest": 190
    },
    {
     "nation": "United Kingdom",
@@ -1452,11 +1452,11 @@
    {
     "nation": "Georgia",
     "club": "BC Batumi 2010",
-    "average_attendance": 70,
+    "average_attendance": 78,
     "weighted_capacity": 9700,
-    "filling_rate": 0.0072,
-    "games_with_attendance": 3,
-    "home_games": 3,
+    "filling_rate": 0.008,
+    "games_with_attendance": 4,
+    "home_games": 4,
     "highest": 100,
     "lowest": 45
    }
