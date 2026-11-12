@@ -64,14 +64,14 @@
 ,Nation,Club,Average attendance,Available arena capacity,Filling rate,Games,Highest attendance,Lowest attendance
 ,Germany,Alba Berlin,8546,13488,63%,2,8721,8371
 ,Spain,Unicaja Malaga,6370,10699,60%,1,6370,6370
+,Lithuania,Rytas Vilnius,4575,9000,51%,3,5267,4055
 ,Spain,Bilbao Surne Basket,4536,10014,45%,2,4672,4400
 ,Poland,Legia Warszawa,4407,6304,70%,1,4407,4407
 ,Czech Republic,BK Pardubice,4380,10300,43%,1,4380,4380
 ,France,SIG Strasbourg,4296,6200,69%,2,4758,3833
-,Lithuania,Rytas Vilnius,4229,9000,47%,2,4403,4055
 ,Germany,Telekom Baskets Bonn,4222,6000,70%,2,4397,4046
 ,Azerbaijan,Sabah BC,4215,9000,47%,2,4430,4000
-,Spain,UCAM Murcia,4012,7454,54%,2,4212,3811
+,Spain,UCAM Murcia,4130,7454,55%,3,4366,3811
 ,Germany,Bamberg Baskets,3908,5700,69%,2,3980,3837
 ,France,Cholet Basket,3779,5191,73%,2,4023,3535
 ,Spain,Club Joventut Badalona,3117,12760,24%,2,3429,2805
@@ -83,14 +83,14 @@
 ,Italy,Pallacanestro Reggiana,2006,4530,44%,2,2197,1816
 ,France,Nanterre 92,1942,3000,65%,1,1942,1942
 ,Finland,Salon Vilpas,1919,2770,69%,1,1919,1919
-,Czech Republic,Era Nymburk,1793,10300,17%,1,1793,1793
 ,Portugal,FC Porto,1727,3875,45%,1,1727,1727
 ,Serbia,KK Spartak Subotica,1724,3500,49%,3,1890,1594
 ,Croatia,KK Cibona,1685,5400,31%,2,2070,1300
+,Czech Republic,Era Nymburk,1452,10300,14%,2,1793,1112
 ,Greece,AEK B.C.,1232,9025,14%,2,1329,1136
 ,Turkey,Galatasaray S.K.,1223,16500,7%,1,1223,1223
+,Greece,Peristeri B.C.,1141,4000,29%,2,1276,1006
 ,Lithuania,Utena Juventus,1072,9000,12%,2,1204,939
-,Greece,Peristeri B.C.,1006,4000,25%,1,1006,1006
 ,Bosnia and Herzegovina,KK Igokea,775,3050,25%,2,950,600
 ,Israel,Hapoel Holon,,,,0,,
 ,Israel,Bnei Herzliya,,,,0,,

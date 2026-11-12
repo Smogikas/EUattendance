@@ -601,6 +601,17 @@
     "lowest": 6370
    },
    {
+    "nation": "Lithuania",
+    "club": "Rytas Vilnius",
+    "average_attendance": 4575,
+    "weighted_capacity": 9000,
+    "filling_rate": 0.5083,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 5267,
+    "lowest": 4055
+   },
+   {
     "nation": "Spain",
     "club": "Bilbao Surne Basket",
     "average_attendance": 4536,
@@ -645,17 +656,6 @@
     "lowest": 3833
    },
    {
-    "nation": "Lithuania",
-    "club": "Rytas Vilnius",
-    "average_attendance": 4229,
-    "weighted_capacity": 9000,
-    "filling_rate": 0.4699,
-    "games_with_attendance": 2,
-    "home_games": 3,
-    "highest": 4403,
-    "lowest": 4055
-   },
-   {
     "nation": "Germany",
     "club": "Telekom Baskets Bonn",
     "average_attendance": 4222,
@@ -680,12 +680,12 @@
    {
     "nation": "Spain",
     "club": "UCAM Murcia",
-    "average_attendance": 4012,
+    "average_attendance": 4130,
     "weighted_capacity": 7454,
-    "filling_rate": 0.5382,
-    "games_with_attendance": 2,
+    "filling_rate": 0.554,
+    "games_with_attendance": 3,
     "home_games": 3,
-    "highest": 4212,
+    "highest": 4366,
     "lowest": 3811
    },
    {
@@ -810,17 +810,6 @@
     "lowest": 1919
    },
    {
-    "nation": "Czech Republic",
-    "club": "Era Nymburk",
-    "average_attendance": 1793,
-    "weighted_capacity": 10300,
-    "filling_rate": 0.1741,
-    "games_with_attendance": 1,
-    "home_games": 2,
-    "highest": 1793,
-    "lowest": 1793
-   },
-   {
     "nation": "Portugal",
     "club": "FC Porto",
     "average_attendance": 1727,
@@ -854,6 +843,17 @@
     "lowest": 1300
    },
    {
+    "nation": "Czech Republic",
+    "club": "Era Nymburk",
+    "average_attendance": 1452,
+    "weighted_capacity": 10300,
+    "filling_rate": 0.141,
+    "games_with_attendance": 2,
+    "home_games": 2,
+    "highest": 1793,
+    "lowest": 1112
+   },
+   {
     "nation": "Greece",
     "club": "AEK B.C.",
     "average_attendance": 1232,
@@ -876,6 +876,17 @@
     "lowest": 1223
    },
    {
+    "nation": "Greece",
+    "club": "Peristeri B.C.",
+    "average_attendance": 1141,
+    "weighted_capacity": 4000,
+    "filling_rate": 0.2853,
+    "games_with_attendance": 2,
+    "home_games": 2,
+    "highest": 1276,
+    "lowest": 1006
+   },
+   {
     "nation": "Lithuania",
     "club": "Utena Juventus",
     "average_attendance": 1072,
@@ -885,17 +896,6 @@
     "home_games": 2,
     "highest": 1204,
     "lowest": 939
-   },
-   {
-    "nation": "Greece",
-    "club": "Peristeri B.C.",
-    "average_attendance": 1006,
-    "weighted_capacity": 4000,
-    "filling_rate": 0.2515,
-    "games_with_attendance": 1,
-    "home_games": 2,
-    "highest": 1006,
-    "lowest": 1006
    },
    {
     "nation": "Bosnia and Herzegovina",
