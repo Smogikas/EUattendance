@@ -1296,17 +1296,6 @@
     "lowest": 500
    },
    {
-    "nation": "Azerbaijan",
-    "club": "Gence BC",
-    "average_attendance": 521,
-    "weighted_capacity": 3050,
-    "filling_rate": 0.1708,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 542,
-    "lowest": 500
-   },
-   {
     "nation": "Greece",
     "club": "Promitheas Patras B.C.",
     "average_attendance": 513,
@@ -1320,12 +1309,12 @@
    {
     "nation": "Estonia",
     "club": "BC Parnu",
-    "average_attendance": 488,
+    "average_attendance": 507,
     "weighted_capacity": 1820,
-    "filling_rate": 0.2679,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 503,
+    "filling_rate": 0.2784,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 564,
     "lowest": 458
    },
    {
@@ -1360,6 +1349,17 @@
     "home_games": 2,
     "highest": 600,
     "lowest": 350
+   },
+   {
+    "nation": "Azerbaijan",
+    "club": "Gence BC",
+    "average_attendance": 447,
+    "weighted_capacity": 3050,
+    "filling_rate": 0.1467,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 542,
+    "lowest": 300
    },
    {
     "nation": "Portugal",
