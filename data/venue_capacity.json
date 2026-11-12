@@ -1,4 +1,10 @@
 {
+"Accor Arena": {
+"capacity": 15609,
+"src": "arenas",
+"arena": "Accor Arena",
+"match": "exact"
+},
 "Adidas Arena": {
 "capacity": 8000,
 "src": "arenas",

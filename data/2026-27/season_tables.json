@@ -16,13 +16,13 @@
    {
     "nation": "Serbia",
     "club": "KK Partizan",
-    "average_attendance": 16692,
+    "average_attendance": 16095,
     "weighted_capacity": 21000,
-    "filling_rate": 0.7949,
-    "games_with_attendance": 4,
-    "home_games": 4,
+    "filling_rate": 0.7664,
+    "games_with_attendance": 5,
+    "home_games": 5,
     "highest": 20073,
-    "lowest": 13783
+    "lowest": 13706
    },
    {
     "nation": "Lithuania",
@@ -113,6 +113,17 @@
     "lowest": 6290
    },
    {
+    "nation": "France",
+    "club": "Paris Basketball",
+    "average_attendance": 6869,
+    "weighted_capacity": 9275,
+    "filling_rate": 0.7406,
+    "games_with_attendance": 6,
+    "home_games": 6,
+    "highest": 11774,
+    "lowest": 3746
+   },
+   {
     "nation": "Italy",
     "club": "Olimpia Milano",
     "average_attendance": 6464,
@@ -155,17 +166,6 @@
     "home_games": 5,
     "highest": 9923,
     "lowest": 3603
-   },
-   {
-    "nation": "France",
-    "club": "Paris Basketball",
-    "average_attendance": 5888,
-    "weighted_capacity": 8008,
-    "filling_rate": 0.7352,
-    "games_with_attendance": 5,
-    "home_games": 5,
-    "highest": 8042,
-    "lowest": 3746
    },
    {
     "nation": "United Arab Emirates",
@@ -271,11 +271,11 @@
    {
     "nation": "Greece",
     "club": "Aris B.C.",
-    "average_attendance": 5935,
+    "average_attendance": 5936,
     "weighted_capacity": 6200,
-    "filling_rate": 0.9573,
-    "games_with_attendance": 3,
-    "home_games": 3,
+    "filling_rate": 0.9574,
+    "games_with_attendance": 4,
+    "home_games": 4,
     "highest": 6004,
     "lowest": 5832
    },
@@ -293,11 +293,11 @@
    {
     "nation": "France",
     "club": "Le Mans Sarthe Basket",
-    "average_attendance": 3753,
+    "average_attendance": 3711,
     "weighted_capacity": 6023,
-    "filling_rate": 0.6231,
-    "games_with_attendance": 3,
-    "home_games": 3,
+    "filling_rate": 0.6161,
+    "games_with_attendance": 4,
+    "home_games": 4,
     "highest": 3972,
     "lowest": 3484
    },
@@ -348,11 +348,11 @@
    {
     "nation": "Germany",
     "club": "Niners Chemnitz",
-    "average_attendance": 2973,
+    "average_attendance": 2995,
     "weighted_capacity": 5000,
-    "filling_rate": 0.5946,
-    "games_with_attendance": 3,
-    "home_games": 3,
+    "filling_rate": 0.599,
+    "games_with_attendance": 4,
+    "home_games": 4,
     "highest": 3817,
     "lowest": 2482
    },
@@ -456,6 +456,17 @@
     "lowest": 1003
    },
    {
+    "nation": "Italy",
+    "club": "Derthona Basket",
+    "average_attendance": 1840,
+    "weighted_capacity": 5000,
+    "filling_rate": 0.3679,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 1911,
+    "lowest": 1762
+   },
+   {
     "nation": "Slovenia",
     "club": "KK Cedevita Olimpija",
     "average_attendance": 1834,
@@ -465,17 +476,6 @@
     "home_games": 3,
     "highest": 2268,
     "lowest": 1512
-   },
-   {
-    "nation": "Italy",
-    "club": "Derthona Basket",
-    "average_attendance": 1816,
-    "weighted_capacity": 5000,
-    "filling_rate": 0.3631,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 1866,
-    "lowest": 1762
    },
    {
     "nation": "Lithuania",
@@ -535,13 +535,13 @@
    {
     "nation": "Italy",
     "club": "BC Roma SPQR",
-    "average_attendance": 877,
+    "average_attendance": 832,
     "weighted_capacity": 3500,
-    "filling_rate": 0.2505,
-    "games_with_attendance": 3,
-    "home_games": 3,
+    "filling_rate": 0.2379,
+    "games_with_attendance": 4,
+    "home_games": 4,
     "highest": 1000,
-    "lowest": 800
+    "lowest": 700
    },
    {
     "nation": "Bulgaria",
@@ -684,7 +684,7 @@
     "weighted_capacity": 7454,
     "filling_rate": 0.5382,
     "games_with_attendance": 2,
-    "home_games": 2,
+    "home_games": 3,
     "highest": 4212,
     "lowest": 3811
    },
@@ -893,7 +893,7 @@
     "weighted_capacity": 4000,
     "filling_rate": 0.2515,
     "games_with_attendance": 1,
-    "home_games": 1,
+    "home_games": 2,
     "highest": 1006,
     "lowest": 1006
    },
@@ -955,6 +955,17 @@
     "lowest": 3805
    },
    {
+    "nation": "Poland",
+    "club": "Zastal Zielona Gora",
+    "average_attendance": 3454,
+    "weighted_capacity": 5080,
+    "filling_rate": 0.68,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 4335,
+    "lowest": 3032
+   },
+   {
     "nation": "France",
     "club": "Elan Chalon",
     "average_attendance": 3180,
@@ -964,17 +975,6 @@
     "home_games": 3,
     "highest": 3360,
     "lowest": 3000
-   },
-   {
-    "nation": "Poland",
-    "club": "Zastal Zielona Gora",
-    "average_attendance": 3161,
-    "weighted_capacity": 5080,
-    "filling_rate": 0.6222,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 3330,
-    "lowest": 3032
    },
    {
     "nation": "Spain",
@@ -1023,11 +1023,11 @@
    {
     "nation": "Germany",
     "club": "Wurzburg Baskets",
-    "average_attendance": 1767,
+    "average_attendance": 1750,
     "weighted_capacity": 3140,
-    "filling_rate": 0.5626,
-    "games_with_attendance": 3,
-    "home_games": 3,
+    "filling_rate": 0.5574,
+    "games_with_attendance": 4,
+    "home_games": 4,
     "highest": 1900,
     "lowest": 1600
    },
@@ -1045,11 +1045,11 @@
    {
     "nation": "Slovakia",
     "club": "BC Prievidza",
-    "average_attendance": 1525,
+    "average_attendance": 1548,
     "weighted_capacity": 3400,
-    "filling_rate": 0.4485,
-    "games_with_attendance": 2,
-    "home_games": 2,
+    "filling_rate": 0.4554,
+    "games_with_attendance": 3,
+    "home_games": 3,
     "highest": 1733,
     "lowest": 1317
    },
@@ -1067,11 +1067,11 @@
    {
     "nation": "Belgium",
     "club": "Filou Ostende",
-    "average_attendance": 1500,
+    "average_attendance": 1479,
     "weighted_capacity": 5000,
-    "filling_rate": 0.2999,
-    "games_with_attendance": 2,
-    "home_games": 3,
+    "filling_rate": 0.2958,
+    "games_with_attendance": 3,
+    "home_games": 4,
     "highest": 1678,
     "lowest": 1321
    },
@@ -1120,6 +1120,17 @@
     "lowest": 1082
    },
    {
+    "nation": "Poland",
+    "club": "Dziki Warszawa",
+    "average_attendance": 1018,
+    "weighted_capacity": 1298,
+    "filling_rate": 0.784,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 1204,
+    "lowest": 857
+   },
+   {
     "nation": "North Macedonia",
     "club": "KK MZT Skopje Aerodrom",
     "average_attendance": 1000,
@@ -1131,24 +1142,13 @@
     "lowest": 500
    },
    {
-    "nation": "Greece",
-    "club": "Iraklis B.C.",
-    "average_attendance": 960,
-    "weighted_capacity": 2580,
-    "filling_rate": 0.3722,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 1500,
-    "lowest": 578
-   },
-   {
     "nation": "Switzerland",
     "club": "Fribourg Olympic Basket",
-    "average_attendance": 949,
+    "average_attendance": 937,
     "weighted_capacity": 2789,
-    "filling_rate": 0.3404,
-    "games_with_attendance": 3,
-    "home_games": 3,
+    "filling_rate": 0.336,
+    "games_with_attendance": 4,
+    "home_games": 4,
     "highest": 998,
     "lowest": 900
    },
@@ -1175,15 +1175,15 @@
     "lowest": 863
    },
    {
-    "nation": "Poland",
-    "club": "Dziki Warszawa",
-    "average_attendance": 924,
-    "weighted_capacity": 1298,
-    "filling_rate": 0.7122,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 992,
-    "lowest": 857
+    "nation": "Greece",
+    "club": "Iraklis B.C.",
+    "average_attendance": 933,
+    "weighted_capacity": 2580,
+    "filling_rate": 0.3615,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 1500,
+    "lowest": 578
    },
    {
     "nation": "Czech Republic",
@@ -1219,24 +1219,13 @@
     "lowest": 800
    },
    {
-    "nation": "Croatia",
-    "club": "KK Split",
-    "average_attendance": 850,
-    "weighted_capacity": 10941,
-    "filling_rate": 0.0777,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 1000,
-    "lowest": 700
-   },
-   {
     "nation": "Switzerland",
     "club": "Lions de Geneve",
-    "average_attendance": 830,
+    "average_attendance": 884,
     "weighted_capacity": 3260,
-    "filling_rate": 0.2546,
-    "games_with_attendance": 4,
-    "home_games": 4,
+    "filling_rate": 0.2712,
+    "games_with_attendance": 5,
+    "home_games": 5,
     "highest": 1100,
     "lowest": 720
    },
@@ -1250,6 +1239,17 @@
     "home_games": 2,
     "highest": 911,
     "lowest": 711
+   },
+   {
+    "nation": "Croatia",
+    "club": "KK Split",
+    "average_attendance": 733,
+    "weighted_capacity": 10941,
+    "filling_rate": 0.067,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 1000,
+    "lowest": 500
    },
    {
     "nation": "Greece",
@@ -1329,6 +1329,17 @@
     "lowest": 458
    },
    {
+    "nation": "Bulgaria",
+    "club": "BC Rilski Sportist",
+    "average_attendance": 483,
+    "weighted_capacity": 2767,
+    "filling_rate": 0.1747,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 500,
+    "lowest": 450
+   },
+   {
     "nation": "Romania",
     "club": "Sport Club Municipal Craiova",
     "average_attendance": 482,
@@ -1351,24 +1362,13 @@
     "lowest": 350
    },
    {
-    "nation": "Bulgaria",
-    "club": "BC Rilski Sportist",
-    "average_attendance": 475,
-    "weighted_capacity": 2650,
-    "filling_rate": 0.1792,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 500,
-    "lowest": 450
-   },
-   {
     "nation": "Portugal",
     "club": "SL Benfica",
     "average_attendance": 379,
     "weighted_capacity": 2456,
     "filling_rate": 0.1545,
     "games_with_attendance": 3,
-    "home_games": 3,
+    "home_games": 4,
     "highest": 386,
     "lowest": 366
    },
@@ -1430,11 +1430,11 @@
    {
     "nation": "Austria",
     "club": "BC Vienna",
-    "average_attendance": 201,
+    "average_attendance": 202,
     "weighted_capacity": 1530,
-    "filling_rate": 0.1314,
-    "games_with_attendance": 2,
-    "home_games": 2,
+    "filling_rate": 0.1318,
+    "games_with_attendance": 3,
+    "home_games": 3,
     "highest": 250,
     "lowest": 152
    },
