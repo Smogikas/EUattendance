@@ -49,11 +49,11 @@
    {
     "nation": "Spain",
     "club": "Valencia Basket",
-    "average_attendance": 11920,
+    "average_attendance": 12088,
     "weighted_capacity": 15600,
-    "filling_rate": 0.7641,
-    "games_with_attendance": 5,
-    "home_games": 5,
+    "filling_rate": 0.7748,
+    "games_with_attendance": 6,
+    "home_games": 6,
     "highest": 13177,
     "lowest": 10361
    },
@@ -71,11 +71,11 @@
    {
     "nation": "Spain",
     "club": "Real Madrid Baloncesto",
-    "average_attendance": 8823,
+    "average_attendance": 8792,
     "weighted_capacity": 13109,
-    "filling_rate": 0.673,
-    "games_with_attendance": 4,
-    "home_games": 4,
+    "filling_rate": 0.6707,
+    "games_with_attendance": 5,
+    "home_games": 5,
     "highest": 10164,
     "lowest": 6723
    },
@@ -126,24 +126,13 @@
    {
     "nation": "Italy",
     "club": "Olimpia Milano",
-    "average_attendance": 6464,
+    "average_attendance": 6466,
     "weighted_capacity": 12700,
-    "filling_rate": 0.509,
-    "games_with_attendance": 5,
-    "home_games": 5,
+    "filling_rate": 0.5091,
+    "games_with_attendance": 6,
+    "home_games": 6,
     "highest": 6950,
     "lowest": 5891
-   },
-   {
-    "nation": "Greece",
-    "club": "Olympiacos B.C.",
-    "average_attendance": 6383,
-    "weighted_capacity": 9025,
-    "filling_rate": 0.7073,
-    "games_with_attendance": 4,
-    "home_games": 4,
-    "highest": 7237,
-    "lowest": 5147
    },
    {
     "nation": "Turkey",
@@ -155,6 +144,17 @@
     "home_games": 5,
     "highest": 8500,
     "lowest": 5103
+   },
+   {
+    "nation": "Greece",
+    "club": "Olympiacos B.C.",
+    "average_attendance": 6132,
+    "weighted_capacity": 9025,
+    "filling_rate": 0.6795,
+    "games_with_attendance": 5,
+    "home_games": 5,
+    "highest": 7237,
+    "lowest": 5129
    },
    {
     "nation": "Turkey",
@@ -214,12 +214,12 @@
    {
     "nation": "Israel",
     "club": "Maccabi Tel Aviv",
-    "average_attendance": 218,
+    "average_attendance": 417,
     "weighted_capacity": 8000,
-    "filling_rate": 0.0272,
-    "games_with_attendance": 4,
-    "home_games": 4,
-    "highest": 427,
+    "filling_rate": 0.0521,
+    "games_with_attendance": 5,
+    "home_games": 5,
+    "highest": 1212,
     "lowest": 88
    }
   ],
@@ -513,12 +513,12 @@
    {
     "nation": "Germany",
     "club": "Frankfurt Skyliners",
-    "average_attendance": 1405,
+    "average_attendance": 1470,
     "weighted_capacity": 5002,
-    "filling_rate": 0.2809,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 1620,
+    "filling_rate": 0.2939,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 1666,
     "lowest": 1145
    },
    {

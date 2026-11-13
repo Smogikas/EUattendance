@@ -647,6 +647,12 @@
 "arena": "Jane Sandanski Arena",
 "match": "exact"
 },
+"Spyros Kyprianou Athletic Center": {
+"capacity": 8000,
+"src": "arenas",
+"arena": "Spyros Kyprianou Athletic Center",
+"match": "exact"
+},
 "Stadthalle Rostock": {
 "capacity": 5000,
 "src": "arenas",
