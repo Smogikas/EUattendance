@@ -5,12 +5,12 @@
    {
     "nation": "Greece",
     "club": "Panathinaikos B.C.",
-    "average_attendance": 16750,
-    "weighted_capacity": 19000,
-    "filling_rate": 0.8816,
-    "games_with_attendance": 7,
-    "home_games": 7,
-    "highest": 18768,
+    "average_attendance": 17041,
+    "weighted_capacity": 19009,
+    "filling_rate": 0.8965,
+    "games_with_attendance": 8,
+    "home_games": 8,
+    "highest": 19073,
     "lowest": 14633
    },
    {
@@ -93,11 +93,11 @@
    {
     "nation": "France",
     "club": "ASVEL Basket",
-    "average_attendance": 7448,
-    "weighted_capacity": 11362,
-    "filling_rate": 0.6556,
-    "games_with_attendance": 6,
-    "home_games": 6,
+    "average_attendance": 7565,
+    "weighted_capacity": 11528,
+    "filling_rate": 0.6563,
+    "games_with_attendance": 7,
+    "home_games": 7,
     "highest": 8712,
     "lowest": 5282
    },
