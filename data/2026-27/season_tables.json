@@ -157,17 +157,6 @@
     "lowest": 5129
    },
    {
-    "nation": "United Arab Emirates",
-    "club": "Dubai Basketball",
-    "average_attendance": 5690,
-    "weighted_capacity": 15000,
-    "filling_rate": 0.3794,
-    "games_with_attendance": 5,
-    "home_games": 5,
-    "highest": 7313,
-    "lowest": 2700
-   },
-   {
     "nation": "Turkey",
     "club": "Anadolu Efes S.K.",
     "average_attendance": 5689,
@@ -177,6 +166,17 @@
     "home_games": 6,
     "highest": 9923,
     "lowest": 3603
+   },
+   {
+    "nation": "United Arab Emirates",
+    "club": "Dubai Basketball",
+    "average_attendance": 5654,
+    "weighted_capacity": 15000,
+    "filling_rate": 0.3769,
+    "games_with_attendance": 6,
+    "home_games": 6,
+    "highest": 7313,
+    "lowest": 2700
    },
    {
     "nation": "Italy",
@@ -214,12 +214,12 @@
    {
     "nation": "Israel",
     "club": "Maccabi Tel Aviv",
-    "average_attendance": 417,
+    "average_attendance": 733,
     "weighted_capacity": 8000,
-    "filling_rate": 0.0521,
-    "games_with_attendance": 5,
-    "home_games": 5,
-    "highest": 1212,
+    "filling_rate": 0.0916,
+    "games_with_attendance": 6,
+    "home_games": 6,
+    "highest": 2313,
     "lowest": 88
    }
   ],
@@ -227,12 +227,12 @@
    {
     "nation": "Turkey",
     "club": "Turk Telekom B.K.",
-    "average_attendance": 6631,
+    "average_attendance": 6885,
     "weighted_capacity": 10400,
-    "filling_rate": 0.6376,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 6867,
+    "filling_rate": 0.662,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 7647,
     "lowest": 6313
    },
    {
@@ -546,13 +546,13 @@
    {
     "nation": "Bulgaria",
     "club": "BC Balkan Botevgrad",
-    "average_attendance": 638,
+    "average_attendance": 560,
     "weighted_capacity": 3500,
-    "filling_rate": 0.1821,
-    "games_with_attendance": 4,
-    "home_games": 4,
+    "filling_rate": 0.16,
+    "games_with_attendance": 5,
+    "home_games": 5,
     "highest": 800,
-    "lowest": 450
+    "lowest": 250
    },
    {
     "nation": "Israel",
@@ -926,7 +926,7 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 1,
+    "home_games": 2,
     "highest": null,
     "lowest": null
    }
@@ -999,6 +999,17 @@
     "lowest": 1684
    },
    {
+    "nation": "Turkey",
+    "club": "Denizli Basket (Merkezefendi)",
+    "average_attendance": 2058,
+    "weighted_capacity": 5000,
+    "filling_rate": 0.4115,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 2500,
+    "lowest": 1200
+   },
+   {
     "nation": "Greece",
     "club": "Kolossos Rodou B.C.",
     "average_attendance": 2000,
@@ -1008,17 +1019,6 @@
     "home_games": 2,
     "highest": 2000,
     "lowest": 2000
-   },
-   {
-    "nation": "Turkey",
-    "club": "Denizli Basket (Merkezefendi)",
-    "average_attendance": 1836,
-    "weighted_capacity": 5000,
-    "filling_rate": 0.3673,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 2473,
-    "lowest": 1200
    },
    {
     "nation": "Germany",
@@ -1252,17 +1252,6 @@
     "lowest": 500
    },
    {
-    "nation": "Greece",
-    "club": "Mykonos B.C.",
-    "average_attendance": 717,
-    "weighted_capacity": 1014,
-    "filling_rate": 0.7068,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 800,
-    "lowest": 600
-   },
-   {
     "nation": "Estonia",
     "club": "BC Kalev/Cramo",
     "average_attendance": 688,
@@ -1272,6 +1261,17 @@
     "home_games": 2,
     "highest": 714,
     "lowest": 662
+   },
+   {
+    "nation": "Greece",
+    "club": "Mykonos B.C.",
+    "average_attendance": 650,
+    "weighted_capacity": 1014,
+    "filling_rate": 0.641,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 800,
+    "lowest": 450
    },
    {
     "nation": "Romania",

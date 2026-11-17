@@ -14,18 +14,18 @@
 ,Italy,Olimpia Milano,6466,12700,51%,6,6950,5891
 ,Turkey,Besiktas J.K.,6318,10000,63%,5,8500,5103
 ,Greece,Olympiacos B.C.,6132,9025,68%,5,7237,5129
-,United Arab Emirates,Dubai Basketball,5690,15000,38%,5,7313,2700
 ,Turkey,Anadolu Efes S.K.,5689,10000,57%,6,9923,3603
+,United Arab Emirates,Dubai Basketball,5654,15000,38%,6,7313,2700
 ,Italy,Virtus Bologna,5408,5570,97%,5,5471,5167
 ,Spain,FC Barcelona Basquet,5000,7786,64%,5,6004,3637
 ,Israel,Hapoel Tel Aviv,1098,10155,11%,4,3428,218
-,Israel,Maccabi Tel Aviv,417,8000,5%,5,1212,88
+,Israel,Maccabi Tel Aviv,733,8000,9%,6,2313,88
 ,,END
 
 
 ,Eurocup 26/27
 ,Nation,Club,Average attendance,Available arena capacity,Filling rate,Games,Highest attendance,Lowest attendance
-,Turkey,Turk Telekom B.K.,6631,10400,64%,3,6867,6313
+,Turkey,Turk Telekom B.K.,6885,10400,66%,4,7647,6313
 ,Greece,PAOK BC,6424,8142,79%,2,7252,5595
 ,Spain,CB San Pablo Burgos,6406,9604,67%,4,6896,6007
 ,Romania,U-BT Cluj - Napoca,5979,10000,60%,3,6147,5802
@@ -54,7 +54,7 @@
 ,Germany,Frankfurt Skyliners,1470,5002,29%,4,1666,1145
 ,Lithuania,Lietkabelis Panevėžys,1302,5600,23%,4,1459,1212
 ,Italy,BC Roma SPQR,832,3500,24%,4,1000,700
-,Bulgaria,BC Balkan Botevgrad,638,3500,18%,4,800,450
+,Bulgaria,BC Balkan Botevgrad,560,3500,16%,5,800,250
 ,Israel,Hapoel Jerusalem,118,5000,2%,3,227,60
 ,Bosnia and Herzegovina,KK Bosna Royal,,,,0,,
 ,,END
@@ -105,8 +105,8 @@
 ,France,Elan Chalon,3180,4540,70%,2,3360,3000
 ,Spain,Basquet Girona,2410,5750,42%,3,2873,2167
 ,Romania,CSM Oradea,2070,5200,40%,2,2457,1684
+,Turkey,Denizli Basket (Merkezefendi),2058,5000,41%,3,2500,1200
 ,Greece,Kolossos Rodou B.C.,2000,3400,59%,1,2000,2000
-,Turkey,Denizli Basket (Merkezefendi),1836,5000,37%,2,2473,1200
 ,Germany,Wurzburg Baskets,1750,3140,56%,4,1900,1600
 ,Latvia,BK VEF Riga,1684,2400,70%,2,1741,1628
 ,Slovakia,BC Prievidza,1548,3400,46%,3,1733,1317
@@ -128,8 +128,8 @@
 ,Switzerland,Lions de Geneve,884,3260,27%,5,1100,720
 ,Denmark,Bakken Bears,811,1800,45%,2,911,711
 ,Croatia,KK Split,733,10941,7%,3,1000,500
-,Greece,Mykonos B.C.,717,1014,71%,3,800,600
 ,Estonia,BC Kalev/Cramo,688,1800,38%,2,714,662
+,Greece,Mykonos B.C.,650,1014,64%,4,800,450
 ,Romania,CS Dinamo Bucharest,567,2538,22%,3,1200,200
 ,Azerbaijan,LANDAU Lions,538,2000,27%,2,575,500
 ,Greece,Promitheas Patras B.C.,513,4200,12%,3,798,355
