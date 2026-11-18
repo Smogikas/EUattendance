@@ -689,6 +689,17 @@
     "lowest": 3811
    },
    {
+    "nation": "Israel",
+    "club": "Bnei Herzliya",
+    "average_attendance": 3989,
+    "weighted_capacity": 6000,
+    "filling_rate": 0.6648,
+    "games_with_attendance": 1,
+    "home_games": 2,
+    "highest": 3989,
+    "lowest": 3989
+   },
+   {
     "nation": "Germany",
     "club": "Bamberg Baskets",
     "average_attendance": 3908,
@@ -713,9 +724,9 @@
    {
     "nation": "Spain",
     "club": "Club Joventut Badalona",
-    "average_attendance": 3093,
+    "average_attendance": 3160,
     "weighted_capacity": 12760,
-    "filling_rate": 0.2424,
+    "filling_rate": 0.2476,
     "games_with_attendance": 3,
     "home_games": 3,
     "highest": 3429,
@@ -768,12 +779,12 @@
    {
     "nation": "Belgium",
     "club": "Antwerp Giants",
-    "average_attendance": 2104,
+    "average_attendance": 2168,
     "weighted_capacity": 5218,
-    "filling_rate": 0.4032,
-    "games_with_attendance": 1,
+    "filling_rate": 0.4156,
+    "games_with_attendance": 2,
     "home_games": 2,
-    "highest": 2104,
+    "highest": 2233,
     "lowest": 2104
    },
    {
@@ -889,13 +900,13 @@
    {
     "nation": "Lithuania",
     "club": "Utena Juventus",
-    "average_attendance": 1072,
+    "average_attendance": 1012,
     "weighted_capacity": 9000,
-    "filling_rate": 0.1191,
-    "games_with_attendance": 2,
+    "filling_rate": 0.1124,
+    "games_with_attendance": 3,
     "home_games": 3,
     "highest": 1204,
-    "lowest": 939
+    "lowest": 893
    },
    {
     "nation": "Bosnia and Herzegovina",
@@ -911,17 +922,6 @@
    {
     "nation": "Israel",
     "club": "Hapoel Holon",
-    "average_attendance": null,
-    "weighted_capacity": null,
-    "filling_rate": null,
-    "games_with_attendance": 0,
-    "home_games": 2,
-    "highest": null,
-    "lowest": null
-   },
-   {
-    "nation": "Israel",
-    "club": "Bnei Herzliya",
     "average_attendance": null,
     "weighted_capacity": null,
     "filling_rate": null,
