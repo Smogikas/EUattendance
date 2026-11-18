@@ -16,24 +16,24 @@
    {
     "nation": "Serbia",
     "club": "KK Partizan",
-    "average_attendance": 16095,
+    "average_attendance": 15739,
     "weighted_capacity": 21000,
-    "filling_rate": 0.7664,
-    "games_with_attendance": 5,
-    "home_games": 5,
+    "filling_rate": 0.7495,
+    "games_with_attendance": 6,
+    "home_games": 6,
     "highest": 20073,
     "lowest": 13706
    },
    {
     "nation": "Lithuania",
     "club": "Žalgiris Kaunas",
-    "average_attendance": 15008,
+    "average_attendance": 14930,
     "weighted_capacity": 15415,
-    "filling_rate": 0.9736,
-    "games_with_attendance": 4,
-    "home_games": 4,
+    "filling_rate": 0.9686,
+    "games_with_attendance": 5,
+    "home_games": 5,
     "highest": 15267,
-    "lowest": 14799
+    "lowest": 14618
    },
    {
     "nation": "Serbia",
@@ -82,11 +82,11 @@
    {
     "nation": "Turkey",
     "club": "Fenerbahce Istanbul",
-    "average_attendance": 8069,
+    "average_attendance": 8104,
     "weighted_capacity": 13500,
-    "filling_rate": 0.5977,
-    "games_with_attendance": 6,
-    "home_games": 6,
+    "filling_rate": 0.6003,
+    "games_with_attendance": 7,
+    "home_games": 7,
     "highest": 8850,
     "lowest": 7214
    },
@@ -102,17 +102,6 @@
     "lowest": 5282
    },
    {
-    "nation": "Spain",
-    "club": "Saski Baskonia",
-    "average_attendance": 7182,
-    "weighted_capacity": 15504,
-    "filling_rate": 0.4632,
-    "games_with_attendance": 5,
-    "home_games": 5,
-    "highest": 8136,
-    "lowest": 6290
-   },
-   {
     "nation": "France",
     "club": "Paris Basketball",
     "average_attendance": 6869,
@@ -126,13 +115,24 @@
    {
     "nation": "Italy",
     "club": "Olimpia Milano",
-    "average_attendance": 6466,
+    "average_attendance": 6435,
     "weighted_capacity": 12700,
-    "filling_rate": 0.5091,
-    "games_with_attendance": 6,
-    "home_games": 6,
+    "filling_rate": 0.5067,
+    "games_with_attendance": 7,
+    "home_games": 7,
     "highest": 6950,
     "lowest": 5891
+   },
+   {
+    "nation": "Spain",
+    "club": "Saski Baskonia",
+    "average_attendance": 6349,
+    "weighted_capacity": 15504,
+    "filling_rate": 0.4095,
+    "games_with_attendance": 6,
+    "home_games": 6,
+    "highest": 8136,
+    "lowest": 2186
    },
    {
     "nation": "Turkey",
@@ -185,18 +185,18 @@
     "weighted_capacity": 5570,
     "filling_rate": 0.9708,
     "games_with_attendance": 5,
-    "home_games": 5,
+    "home_games": 6,
     "highest": 5471,
     "lowest": 5167
    },
    {
     "nation": "Spain",
     "club": "FC Barcelona Basquet",
-    "average_attendance": 5000,
+    "average_attendance": 5089,
     "weighted_capacity": 7786,
-    "filling_rate": 0.6422,
-    "games_with_attendance": 5,
-    "home_games": 5,
+    "filling_rate": 0.6537,
+    "games_with_attendance": 6,
+    "home_games": 6,
     "highest": 6004,
     "lowest": 3637
    },
@@ -304,11 +304,11 @@
    {
     "nation": "Germany",
     "club": "Rostock Seawolves",
-    "average_attendance": 3553,
+    "average_attendance": 3467,
     "weighted_capacity": 5000,
-    "filling_rate": 0.7105,
-    "games_with_attendance": 3,
-    "home_games": 3,
+    "filling_rate": 0.6934,
+    "games_with_attendance": 4,
+    "home_games": 4,
     "highest": 4620,
     "lowest": 2753
    },
@@ -423,17 +423,6 @@
     "lowest": 2143
    },
    {
-    "nation": "United Kingdom",
-    "club": "London Lions",
-    "average_attendance": 2143,
-    "weighted_capacity": 6000,
-    "filling_rate": 0.3572,
-    "games_with_attendance": 3,
-    "home_games": 4,
-    "highest": 3788,
-    "lowest": 1309
-   },
-   {
     "nation": "Montenegro",
     "club": "KK Buducnost",
     "average_attendance": 2083,
@@ -443,6 +432,17 @@
     "home_games": 3,
     "highest": 3200,
     "lowest": 1230
+   },
+   {
+    "nation": "United Kingdom",
+    "club": "London Lions",
+    "average_attendance": 2055,
+    "weighted_capacity": 6000,
+    "filling_rate": 0.3425,
+    "games_with_attendance": 4,
+    "home_games": 5,
+    "highest": 3788,
+    "lowest": 1309
    },
    {
     "nation": "Turkey",
@@ -535,11 +535,11 @@
    {
     "nation": "Italy",
     "club": "BC Roma SPQR",
-    "average_attendance": 832,
+    "average_attendance": 836,
     "weighted_capacity": 3500,
-    "filling_rate": 0.2379,
-    "games_with_attendance": 4,
-    "home_games": 4,
+    "filling_rate": 0.2389,
+    "games_with_attendance": 5,
+    "home_games": 5,
     "highest": 1000,
     "lowest": 700
    },
@@ -713,11 +713,11 @@
    {
     "nation": "Spain",
     "club": "Club Joventut Badalona",
-    "average_attendance": 3117,
+    "average_attendance": 3093,
     "weighted_capacity": 12760,
-    "filling_rate": 0.2443,
-    "games_with_attendance": 2,
-    "home_games": 2,
+    "filling_rate": 0.2424,
+    "games_with_attendance": 3,
+    "home_games": 3,
     "highest": 3429,
     "lowest": 2805
    },
@@ -772,7 +772,7 @@
     "weighted_capacity": 5218,
     "filling_rate": 0.4032,
     "games_with_attendance": 1,
-    "home_games": 1,
+    "home_games": 2,
     "highest": 2104,
     "lowest": 2104
    },
@@ -893,7 +893,7 @@
     "weighted_capacity": 9000,
     "filling_rate": 0.1191,
     "games_with_attendance": 2,
-    "home_games": 2,
+    "home_games": 3,
     "highest": 1204,
     "lowest": 939
    },
@@ -946,11 +946,11 @@
    {
     "nation": "France",
     "club": "SLUC Nancy Basket",
-    "average_attendance": 4124,
+    "average_attendance": 4110,
     "weighted_capacity": 6027,
-    "filling_rate": 0.6843,
-    "games_with_attendance": 3,
-    "home_games": 3,
+    "filling_rate": 0.682,
+    "games_with_attendance": 4,
+    "home_games": 4,
     "highest": 4554,
     "lowest": 3805
    },
@@ -968,22 +968,22 @@
    {
     "nation": "France",
     "club": "Elan Chalon",
-    "average_attendance": 3180,
+    "average_attendance": 3197,
     "weighted_capacity": 4540,
-    "filling_rate": 0.7004,
-    "games_with_attendance": 2,
-    "home_games": 3,
+    "filling_rate": 0.7041,
+    "games_with_attendance": 3,
+    "home_games": 4,
     "highest": 3360,
     "lowest": 3000
    },
    {
     "nation": "Spain",
     "club": "Basquet Girona",
-    "average_attendance": 2410,
+    "average_attendance": 2351,
     "weighted_capacity": 5750,
-    "filling_rate": 0.4191,
-    "games_with_attendance": 3,
-    "home_games": 3,
+    "filling_rate": 0.4089,
+    "games_with_attendance": 4,
+    "home_games": 4,
     "highest": 2873,
     "lowest": 2167
    },
@@ -1023,12 +1023,12 @@
    {
     "nation": "Germany",
     "club": "Wurzburg Baskets",
-    "average_attendance": 1750,
+    "average_attendance": 1820,
     "weighted_capacity": 3140,
-    "filling_rate": 0.5574,
-    "games_with_attendance": 4,
-    "home_games": 4,
-    "highest": 1900,
+    "filling_rate": 0.5797,
+    "games_with_attendance": 5,
+    "home_games": 5,
+    "highest": 2100,
     "lowest": 1600
    },
    {
@@ -1254,12 +1254,12 @@
    {
     "nation": "Estonia",
     "club": "BC Kalev/Cramo",
-    "average_attendance": 688,
+    "average_attendance": 718,
     "weighted_capacity": 1800,
-    "filling_rate": 0.3822,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 714,
+    "filling_rate": 0.3991,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 779,
     "lowest": 662
    },
    {
