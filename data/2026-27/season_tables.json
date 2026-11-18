@@ -113,6 +113,17 @@
     "lowest": 3746
    },
    {
+    "nation": "Turkey",
+    "club": "Besiktas J.K.",
+    "average_attendance": 6613,
+    "weighted_capacity": 10000,
+    "filling_rate": 0.6613,
+    "games_with_attendance": 6,
+    "home_games": 6,
+    "highest": 8500,
+    "lowest": 5103
+   },
+   {
     "nation": "Italy",
     "club": "Olimpia Milano",
     "average_attendance": 6435,
@@ -133,17 +144,6 @@
     "home_games": 6,
     "highest": 8136,
     "lowest": 2186
-   },
-   {
-    "nation": "Turkey",
-    "club": "Besiktas J.K.",
-    "average_attendance": 6318,
-    "weighted_capacity": 10000,
-    "filling_rate": 0.6318,
-    "games_with_attendance": 5,
-    "home_games": 5,
-    "highest": 8500,
-    "lowest": 5103
    },
    {
     "nation": "Greece",
@@ -258,17 +258,6 @@
     "lowest": 6007
    },
    {
-    "nation": "Romania",
-    "club": "U-BT Cluj - Napoca",
-    "average_attendance": 5979,
-    "weighted_capacity": 10000,
-    "filling_rate": 0.5979,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 6147,
-    "lowest": 5802
-   },
-   {
     "nation": "Greece",
     "club": "Aris B.C.",
     "average_attendance": 5936,
@@ -278,6 +267,17 @@
     "home_games": 4,
     "highest": 6004,
     "lowest": 5832
+   },
+   {
+    "nation": "Romania",
+    "club": "U-BT Cluj - Napoca",
+    "average_attendance": 5794,
+    "weighted_capacity": 10000,
+    "filling_rate": 0.5794,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 6147,
+    "lowest": 5238
    },
    {
     "nation": "Latvia",
@@ -456,17 +456,6 @@
     "lowest": 1003
    },
    {
-    "nation": "Italy",
-    "club": "Derthona Basket",
-    "average_attendance": 1840,
-    "weighted_capacity": 5000,
-    "filling_rate": 0.3679,
-    "games_with_attendance": 4,
-    "home_games": 4,
-    "highest": 1911,
-    "lowest": 1762
-   },
-   {
     "nation": "Slovenia",
     "club": "KK Cedevita Olimpija",
     "average_attendance": 1834,
@@ -476,6 +465,17 @@
     "home_games": 3,
     "highest": 2268,
     "lowest": 1512
+   },
+   {
+    "nation": "Italy",
+    "club": "Derthona Basket",
+    "average_attendance": 1776,
+    "weighted_capacity": 5000,
+    "filling_rate": 0.3552,
+    "games_with_attendance": 5,
+    "home_games": 5,
+    "highest": 1911,
+    "lowest": 1521
    },
    {
     "nation": "Lithuania",
@@ -871,7 +871,7 @@
     "weighted_capacity": 9025,
     "filling_rate": 0.1366,
     "games_with_attendance": 2,
-    "home_games": 2,
+    "home_games": 3,
     "highest": 1329,
     "lowest": 1136
    },
@@ -882,7 +882,7 @@
     "weighted_capacity": 16500,
     "filling_rate": 0.0741,
     "games_with_attendance": 1,
-    "home_games": 1,
+    "home_games": 2,
     "highest": 1223,
     "lowest": 1223
    },
@@ -1016,7 +1016,7 @@
     "weighted_capacity": 3400,
     "filling_rate": 0.5882,
     "games_with_attendance": 1,
-    "home_games": 2,
+    "home_games": 3,
     "highest": 2000,
     "lowest": 2000
    },
@@ -1034,11 +1034,11 @@
    {
     "nation": "Latvia",
     "club": "BK VEF Riga",
-    "average_attendance": 1684,
+    "average_attendance": 1679,
     "weighted_capacity": 2400,
-    "filling_rate": 0.7019,
-    "games_with_attendance": 2,
-    "home_games": 2,
+    "filling_rate": 0.6994,
+    "games_with_attendance": 3,
+    "home_games": 3,
     "highest": 1741,
     "lowest": 1628
    },
@@ -1111,11 +1111,11 @@
    {
     "nation": "Estonia",
     "club": "Tartu Ulikool",
-    "average_attendance": 1098,
+    "average_attendance": 1099,
     "weighted_capacity": 2600,
-    "filling_rate": 0.4221,
-    "games_with_attendance": 2,
-    "home_games": 2,
+    "filling_rate": 0.4226,
+    "games_with_attendance": 3,
+    "home_games": 3,
     "highest": 1113,
     "lowest": 1082
    },
@@ -1186,17 +1186,6 @@
     "lowest": 578
    },
    {
-    "nation": "Czech Republic",
-    "club": "BK Opava",
-    "average_attendance": 920,
-    "weighted_capacity": 3006,
-    "filling_rate": 0.3062,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 950,
-    "lowest": 891
-   },
-   {
     "nation": "Bulgaria",
     "club": "\"Basketball Club Lokomotiv Plovdiv\" Association",
     "average_attendance": 912,
@@ -1208,17 +1197,6 @@
     "lowest": 700
    },
    {
-    "nation": "Hungary",
-    "club": "Szolnoki Olaj",
-    "average_attendance": 888,
-    "weighted_capacity": 3200,
-    "filling_rate": 0.2777,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 977,
-    "lowest": 800
-   },
-   {
     "nation": "Switzerland",
     "club": "Lions de Geneve",
     "average_attendance": 884,
@@ -1228,6 +1206,28 @@
     "home_games": 5,
     "highest": 1100,
     "lowest": 720
+   },
+   {
+    "nation": "Czech Republic",
+    "club": "BK Opava",
+    "average_attendance": 864,
+    "weighted_capacity": 3006,
+    "filling_rate": 0.2873,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 950,
+    "lowest": 750
+   },
+   {
+    "nation": "Hungary",
+    "club": "Szolnoki Olaj",
+    "average_attendance": 859,
+    "weighted_capacity": 3200,
+    "filling_rate": 0.2684,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 977,
+    "lowest": 800
    },
    {
     "nation": "Denmark",
@@ -1285,17 +1285,6 @@
     "lowest": 200
    },
    {
-    "nation": "Azerbaijan",
-    "club": "LANDAU Lions",
-    "average_attendance": 538,
-    "weighted_capacity": 2000,
-    "filling_rate": 0.2687,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 575,
-    "lowest": 500
-   },
-   {
     "nation": "Greece",
     "club": "Promitheas Patras B.C.",
     "average_attendance": 513,
@@ -1340,15 +1329,15 @@
     "lowest": 312
    },
    {
-    "nation": "Cyprus",
-    "club": "Petrolina AEK Larnaca Basketball Club",
-    "average_attendance": 475,
+    "nation": "Azerbaijan",
+    "club": "LANDAU Lions",
+    "average_attendance": 458,
     "weighted_capacity": 2000,
-    "filling_rate": 0.2375,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 600,
-    "lowest": 350
+    "filling_rate": 0.2292,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 575,
+    "lowest": 300
    },
    {
     "nation": "Azerbaijan",
@@ -1359,6 +1348,17 @@
     "games_with_attendance": 3,
     "home_games": 3,
     "highest": 542,
+    "lowest": 300
+   },
+   {
+    "nation": "Cyprus",
+    "club": "Petrolina AEK Larnaca Basketball Club",
+    "average_attendance": 417,
+    "weighted_capacity": 2000,
+    "filling_rate": 0.2083,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 600,
     "lowest": 300
    },
    {
@@ -1417,17 +1417,6 @@
     "lowest": 200
    },
    {
-    "nation": "Cyprus",
-    "club": "Keravnos BC",
-    "average_attendance": 225,
-    "weighted_capacity": 2000,
-    "filling_rate": 0.1125,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 250,
-    "lowest": 200
-   },
-   {
     "nation": "Austria",
     "club": "BC Vienna",
     "average_attendance": 202,
@@ -1439,15 +1428,26 @@
     "lowest": 152
    },
    {
+    "nation": "Cyprus",
+    "club": "Keravnos BC",
+    "average_attendance": 200,
+    "weighted_capacity": 2000,
+    "filling_rate": 0.1,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 250,
+    "lowest": 150
+   },
+   {
     "nation": "Turkey",
     "club": "Esenler Erokspor",
-    "average_attendance": 130,
+    "average_attendance": 120,
     "weighted_capacity": 3200,
-    "filling_rate": 0.0406,
-    "games_with_attendance": 2,
-    "home_games": 3,
+    "filling_rate": 0.0375,
+    "games_with_attendance": 3,
+    "home_games": 4,
     "highest": 150,
-    "lowest": 110
+    "lowest": 100
    },
    {
     "nation": "Georgia",

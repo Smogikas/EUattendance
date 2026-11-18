@@ -10,9 +10,9 @@
 ,Turkey,Fenerbahce Istanbul,8104,13500,60%,7,8850,7214
 ,France,ASVEL Basket,7565,11528,66%,7,8712,5282
 ,France,Paris Basketball,6869,9275,74%,6,11774,3746
+,Turkey,Besiktas J.K.,6613,10000,66%,6,8500,5103
 ,Italy,Olimpia Milano,6435,12700,51%,7,6950,5891
 ,Spain,Saski Baskonia,6349,15504,41%,6,8136,2186
-,Turkey,Besiktas J.K.,6318,10000,63%,5,8500,5103
 ,Greece,Olympiacos B.C.,6132,9025,68%,5,7237,5129
 ,Turkey,Anadolu Efes S.K.,5689,10000,57%,6,9923,3603
 ,United Arab Emirates,Dubai Basketball,5654,15000,38%,6,7313,2700
@@ -28,8 +28,8 @@
 ,Turkey,Turk Telekom B.K.,6885,10400,66%,4,7647,6313
 ,Greece,PAOK BC,6424,8142,79%,2,7252,5595
 ,Spain,CB San Pablo Burgos,6406,9604,67%,4,6896,6007
-,Romania,U-BT Cluj - Napoca,5979,10000,60%,3,6147,5802
 ,Greece,Aris B.C.,5936,6200,96%,4,6004,5832
+,Romania,U-BT Cluj - Napoca,5794,10000,58%,4,6147,5238
 ,Latvia,Rigas Zelli,4650,11200,42%,3,5388,3893
 ,France,Le Mans Sarthe Basket,3711,6023,62%,4,3972,3484
 ,Germany,Rostock Seawolves,3467,5000,69%,4,4620,2753
@@ -46,8 +46,8 @@
 ,Montenegro,KK Buducnost,2083,6000,35%,3,3200,1230
 ,United Kingdom,London Lions,2055,6000,34%,4,3788,1309
 ,Turkey,Bahcesehir Koleji,1967,16500,12%,4,3127,1003
-,Italy,Derthona Basket,1840,5000,37%,4,1911,1762
 ,Slovenia,KK Cedevita Olimpija,1834,12480,15%,3,2268,1512
+,Italy,Derthona Basket,1776,5000,36%,5,1911,1521
 ,Lithuania,Neptūnas Klaipėda,1623,6200,26%,4,1757,1530
 ,Italy,Maxima Roma,1618,6067,27%,3,2178,1208
 ,Turkey,Tofas Bursa,1535,7500,20%,3,2168,1102
@@ -108,44 +108,44 @@
 ,Turkey,Denizli Basket (Merkezefendi),2058,5000,41%,3,2500,1200
 ,Greece,Kolossos Rodou B.C.,2000,3400,59%,1,2000,2000
 ,Germany,Wurzburg Baskets,1820,3140,58%,5,2100,1600
-,Latvia,BK VEF Riga,1684,2400,70%,2,1741,1628
+,Latvia,BK VEF Riga,1679,2400,70%,3,1741,1628
 ,Slovakia,BC Prievidza,1548,3400,46%,3,1733,1317
 ,Kosovo,Basketball Club Bashkimi,1500,3000,50%,2,2000,1000
 ,Belgium,Filou Ostende,1479,5000,30%,3,1678,1321
 ,Poland,King Wilki Morskie Szczecin,1444,3322,43%,2,1588,1301
 ,Kosovo,BC Trepca,1250,2300,54%,2,1500,1000
 ,Slovakia,BK Patrioti Levice,1177,2250,52%,2,1212,1142
-,Estonia,Tartu Ulikool,1098,2600,42%,2,1113,1082
+,Estonia,Tartu Ulikool,1099,2600,42%,3,1113,1082
 ,Poland,Dziki Warszawa,1018,1298,78%,3,1204,857
 ,North Macedonia,KK MZT Skopje Aerodrom,1000,5850,17%,3,2000,500
 ,Switzerland,Fribourg Olympic Basket,937,2789,34%,4,998,900
 ,Turkey,Korfez Basket (Manisa),936,5000,19%,4,2123,221
 ,Latvia,Valmiera Glass/ViA,936,1500,62%,4,1004,863
 ,Greece,Iraklis B.C.,933,2580,36%,4,1500,578
-,Czech Republic,BK Opava,920,3006,31%,2,950,891
 ,Bulgaria,"""Basketball Club Lokomotiv Plovdiv"" Association",912,1600,57%,4,1100,700
-,Hungary,Szolnoki Olaj,888,3200,28%,2,977,800
 ,Switzerland,Lions de Geneve,884,3260,27%,5,1100,720
+,Czech Republic,BK Opava,864,3006,29%,3,950,750
+,Hungary,Szolnoki Olaj,859,3200,27%,3,977,800
 ,Denmark,Bakken Bears,811,1800,45%,2,911,711
 ,Croatia,KK Split,733,10941,7%,3,1000,500
 ,Estonia,BC Kalev/Cramo,718,1800,40%,3,779,662
 ,Greece,Mykonos B.C.,650,1014,64%,4,800,450
 ,Romania,CS Dinamo Bucharest,567,2538,22%,3,1200,200
-,Azerbaijan,LANDAU Lions,538,2000,27%,2,575,500
 ,Greece,Promitheas Patras B.C.,513,4200,12%,3,798,355
 ,Estonia,BC Parnu,507,1820,28%,4,564,458
 ,Bulgaria,BC Rilski Sportist,483,2767,17%,3,500,450
 ,Romania,Sport Club Municipal Craiova,482,4215,11%,4,800,312
-,Cyprus,Petrolina AEK Larnaca Basketball Club,475,2000,24%,2,600,350
+,Azerbaijan,LANDAU Lions,458,2000,23%,3,575,300
 ,Azerbaijan,Gence BC,447,3050,15%,3,542,300
+,Cyprus,Petrolina AEK Larnaca Basketball Club,417,2000,21%,3,600,300
 ,Portugal,SL Benfica,379,2456,15%,3,386,366
 ,Portugal,Sporting CP,345,3001,12%,2,390,300
 ,Azerbaijan,Neftchi Sports Club Public Union,340,4750,7%,3,400,300
 ,Slovakia,Nitra Blue Wings,322,2000,16%,4,550,190
 ,United Kingdom,Manchester Basketball Club,238,2000,12%,2,275,200
-,Cyprus,Keravnos BC,225,2000,11%,2,250,200
 ,Austria,BC Vienna,202,1530,13%,3,250,152
-,Turkey,Esenler Erokspor,130,3200,4%,2,150,110
+,Cyprus,Keravnos BC,200,2000,10%,3,250,150
+,Turkey,Esenler Erokspor,120,3200,4%,3,150,100
 ,Georgia,BC Batumi 2010,78,9700,1%,4,100,45
 ,,END
 
