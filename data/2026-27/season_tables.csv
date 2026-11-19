@@ -28,30 +28,30 @@
 ,Turkey,Turk Telekom B.K.,6885,10400,66%,4,7647,6313
 ,Greece,PAOK BC,6424,8142,79%,2,7252,5595
 ,Spain,CB San Pablo Burgos,6406,9604,67%,4,6896,6007
-,Greece,Aris B.C.,5936,6200,96%,4,6004,5832
+,Greece,Aris B.C.,5946,6200,96%,5,6004,5832
 ,Romania,U-BT Cluj - Napoca,5794,10000,58%,4,6147,5238
 ,Latvia,Rigas Zelli,4650,11200,42%,3,5388,3893
 ,France,Le Mans Sarthe Basket,3711,6023,62%,4,3972,3484
 ,Germany,Rostock Seawolves,3467,5000,69%,4,4620,2753
-,France,JL Bourg Basket,3340,3548,94%,2,3480,3200
-,Spain,Basquet Manresa,3195,5000,64%,3,3670,2730
+,Spain,Basquet Manresa,3450,5000,69%,4,4212,2730
+,France,JL Bourg Basket,3341,3548,94%,3,3480,3200
 ,Germany,Ratiopharm Ulm,3166,6000,53%,3,5110,2160
-,Germany,Niners Chemnitz,2995,5000,60%,4,3817,2482
+,Germany,Niners Chemnitz,3017,5000,60%,5,3817,2482
 ,Spain,CB Canarias Tenerife,2970,5100,58%,4,3374,2769
 ,Lithuania,BC Šiauliai,2575,5500,47%,4,3382,2041
-,Italy,Aquila Trento,2386,4360,55%,4,2563,2113
+,Italy,Aquila Trento,2473,4360,57%,5,2823,2113
 ,Poland,Slask Wroclaw,2373,3000,79%,4,3000,1618
 ,Italy,Napoli Basket,2323,3980,58%,1,2323,2323
+,Slovenia,KK Cedevita Olimpija,2314,12480,19%,4,3756,1512
 ,Italy,Umana Reyer Venezia,2291,3509,65%,3,2518,2143
-,Montenegro,KK Buducnost,2083,6000,35%,3,3200,1230
 ,United Kingdom,London Lions,2055,6000,34%,4,3788,1309
 ,Turkey,Bahcesehir Koleji,1967,16500,12%,4,3127,1003
-,Slovenia,KK Cedevita Olimpija,1834,12480,15%,3,2268,1512
+,Montenegro,KK Buducnost,1940,6000,32%,4,3200,1230
 ,Italy,Derthona Basket,1776,5000,36%,5,1911,1521
 ,Lithuania,Neptūnas Klaipėda,1623,6200,26%,4,1757,1530
 ,Italy,Maxima Roma,1618,6067,27%,3,2178,1208
 ,Turkey,Tofas Bursa,1535,7500,20%,3,2168,1102
-,Germany,Frankfurt Skyliners,1470,5002,29%,4,1666,1145
+,Germany,Frankfurt Skyliners,1481,5002,30%,5,1666,1145
 ,Lithuania,Lietkabelis Panevėžys,1302,5600,23%,4,1459,1212
 ,Italy,BC Roma SPQR,836,3500,24%,5,1000,700
 ,Bulgaria,BC Balkan Botevgrad,560,3500,16%,5,800,250
@@ -84,9 +84,9 @@
 ,Italy,Pallacanestro Reggiana,2006,4530,44%,2,2197,1816
 ,France,Nanterre 92,1942,3000,65%,1,1942,1942
 ,Finland,Salon Vilpas,1919,2770,69%,1,1919,1919
+,Croatia,KK Cibona,1790,5400,33%,3,2070,1300
 ,Portugal,FC Porto,1727,3875,45%,1,1727,1727
 ,Serbia,KK Spartak Subotica,1724,3500,49%,3,1890,1594
-,Croatia,KK Cibona,1685,5400,31%,2,2070,1300
 ,Czech Republic,Era Nymburk,1452,10300,14%,2,1793,1112
 ,Greece,AEK B.C.,1232,9025,14%,2,1329,1136
 ,Turkey,Galatasaray S.K.,1223,16500,7%,1,1223,1223
@@ -99,23 +99,24 @@
 
 ,FIBA Europe Cup 26/27
 ,Nation,Club,Average attendance,Available arena capacity,Filling rate,Games,Highest attendance,Lowest attendance
-,Germany,Gladiators Trier,4154,5400,77%,3,4329,4016
+,Germany,Gladiators Trier,4150,5400,77%,4,4329,4016
 ,France,SLUC Nancy Basket,4110,6027,68%,4,4554,3805
 ,Poland,Zastal Zielona Gora,3454,5080,68%,4,4335,3032
 ,France,Elan Chalon,3197,4540,70%,3,3360,3000
 ,Spain,Basquet Girona,2351,5750,41%,4,2873,2167
-,Romania,CSM Oradea,2070,5200,40%,2,2457,1684
 ,Turkey,Denizli Basket (Merkezefendi),2058,5000,41%,3,2500,1200
 ,Greece,Kolossos Rodou B.C.,2000,3400,59%,1,2000,2000
+,Romania,CSM Oradea,1904,5200,37%,3,2457,1571
 ,Germany,Wurzburg Baskets,1820,3140,58%,5,2100,1600
 ,Latvia,BK VEF Riga,1679,2400,70%,3,1741,1628
 ,Slovakia,BC Prievidza,1548,3400,46%,3,1733,1317
-,Kosovo,Basketball Club Bashkimi,1500,3000,50%,2,2000,1000
 ,Belgium,Filou Ostende,1479,5000,30%,3,1678,1321
-,Poland,King Wilki Morskie Szczecin,1444,3322,43%,2,1588,1301
-,Kosovo,BC Trepca,1250,2300,54%,2,1500,1000
+,Poland,King Wilki Morskie Szczecin,1412,3899,36%,3,1588,1301
+,Kosovo,BC Trepca,1333,2300,58%,3,1500,1000
+,Kosovo,Basketball Club Bashkimi,1333,3000,44%,3,2000,1000
 ,Slovakia,BK Patrioti Levice,1177,2250,52%,2,1212,1142
 ,Estonia,Tartu Ulikool,1099,2600,42%,3,1113,1082
+,Denmark,Bakken Bears,1074,1800,60%,3,1600,711
 ,Poland,Dziki Warszawa,1018,1298,78%,3,1204,857
 ,North Macedonia,KK MZT Skopje Aerodrom,1000,5850,17%,3,2000,500
 ,Switzerland,Fribourg Olympic Basket,937,2789,34%,4,998,900
@@ -126,7 +127,6 @@
 ,Switzerland,Lions de Geneve,884,3260,27%,5,1100,720
 ,Czech Republic,BK Opava,864,3006,29%,3,950,750
 ,Hungary,Szolnoki Olaj,859,3200,27%,3,977,800
-,Denmark,Bakken Bears,811,1800,45%,2,911,711
 ,Croatia,KK Split,733,10941,7%,3,1000,500
 ,Estonia,BC Kalev/Cramo,718,1800,40%,3,779,662
 ,Greece,Mykonos B.C.,650,1014,64%,4,800,450
@@ -139,8 +139,8 @@
 ,Azerbaijan,Gence BC,447,3050,15%,3,542,300
 ,Cyprus,Petrolina AEK Larnaca Basketball Club,417,2000,21%,3,600,300
 ,Portugal,SL Benfica,379,2456,15%,3,386,366
-,Portugal,Sporting CP,345,3001,12%,2,390,300
 ,Azerbaijan,Neftchi Sports Club Public Union,340,4750,7%,3,400,300
+,Portugal,Sporting CP,329,3001,11%,3,390,296
 ,Slovakia,Nitra Blue Wings,322,2000,16%,4,550,190
 ,United Kingdom,Manchester Basketball Club,238,2000,12%,2,275,200
 ,Austria,BC Vienna,202,1530,13%,3,250,152

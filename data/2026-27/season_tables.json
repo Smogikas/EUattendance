@@ -260,11 +260,11 @@
    {
     "nation": "Greece",
     "club": "Aris B.C.",
-    "average_attendance": 5936,
+    "average_attendance": 5946,
     "weighted_capacity": 6200,
-    "filling_rate": 0.9574,
-    "games_with_attendance": 4,
-    "home_games": 4,
+    "filling_rate": 0.959,
+    "games_with_attendance": 5,
+    "home_games": 5,
     "highest": 6004,
     "lowest": 5832
    },
@@ -313,26 +313,26 @@
     "lowest": 2753
    },
    {
-    "nation": "France",
-    "club": "JL Bourg Basket",
-    "average_attendance": 3340,
-    "weighted_capacity": 3548,
-    "filling_rate": 0.9414,
-    "games_with_attendance": 2,
-    "home_games": 3,
-    "highest": 3480,
-    "lowest": 3200
-   },
-   {
     "nation": "Spain",
     "club": "Basquet Manresa",
-    "average_attendance": 3195,
+    "average_attendance": 3450,
     "weighted_capacity": 5000,
-    "filling_rate": 0.6391,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 3670,
+    "filling_rate": 0.6899,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 4212,
     "lowest": 2730
+   },
+   {
+    "nation": "France",
+    "club": "JL Bourg Basket",
+    "average_attendance": 3341,
+    "weighted_capacity": 3548,
+    "filling_rate": 0.9418,
+    "games_with_attendance": 3,
+    "home_games": 4,
+    "highest": 3480,
+    "lowest": 3200
    },
    {
     "nation": "Germany",
@@ -348,11 +348,11 @@
    {
     "nation": "Germany",
     "club": "Niners Chemnitz",
-    "average_attendance": 2995,
+    "average_attendance": 3017,
     "weighted_capacity": 5000,
-    "filling_rate": 0.599,
-    "games_with_attendance": 4,
-    "home_games": 4,
+    "filling_rate": 0.6035,
+    "games_with_attendance": 5,
+    "home_games": 5,
     "highest": 3817,
     "lowest": 2482
    },
@@ -381,12 +381,12 @@
    {
     "nation": "Italy",
     "club": "Aquila Trento",
-    "average_attendance": 2386,
+    "average_attendance": 2473,
     "weighted_capacity": 4360,
-    "filling_rate": 0.5472,
-    "games_with_attendance": 4,
-    "home_games": 4,
-    "highest": 2563,
+    "filling_rate": 0.5673,
+    "games_with_attendance": 5,
+    "home_games": 5,
+    "highest": 2823,
     "lowest": 2113
    },
    {
@@ -412,6 +412,17 @@
     "lowest": 2323
    },
    {
+    "nation": "Slovenia",
+    "club": "KK Cedevita Olimpija",
+    "average_attendance": 2314,
+    "weighted_capacity": 12480,
+    "filling_rate": 0.1854,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 3756,
+    "lowest": 1512
+   },
+   {
     "nation": "Italy",
     "club": "Umana Reyer Venezia",
     "average_attendance": 2291,
@@ -421,17 +432,6 @@
     "home_games": 3,
     "highest": 2518,
     "lowest": 2143
-   },
-   {
-    "nation": "Montenegro",
-    "club": "KK Buducnost",
-    "average_attendance": 2083,
-    "weighted_capacity": 6000,
-    "filling_rate": 0.3472,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 3200,
-    "lowest": 1230
    },
    {
     "nation": "United Kingdom",
@@ -456,15 +456,15 @@
     "lowest": 1003
    },
    {
-    "nation": "Slovenia",
-    "club": "KK Cedevita Olimpija",
-    "average_attendance": 1834,
-    "weighted_capacity": 12480,
-    "filling_rate": 0.1469,
-    "games_with_attendance": 3,
-    "home_games": 3,
-    "highest": 2268,
-    "lowest": 1512
+    "nation": "Montenegro",
+    "club": "KK Buducnost",
+    "average_attendance": 1940,
+    "weighted_capacity": 6000,
+    "filling_rate": 0.3233,
+    "games_with_attendance": 4,
+    "home_games": 4,
+    "highest": 3200,
+    "lowest": 1230
    },
    {
     "nation": "Italy",
@@ -513,11 +513,11 @@
    {
     "nation": "Germany",
     "club": "Frankfurt Skyliners",
-    "average_attendance": 1470,
+    "average_attendance": 1481,
     "weighted_capacity": 5002,
-    "filling_rate": 0.2939,
-    "games_with_attendance": 4,
-    "home_games": 4,
+    "filling_rate": 0.2961,
+    "games_with_attendance": 5,
+    "home_games": 5,
     "highest": 1666,
     "lowest": 1145
    },
@@ -572,7 +572,7 @@
     "weighted_capacity": null,
     "filling_rate": null,
     "games_with_attendance": 0,
-    "home_games": 3,
+    "home_games": 4,
     "highest": null,
     "lowest": null
    }
@@ -596,7 +596,7 @@
     "weighted_capacity": 10699,
     "filling_rate": 0.5954,
     "games_with_attendance": 1,
-    "home_games": 1,
+    "home_games": 2,
     "highest": 6370,
     "lowest": 6370
    },
@@ -821,6 +821,17 @@
     "lowest": 1919
    },
    {
+    "nation": "Croatia",
+    "club": "KK Cibona",
+    "average_attendance": 1790,
+    "weighted_capacity": 5400,
+    "filling_rate": 0.3315,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 2070,
+    "lowest": 1300
+   },
+   {
     "nation": "Portugal",
     "club": "FC Porto",
     "average_attendance": 1727,
@@ -841,17 +852,6 @@
     "home_games": 3,
     "highest": 1890,
     "lowest": 1594
-   },
-   {
-    "nation": "Croatia",
-    "club": "KK Cibona",
-    "average_attendance": 1685,
-    "weighted_capacity": 5400,
-    "filling_rate": 0.312,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 2070,
-    "lowest": 1300
    },
    {
     "nation": "Czech Republic",
@@ -935,11 +935,11 @@
    {
     "nation": "Germany",
     "club": "Gladiators Trier",
-    "average_attendance": 4154,
+    "average_attendance": 4150,
     "weighted_capacity": 5400,
-    "filling_rate": 0.7692,
-    "games_with_attendance": 3,
-    "home_games": 3,
+    "filling_rate": 0.7684,
+    "games_with_attendance": 4,
+    "home_games": 4,
     "highest": 4329,
     "lowest": 4016
    },
@@ -988,17 +988,6 @@
     "lowest": 2167
    },
    {
-    "nation": "Romania",
-    "club": "CSM Oradea",
-    "average_attendance": 2070,
-    "weighted_capacity": 5200,
-    "filling_rate": 0.3982,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 2457,
-    "lowest": 1684
-   },
-   {
     "nation": "Turkey",
     "club": "Denizli Basket (Merkezefendi)",
     "average_attendance": 2058,
@@ -1019,6 +1008,17 @@
     "home_games": 3,
     "highest": 2000,
     "lowest": 2000
+   },
+   {
+    "nation": "Romania",
+    "club": "CSM Oradea",
+    "average_attendance": 1904,
+    "weighted_capacity": 5200,
+    "filling_rate": 0.3662,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 2457,
+    "lowest": 1571
    },
    {
     "nation": "Germany",
@@ -1054,17 +1054,6 @@
     "lowest": 1317
    },
    {
-    "nation": "Kosovo",
-    "club": "Basketball Club Bashkimi",
-    "average_attendance": 1500,
-    "weighted_capacity": 3000,
-    "filling_rate": 0.5,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 2000,
-    "lowest": 1000
-   },
-   {
     "nation": "Belgium",
     "club": "Filou Ostende",
     "average_attendance": 1479,
@@ -1078,23 +1067,34 @@
    {
     "nation": "Poland",
     "club": "King Wilki Morskie Szczecin",
-    "average_attendance": 1444,
-    "weighted_capacity": 3322,
-    "filling_rate": 0.4349,
-    "games_with_attendance": 2,
-    "home_games": 2,
+    "average_attendance": 1412,
+    "weighted_capacity": 3899,
+    "filling_rate": 0.3622,
+    "games_with_attendance": 3,
+    "home_games": 3,
     "highest": 1588,
     "lowest": 1301
    },
    {
     "nation": "Kosovo",
     "club": "BC Trepca",
-    "average_attendance": 1250,
+    "average_attendance": 1333,
     "weighted_capacity": 2300,
-    "filling_rate": 0.5435,
-    "games_with_attendance": 2,
-    "home_games": 2,
+    "filling_rate": 0.5797,
+    "games_with_attendance": 3,
+    "home_games": 3,
     "highest": 1500,
+    "lowest": 1000
+   },
+   {
+    "nation": "Kosovo",
+    "club": "Basketball Club Bashkimi",
+    "average_attendance": 1333,
+    "weighted_capacity": 3000,
+    "filling_rate": 0.4444,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 2000,
     "lowest": 1000
    },
    {
@@ -1118,6 +1118,17 @@
     "home_games": 3,
     "highest": 1113,
     "lowest": 1082
+   },
+   {
+    "nation": "Denmark",
+    "club": "Bakken Bears",
+    "average_attendance": 1074,
+    "weighted_capacity": 1800,
+    "filling_rate": 0.5967,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 1600,
+    "lowest": 711
    },
    {
     "nation": "Poland",
@@ -1228,17 +1239,6 @@
     "home_games": 3,
     "highest": 977,
     "lowest": 800
-   },
-   {
-    "nation": "Denmark",
-    "club": "Bakken Bears",
-    "average_attendance": 811,
-    "weighted_capacity": 1800,
-    "filling_rate": 0.4506,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 911,
-    "lowest": 711
    },
    {
     "nation": "Croatia",
@@ -1373,17 +1373,6 @@
     "lowest": 366
    },
    {
-    "nation": "Portugal",
-    "club": "Sporting CP",
-    "average_attendance": 345,
-    "weighted_capacity": 3001,
-    "filling_rate": 0.115,
-    "games_with_attendance": 2,
-    "home_games": 2,
-    "highest": 390,
-    "lowest": 300
-   },
-   {
     "nation": "Azerbaijan",
     "club": "Neftchi Sports Club Public Union",
     "average_attendance": 340,
@@ -1393,6 +1382,17 @@
     "home_games": 3,
     "highest": 400,
     "lowest": 300
+   },
+   {
+    "nation": "Portugal",
+    "club": "Sporting CP",
+    "average_attendance": 329,
+    "weighted_capacity": 3001,
+    "filling_rate": 0.1095,
+    "games_with_attendance": 3,
+    "home_games": 3,
+    "highest": 390,
+    "lowest": 296
    },
    {
     "nation": "Slovakia",
