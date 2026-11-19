@@ -19,7 +19,7 @@
 ,Italy,Virtus Bologna,5408,5570,97%,5,5471,5167
 ,Spain,FC Barcelona Basquet,5089,7786,65%,6,6004,3637
 ,Israel,Hapoel Tel Aviv,1098,10155,11%,4,3428,218
-,Israel,Maccabi Tel Aviv,733,8000,9%,6,2313,88
+,Israel,Maccabi Tel Aviv,723,8000,9%,7,2313,88
 ,,END
 
 
@@ -63,7 +63,7 @@
 ,Basketball Champions League 26/27
 ,Nation,Club,Average attendance,Available arena capacity,Filling rate,Games,Highest attendance,Lowest attendance
 ,Germany,Alba Berlin,8546,13488,63%,2,8721,8371
-,Spain,Unicaja Malaga,6309,10699,59%,2,6370,6248
+,Spain,Unicaja Malaga,6424,10699,60%,2,6478,6370
 ,Lithuania,Rytas Vilnius,4575,9000,51%,3,5267,4055
 ,Spain,Bilbao Surne Basket,4536,10014,45%,2,4672,4400
 ,Poland,Legia Warszawa,4407,6304,70%,1,4407,4407
@@ -81,15 +81,15 @@
 ,Italy,Pallacanestro Varese,2481,5677,44%,1,2481,2481
 ,Germany,Rasta Vechta,2218,3140,71%,1,2218,2218
 ,Belgium,Antwerp Giants,2168,5218,42%,2,2233,2104
+,Turkey,Galatasaray S.K.,2035,16500,12%,2,2847,1223
 ,Italy,Pallacanestro Reggiana,2006,4530,44%,2,2197,1816
 ,France,Nanterre 92,1942,3000,65%,1,1942,1942
 ,Finland,Salon Vilpas,1919,2770,69%,1,1919,1919
-,Croatia,KK Cibona,1790,5400,33%,3,2070,1300
+,Croatia,KK Cibona,1857,5400,34%,3,2201,1300
 ,Portugal,FC Porto,1727,3875,45%,1,1727,1727
 ,Serbia,KK Spartak Subotica,1724,3500,49%,3,1890,1594
 ,Czech Republic,Era Nymburk,1452,10300,14%,2,1793,1112
-,Greece,AEK B.C.,1232,9025,14%,2,1329,1136
-,Turkey,Galatasaray S.K.,1223,16500,7%,1,1223,1223
+,Greece,AEK B.C.,1157,9025,13%,3,1329,1006
 ,Greece,Peristeri B.C.,1141,4000,29%,2,1276,1006
 ,Lithuania,Utena Juventus,1012,9000,11%,3,1204,893
 ,Bosnia and Herzegovina,KK Igokea,775,3050,25%,2,950,600

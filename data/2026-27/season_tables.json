@@ -214,11 +214,11 @@
    {
     "nation": "Israel",
     "club": "Maccabi Tel Aviv",
-    "average_attendance": 733,
+    "average_attendance": 723,
     "weighted_capacity": 8000,
-    "filling_rate": 0.0916,
-    "games_with_attendance": 6,
-    "home_games": 6,
+    "filling_rate": 0.0903,
+    "games_with_attendance": 7,
+    "home_games": 7,
     "highest": 2313,
     "lowest": 88
    }
@@ -592,13 +592,13 @@
    {
     "nation": "Spain",
     "club": "Unicaja Malaga",
-    "average_attendance": 6309,
+    "average_attendance": 6424,
     "weighted_capacity": 10699,
-    "filling_rate": 0.5897,
+    "filling_rate": 0.6004,
     "games_with_attendance": 2,
     "home_games": 2,
-    "highest": 6370,
-    "lowest": 6248
+    "highest": 6478,
+    "lowest": 6370
    },
    {
     "nation": "Lithuania",
@@ -788,6 +788,17 @@
     "lowest": 2104
    },
    {
+    "nation": "Turkey",
+    "club": "Galatasaray S.K.",
+    "average_attendance": 2035,
+    "weighted_capacity": 16500,
+    "filling_rate": 0.1233,
+    "games_with_attendance": 2,
+    "home_games": 2,
+    "highest": 2847,
+    "lowest": 1223
+   },
+   {
     "nation": "Italy",
     "club": "Pallacanestro Reggiana",
     "average_attendance": 2006,
@@ -823,12 +834,12 @@
    {
     "nation": "Croatia",
     "club": "KK Cibona",
-    "average_attendance": 1790,
+    "average_attendance": 1857,
     "weighted_capacity": 5400,
-    "filling_rate": 0.3315,
+    "filling_rate": 0.3439,
     "games_with_attendance": 3,
     "home_games": 3,
-    "highest": 2070,
+    "highest": 2201,
     "lowest": 1300
    },
    {
@@ -867,24 +878,13 @@
    {
     "nation": "Greece",
     "club": "AEK B.C.",
-    "average_attendance": 1232,
+    "average_attendance": 1157,
     "weighted_capacity": 9025,
-    "filling_rate": 0.1366,
-    "games_with_attendance": 2,
+    "filling_rate": 0.1282,
+    "games_with_attendance": 3,
     "home_games": 3,
     "highest": 1329,
-    "lowest": 1136
-   },
-   {
-    "nation": "Turkey",
-    "club": "Galatasaray S.K.",
-    "average_attendance": 1223,
-    "weighted_capacity": 16500,
-    "filling_rate": 0.0741,
-    "games_with_attendance": 1,
-    "home_games": 2,
-    "highest": 1223,
-    "lowest": 1223
+    "lowest": 1006
    },
    {
     "nation": "Greece",
