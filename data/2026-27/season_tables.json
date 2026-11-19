@@ -592,13 +592,13 @@
    {
     "nation": "Spain",
     "club": "Unicaja Malaga",
-    "average_attendance": 6370,
+    "average_attendance": 6309,
     "weighted_capacity": 10699,
-    "filling_rate": 0.5954,
-    "games_with_attendance": 1,
+    "filling_rate": 0.5897,
+    "games_with_attendance": 2,
     "home_games": 2,
     "highest": 6370,
-    "lowest": 6370
+    "lowest": 6248
    },
    {
     "nation": "Lithuania",
