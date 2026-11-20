@@ -157,17 +157,6 @@
     "lowest": 5129
    },
    {
-    "nation": "Turkey",
-    "club": "Anadolu Efes S.K.",
-    "average_attendance": 5689,
-    "weighted_capacity": 10000,
-    "filling_rate": 0.5689,
-    "games_with_attendance": 6,
-    "home_games": 6,
-    "highest": 9923,
-    "lowest": 3603
-   },
-   {
     "nation": "United Arab Emirates",
     "club": "Dubai Basketball",
     "average_attendance": 5654,
@@ -177,6 +166,17 @@
     "home_games": 6,
     "highest": 7313,
     "lowest": 2700
+   },
+   {
+    "nation": "Turkey",
+    "club": "Anadolu Efes S.K.",
+    "average_attendance": 5651,
+    "weighted_capacity": 10000,
+    "filling_rate": 0.5651,
+    "games_with_attendance": 7,
+    "home_games": 7,
+    "highest": 9923,
+    "lowest": 3603
    },
    {
     "nation": "Italy",
