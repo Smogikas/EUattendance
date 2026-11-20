@@ -2,16 +2,16 @@
 ,Nation,Club,Average attendance,Available arena capacity,Filling rate,Games,Highest attendance,Lowest attendance
 ,Greece,Panathinaikos B.C.,17041,19009,90%,8,19073,14633
 ,Serbia,KK Partizan,15739,21000,75%,6,20073,13706
-,Lithuania,Žalgiris Kaunas,14930,15415,97%,5,15267,14618
+,Lithuania,Žalgiris Kaunas,14960,15415,97%,6,15267,14618
 ,Serbia,KK Crvena zvezda,14646,21000,70%,6,16420,11765
-,Spain,Valencia Basket,12088,15600,77%,6,13177,10361
-,Germany,Bayern Munich,10538,11500,92%,4,11500,9154
+,Spain,Valencia Basket,12127,15600,78%,7,13177,10361
+,Germany,Bayern Munich,10033,11500,87%,5,11500,8012
 ,Spain,Real Madrid Baloncesto,8792,13109,67%,5,10164,6723
 ,Turkey,Fenerbahce Istanbul,8104,13500,60%,7,8850,7214
 ,France,ASVEL Basket,7565,11528,66%,7,8712,5282
-,France,Paris Basketball,6869,9275,74%,6,11774,3746
+,France,Paris Basketball,6797,9093,75%,7,11774,3746
 ,Turkey,Besiktas J.K.,6613,10000,66%,6,8500,5103
-,Italy,Olimpia Milano,6435,12700,51%,7,6950,5891
+,Italy,Olimpia Milano,6531,12700,51%,8,7203,5891
 ,Spain,Saski Baskonia,6349,15504,41%,6,8136,2186
 ,Greece,Olympiacos B.C.,6132,9025,68%,5,7237,5129
 ,Turkey,Anadolu Efes S.K.,5689,10000,57%,6,9923,3603
@@ -114,7 +114,7 @@
 ,Poland,King Wilki Morskie Szczecin,1412,3899,36%,3,1588,1301
 ,Kosovo,BC Trepca,1333,2300,58%,3,1500,1000
 ,Kosovo,Basketball Club Bashkimi,1333,3000,44%,3,2000,1000
-,Slovakia,BK Patrioti Levice,1177,2250,52%,2,1212,1142
+,Slovakia,BK Patrioti Levice,1154,2250,51%,3,1212,1107
 ,Estonia,Tartu Ulikool,1099,2600,42%,3,1113,1082
 ,Denmark,Bakken Bears,1074,1800,60%,3,1600,711
 ,Poland,Dziki Warszawa,1018,1298,78%,3,1204,857
