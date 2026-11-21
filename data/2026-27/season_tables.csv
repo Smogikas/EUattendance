@@ -1,9 +1,9 @@
 ,Euroleague 26/27
 ,Nation,Club,Average attendance,Available arena capacity,Filling rate,Games,Highest attendance,Lowest attendance
 ,Greece,Panathinaikos B.C.,17041,19009,90%,8,19073,14633
-,Serbia,KK Partizan,15739,21000,75%,6,20073,13706
 ,Lithuania,Žalgiris Kaunas,14960,15415,97%,6,15267,14618
 ,Serbia,KK Crvena zvezda,14646,21000,70%,6,16420,11765
+,Serbia,KK Partizan,14495,19143,76%,7,20073,7032
 ,Spain,Valencia Basket,12127,15600,78%,7,13177,10361
 ,Germany,Bayern Munich,10033,11500,87%,5,11500,8012
 ,Spain,Real Madrid Baloncesto,8792,13109,67%,5,10164,6723
@@ -12,12 +12,12 @@
 ,France,Paris Basketball,6797,9093,75%,7,11774,3746
 ,Turkey,Besiktas J.K.,6613,10000,66%,6,8500,5103
 ,Italy,Olimpia Milano,6531,12700,51%,8,7203,5891
+,Greece,Olympiacos B.C.,6483,9025,72%,6,8238,5129
 ,Spain,Saski Baskonia,6349,15504,41%,6,8136,2186
-,Greece,Olympiacos B.C.,6132,9025,68%,5,7237,5129
 ,United Arab Emirates,Dubai Basketball,5654,15000,38%,6,7313,2700
 ,Turkey,Anadolu Efes S.K.,5651,10000,57%,7,9923,3603
 ,Italy,Virtus Bologna,5408,5570,97%,5,5471,5167
-,Spain,FC Barcelona Basquet,5089,7786,65%,6,6004,3637
+,Spain,FC Barcelona Basquet,5064,7786,65%,7,6004,3637
 ,Israel,Hapoel Tel Aviv,1098,10155,11%,4,3428,218
 ,Israel,Maccabi Tel Aviv,723,8000,9%,7,2313,88
 ,,END

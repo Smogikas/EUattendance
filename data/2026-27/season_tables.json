@@ -14,17 +14,6 @@
     "lowest": 14633
    },
    {
-    "nation": "Serbia",
-    "club": "KK Partizan",
-    "average_attendance": 15739,
-    "weighted_capacity": 21000,
-    "filling_rate": 0.7495,
-    "games_with_attendance": 6,
-    "home_games": 6,
-    "highest": 20073,
-    "lowest": 13706
-   },
-   {
     "nation": "Lithuania",
     "club": "Žalgiris Kaunas",
     "average_attendance": 14960,
@@ -45,6 +34,17 @@
     "home_games": 6,
     "highest": 16420,
     "lowest": 11765
+   },
+   {
+    "nation": "Serbia",
+    "club": "KK Partizan",
+    "average_attendance": 14495,
+    "weighted_capacity": 19143,
+    "filling_rate": 0.7572,
+    "games_with_attendance": 7,
+    "home_games": 7,
+    "highest": 20073,
+    "lowest": 7032
    },
    {
     "nation": "Spain",
@@ -135,6 +135,17 @@
     "lowest": 5891
    },
    {
+    "nation": "Greece",
+    "club": "Olympiacos B.C.",
+    "average_attendance": 6483,
+    "weighted_capacity": 9025,
+    "filling_rate": 0.7184,
+    "games_with_attendance": 6,
+    "home_games": 6,
+    "highest": 8238,
+    "lowest": 5129
+   },
+   {
     "nation": "Spain",
     "club": "Saski Baskonia",
     "average_attendance": 6349,
@@ -144,17 +155,6 @@
     "home_games": 6,
     "highest": 8136,
     "lowest": 2186
-   },
-   {
-    "nation": "Greece",
-    "club": "Olympiacos B.C.",
-    "average_attendance": 6132,
-    "weighted_capacity": 9025,
-    "filling_rate": 0.6795,
-    "games_with_attendance": 5,
-    "home_games": 5,
-    "highest": 7237,
-    "lowest": 5129
    },
    {
     "nation": "United Arab Emirates",
@@ -192,11 +192,11 @@
    {
     "nation": "Spain",
     "club": "FC Barcelona Basquet",
-    "average_attendance": 5089,
+    "average_attendance": 5064,
     "weighted_capacity": 7786,
-    "filling_rate": 0.6537,
-    "games_with_attendance": 6,
-    "home_games": 6,
+    "filling_rate": 0.6505,
+    "games_with_attendance": 7,
+    "home_games": 7,
     "highest": 6004,
     "lowest": 3637
    },
