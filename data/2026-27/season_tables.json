@@ -113,17 +113,6 @@
     "lowest": 3746
    },
    {
-    "nation": "Turkey",
-    "club": "Besiktas J.K.",
-    "average_attendance": 6613,
-    "weighted_capacity": 10000,
-    "filling_rate": 0.6613,
-    "games_with_attendance": 6,
-    "home_games": 6,
-    "highest": 8500,
-    "lowest": 5103
-   },
-   {
     "nation": "Italy",
     "club": "Olimpia Milano",
     "average_attendance": 6531,
@@ -155,6 +144,17 @@
     "home_games": 6,
     "highest": 8136,
     "lowest": 2186
+   },
+   {
+    "nation": "Turkey",
+    "club": "Besiktas J.K.",
+    "average_attendance": 6143,
+    "weighted_capacity": 10000,
+    "filling_rate": 0.6143,
+    "games_with_attendance": 7,
+    "home_games": 7,
+    "highest": 8500,
+    "lowest": 3323
    },
    {
     "nation": "United Arab Emirates",
