@@ -27,11 +27,11 @@
    {
     "nation": "Serbia",
     "club": "KK Crvena zvezda",
-    "average_attendance": 14646,
+    "average_attendance": 14629,
     "weighted_capacity": 21000,
-    "filling_rate": 0.6974,
-    "games_with_attendance": 6,
-    "home_games": 6,
+    "filling_rate": 0.6966,
+    "games_with_attendance": 7,
+    "home_games": 7,
     "highest": 16420,
     "lowest": 11765
    },
@@ -49,24 +49,24 @@
    {
     "nation": "Spain",
     "club": "Valencia Basket",
-    "average_attendance": 12127,
+    "average_attendance": 12400,
     "weighted_capacity": 15600,
-    "filling_rate": 0.7774,
-    "games_with_attendance": 7,
-    "home_games": 7,
-    "highest": 13177,
+    "filling_rate": 0.7948,
+    "games_with_attendance": 8,
+    "home_games": 8,
+    "highest": 14310,
     "lowest": 10361
    },
    {
     "nation": "Germany",
     "club": "Bayern Munich",
-    "average_attendance": 10033,
+    "average_attendance": 9666,
     "weighted_capacity": 11500,
-    "filling_rate": 0.8724,
-    "games_with_attendance": 5,
-    "home_games": 5,
+    "filling_rate": 0.8405,
+    "games_with_attendance": 6,
+    "home_games": 6,
     "highest": 11500,
-    "lowest": 8012
+    "lowest": 7832
    },
    {
     "nation": "Spain",
@@ -93,11 +93,11 @@
    {
     "nation": "France",
     "club": "ASVEL Basket",
-    "average_attendance": 7565,
-    "weighted_capacity": 11528,
-    "filling_rate": 0.6563,
-    "games_with_attendance": 7,
-    "home_games": 7,
+    "average_attendance": 7558,
+    "weighted_capacity": 11652,
+    "filling_rate": 0.6486,
+    "games_with_attendance": 8,
+    "home_games": 8,
     "highest": 8712,
     "lowest": 5282
    },
@@ -192,11 +192,11 @@
    {
     "nation": "Spain",
     "club": "FC Barcelona Basquet",
-    "average_attendance": 5064,
+    "average_attendance": 5144,
     "weighted_capacity": 7786,
-    "filling_rate": 0.6505,
-    "games_with_attendance": 7,
-    "home_games": 7,
+    "filling_rate": 0.6606,
+    "games_with_attendance": 8,
+    "home_games": 8,
     "highest": 6004,
     "lowest": 3637
    },

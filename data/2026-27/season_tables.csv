@@ -2,13 +2,13 @@
 ,Nation,Club,Average attendance,Available arena capacity,Filling rate,Games,Highest attendance,Lowest attendance
 ,Greece,Panathinaikos B.C.,17041,19009,90%,8,19073,14633
 ,Lithuania,Žalgiris Kaunas,14960,15415,97%,6,15267,14618
-,Serbia,KK Crvena zvezda,14646,21000,70%,6,16420,11765
+,Serbia,KK Crvena zvezda,14629,21000,70%,7,16420,11765
 ,Serbia,KK Partizan,14495,19143,76%,7,20073,7032
-,Spain,Valencia Basket,12127,15600,78%,7,13177,10361
-,Germany,Bayern Munich,10033,11500,87%,5,11500,8012
+,Spain,Valencia Basket,12400,15600,79%,8,14310,10361
+,Germany,Bayern Munich,9666,11500,84%,6,11500,7832
 ,Spain,Real Madrid Baloncesto,8792,13109,67%,5,10164,6723
 ,Turkey,Fenerbahce Istanbul,8104,13500,60%,7,8850,7214
-,France,ASVEL Basket,7565,11528,66%,7,8712,5282
+,France,ASVEL Basket,7558,11652,65%,8,8712,5282
 ,France,Paris Basketball,6797,9093,75%,7,11774,3746
 ,Italy,Olimpia Milano,6531,12700,51%,8,7203,5891
 ,Greece,Olympiacos B.C.,6483,9025,72%,6,8238,5129
@@ -17,7 +17,7 @@
 ,United Arab Emirates,Dubai Basketball,5654,15000,38%,6,7313,2700
 ,Turkey,Anadolu Efes S.K.,5651,10000,57%,7,9923,3603
 ,Italy,Virtus Bologna,5408,5570,97%,5,5471,5167
-,Spain,FC Barcelona Basquet,5064,7786,65%,7,6004,3637
+,Spain,FC Barcelona Basquet,5144,7786,66%,8,6004,3637
 ,Israel,Hapoel Tel Aviv,1098,10155,11%,4,3428,218
 ,Israel,Maccabi Tel Aviv,723,8000,9%,7,2313,88
 ,,END
